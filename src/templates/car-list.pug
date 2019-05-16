@@ -1,0 +1,142 @@
+include ./components/_var.pug
+
+include ./components/_head.pug
+include ./components/_header.pug
+main
+  div.brecrum
+    .container.d-flex.justify-content-between
+      p Automotive/ contact us
+      ul
+        li Kia   
+        li Peugeot 
+        li King Long
+  section.content-body
+    .car-selector
+      h1 Explore Your KIA
+      .selector
+        .model-wrapper
+          ul.models
+            li
+              button.active(data-model="stinger")
+                img(src="./assets/images/utils/kia-stinger-white.png", alt="")
+                span stinger
+            li
+              button(data-model="picanto")
+                img(src="./assets/images/utils/kia-picanto_2017-black.png", alt="")
+                span picanto
+            li
+              button(data-model="ceed")
+                img(src="./assets/images/utils/kia-ceed_2018-red.png", alt="")
+                span ceed
+                  
+        .category
+          .stage-bg
+            img.desktop(src="./assets/images/utils/selector-bg-desktop.jpg", alt="")
+            img.mobile(src="./assets/images/utils/selector-bg-mobile.jpg", alt="")
+          .stage.stage-wrap.active(data-content="stinger")
+            .stage-top
+              .stage-content
+                .card-content
+                  span.model-year The 2019
+                  span.model-name stinger
+                  span.starting-at Starting At
+                  span.price
+                    span.dollar $
+                    | 32,000
+                  .vehicle-show
+                    | $32,000
+                  .buttons
+                    a.cta(href="./car-detail.html")
+                      .stage-btn Explore
+                      
+              .stage-content-image.stage-content
+                .stage-vehicle
+                  img.active(src="./assets/images/utils/kia-stinger-white.png", alt="", data-carcolor="white")
+                  img(src="./assets/images/utils/kia-stinger-black.png", alt="", data-carcolor="black")
+                  img(src="./assets/images/utils/kia-stinger-red.png", alt="", data-carcolor="red")
+            .stage-bottom
+              .stage-content.module-wrapper
+                .swatches-wrapper
+                  .swatches-color
+                    button.swatches-button
+                      img.active(src="./assets/images/utils/white-button.png", alt="", data-color="white")
+                    button.swatches-button
+                      img(src="./assets/images/utils/black-button.png", alt="", data-color="black")
+                    button.swatches-button
+                      img(src="./assets/images/utils/red-button.png", alt="", data-color="red")
+                  //- .swatch-name
+                  //-   | White
+          .stage.stage-wrap(data-content="picanto")  
+            .stage-top
+              .stage-content
+                .card-content
+                  span.model-year The 2019
+                  span.model-name picanto
+                  span.starting-at Starting At
+                  span.price
+                    span.dollar $
+                    | 22,000
+                  .vehicle-show
+                    | $22,000
+                  .buttons
+                    a.cta(href="./car-detail.html")
+                      .stage-btn Explore
+          
+              .stage-content-image.stage-content
+                .stage-vehicle
+                  img.active(src="./assets/images/utils/kia-picanto_2017-white.png", alt="", data-carcolor="white")
+                  img(src="./assets/images/utils/kia-picanto_2017-black.png", alt="", data-carcolor="black")
+                  img(src="./assets/images/utils/kia-picanto_2017-red.png", alt="", data-carcolor="red")
+            .stage-bottom
+              .stage-content.module-wrapper
+                .swatches-wrapper
+                  .swatches-color
+                    button.swatches-button
+                      img.active(src="./assets/images/utils/white-button.png", alt="", data-color="white")
+                    button.swatches-button
+                      img(src="./assets/images/utils/black-button.png", alt="", data-color="black")
+                    button.swatches-button
+                      img(src="./assets/images/utils/red-button.png", alt="", data-color="red")
+                  //- .swatch-name
+                  //-   | White
+          .stage.stage-wrap(data-content='ceed')
+            .stage-top
+              .stage-content
+                .card-content
+                  span.model-year The 2019
+                  span.model-name ceed
+                  span.starting-at Starting At
+                  span.price
+                    span.dollar $
+                    | 12,000
+                  .vehicle-show
+                    | $12,000
+                  .buttons
+                    a.cta(href="./car-detail.html")
+                      .stage-btn Explore
+          
+              .stage-content-image.stage-content
+                .stage-vehicle
+                  img.active(src="./assets/images/utils/kia-ceed_2018-white.png", alt="", data-carcolor="white")
+                  img(src="./assets/images/utils/kia-ceed_2018-black.png", alt="", data-carcolor="black")
+                  img(src="./assets/images/utils/kia-ceed_2018-red.png", alt="", data-carcolor="red")
+            .stage-bottom
+              .stage-content.module-wrapper
+                .swatches-wrapper
+                  .swatches-color
+                    button.swatches-button
+                      img.active(src="./assets/images/utils/white-button.png", alt="", data-color="white")
+                    button.swatches-button
+                      img(src="./assets/images/utils/black-button.png", alt="", data-color="black")
+                    button.swatches-button
+                      img(src="./assets/images/utils/red-button.png", alt="", data-color="red")
+                  //- .swatch-name
+                  //-   | White
+                  
+        .divider
+          .module-divider
+
+          
+include ./components/_footer.pug
+
+script(src="./assets/js/core.min.js")

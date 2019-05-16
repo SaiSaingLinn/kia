@@ -1,0 +1,2010 @@
+.kia-main .header-slider-wrap .header-slider .slide-item {
+  text-align: center;
+}
+.kia-main .header-slider-wrap .header-slider .slide-item img {
+  width: 100%;
+}
+.kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
+    bottom: 6rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
+    bottom: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
+    bottom: 1.3rem;
+  }
+}
+.kia-main .header-slider-wrap .header-slider .slide-item h1 {
+  color: #fff;
+  text-shadow: 2px 5px 10px #000;
+}
+@media screen and (min-width: 1200px) {
+  .kia-main .header-slider-wrap .header-slider .slide-item h1 {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .kia-main .header-slider-wrap .header-slider .slide-item h1 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .kia-main .header-slider-wrap .header-slider .slide-item h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .kia-main .header-slider-wrap .header-slider .slide-item h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.kia-main .header-slider-wrap .header-slider .slick-prev {
+  left: 10%;
+}
+
+.kia-main .header-slider-wrap .header-slider .slick-next {
+  right: 10%;
+}
+
+.kia-main .header-slider-wrap .header-slider .slick-prev,
+.kia-main .header-slider-wrap .header-slider .slick-next {
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  background: #c51230;
+  border-radius: 50%;
+}
+
+.kia-main .header-slider-wrap .header-slider .slick-next::before {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  content: "\f054";
+}
+
+.kia-main .header-slider-wrap .header-slider .slick-prev::before {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  content: "\f053";
+}
+
+.kia-main .popular-car-wrap {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #ccc;
+}
+.kia-main .popular-car-wrap .popular-car-list {
+  padding-top: 3rem;
+}
+.kia-main .popular-car-wrap .popular-car-list .car-item {
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  box-shadow: 5px 5px #333;
+  box-shadow: 0 1px 9px 0 #bbb;
+}
+.kia-main .popular-car-wrap .popular-car-list .car-item img {
+  width: 100%;
+  border-radius: .25rem .25rem 0 0;
+}
+.kia-main .popular-car-wrap .popular-car-list .car-item .car-price {
+  padding: .75rem;
+  border-bottom: 1px solid #ccc;
+}
+.kia-main .popular-car-wrap .popular-car-list .car-item .car-price p {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ee5726;
+}
+.kia-main .popular-car-wrap .popular-car-list .car-item .car-price p::after {
+  font-size: .8rem;
+  color: #606060;
+  content: "Price onwards";
+}
+.kia-main .popular-car-wrap .popular-car-list .car-item ul {
+  display: flex;
+  justify-content: space-between;
+  padding: .75rem;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.kia-main .popular-car-wrap .popular-car-list .car-item li {
+  font-size: 14px;
+}
+.kia-main .popular-car-wrap .popular-car-list .car-item li::before {
+  margin-right: 3px;
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  color: #606060;
+  content: "";
+}
+.kia-main .popular-car-wrap .popular-car-list .car-item li:first-child::before {
+  content: "\f004";
+}
+.kia-main .popular-car-wrap .popular-car-list .car-item li:nth-child(2)::before {
+  content: "\f079";
+}
+.kia-main .popular-car-wrap .popular-car-list .car-item li:last-child::before {
+  content: "\f005";
+}
+.kia-main .popular-car-wrap .popular-car-list .slick-prev,
+.kia-main .popular-car-wrap .popular-car-list .slick-next {
+  top: 1rem;
+  width: 2.5rem;
+  height: 2rem;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+}
+.kia-main .popular-car-wrap .popular-car-list .slick-prev {
+  right: 4rem;
+  left: auto;
+}
+.kia-main .popular-car-wrap .popular-car-list .slick-prev::before {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: #000;
+  content: "\f053";
+}
+.kia-main .popular-car-wrap .popular-car-list .slick-next {
+  right: 1rem;
+}
+.kia-main .popular-car-wrap .popular-car-list .slick-next::before {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: #000;
+  content: "\f054";
+}
+
+.kia-main .new-promotion-wrap {
+  padding-top: 3rem;
+}
+.kia-main .new-promotion-wrap .promotion-slider .promotion-content {
+  position: absolute;
+  top: 10%;
+  padding: .5rem 1.5rem;
+}
+@media screen and (max-width: 365px) {
+  .kia-main .new-promotion-wrap .promotion-slider .promotion-content {
+    top: 0;
+  }
+}
+.kia-main .new-promotion-wrap .promotion-slider .promotion-content h3,
+.kia-main .new-promotion-wrap .promotion-slider .promotion-content p {
+  color: #fff;
+}
+.kia-main .new-promotion-wrap .promotion-slider .slick-next {
+  right: 10%;
+  background: #000;
+}
+.kia-main .new-promotion-wrap .promotion-slider .slick-prev {
+  left: 10%;
+  background: #000;
+}
+.kia-main .new-promotion-wrap .promotion-slider .slick-prev,
+.kia-main .new-promotion-wrap .promotion-slider .slick-next {
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  background: #c51230;
+  border-radius: 50%;
+}
+.kia-main .new-promotion-wrap .promotion-slider .slick-next::before {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  content: "\f054";
+}
+.kia-main .new-promotion-wrap .promotion-slider .slick-prev::before {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  content: "\f053";
+}
+.kia-main .new-promotion-wrap .promotion-slider .slick-slide:not(.slick-current) {
+  opacity: .5;
+  transition: opacity 1.5s ease-in-out;
+}
+.kia-main .new-promotion-wrap .bar {
+  padding: 1rem;
+  text-align: center;
+  background-color: #c51230;
+}
+@media screen and (max-width: 425px) {
+  .kia-main .new-promotion-wrap .bar {
+    padding: .5rem;
+  }
+}
+.kia-main .new-promotion-wrap .bar h2 {
+  margin-bottom: 0;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 991px) {
+  .kia-main .new-promotion-wrap .bar h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .kia-main .new-promotion-wrap .bar h2 {
+    font-size: 1rem;
+  }
+}
+
+.kia-main .latest-new-wrap {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #eee;
+}
+.kia-main .latest-new-wrap .new-item {
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+.kia-main .latest-new-wrap .new-item .new-item-content {
+  position: relative;
+  padding: 1.5rem;
+}
+.kia-main .latest-new-wrap .new-item .new-item-content .date {
+  position: absolute;
+  top: -1.8rem;
+  left: 0;
+  padding: .25rem .75rem;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(173, 173, 173, .7);
+}
+.kia-main .latest-new-wrap .new-item .new-item-content h5 {
+  font-weight: 400;
+  color: #3498db;
+  text-transform: uppercase;
+}
+.kia-main .latest-new-wrap .new-item .new-item-content p {
+  margin-bottom: 0;
+}
+.kia-main .latest-new-wrap .add-content-after::after {
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  content: "| SEE ALL NEWS";
+}
+.kia-main .latest-new-wrap hr {
+  width: 22.5rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  border-top: 4px solid #c51230;
+  margin-inline-start: 0;
+}
+.kia-main .latest-new-wrap .facebook-social-wrap .facebook-header {
+  padding: .5rem 1rem;
+  color: #fff;
+  background-color: #3b5998;
+}
+.kia-main .latest-new-wrap .facebook-social-wrap .facebook-header h3 {
+  margin-bottom: 0;
+  color: #fff;
+}
+.kia-main .latest-new-wrap .facebook-social-wrap .facebook-header i {
+  margin-right: .5rem;
+  color: #fff;
+}
+.kia-main .latest-new-wrap .facebook-social-wrap .social-feed-wrap {
+  padding: 1.5rem 0;
+}
+.kia-main .latest-new-wrap .facebook-social-wrap .social-feed-wrap .social-feed-item {
+  background-color: #fff;
+}
+.kia-main .latest-new-wrap .facebook-social-wrap .social-feed-wrap .social-feed-item .social-content {
+  padding: 1.5rem;
+}
+.kia-main .latest-new-wrap .facebook-social-wrap .social-feed-wrap .social-feed-item .social-content p {
+  margin-bottom: 0;
+}
+.kia-main .latest-new-wrap .facebook-social-wrap .social-feed-wrap .social-feed-item .social-content ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.kia-main .latest-new-wrap .facebook-social-wrap .social-feed-wrap .social-feed-item .social-content .logo {
+  padding: .5rem .25rem;
+  margin-right: .5rem;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+.kia-main .latest-new-wrap .facebook-social-wrap .social-feed-wrap .social-feed-item .social-content .kia-mm {
+  display: block;
+  font-weight: 600;
+  color: #3b5998;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #606060;
+  background-color: #fff;
+}
+header a,
+header a:hover {
+  color: #606060;
+}
+
+.top-bar {
+  width: 100%;
+  min-height: 2rem;
+  font-size: .9rem;
+  border-bottom: 1px solid #ccc;
+}
+.top-bar .sub-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.top-bar .sub-menu .contact-item {
+  display: inline-block;
+}
+.top-bar ul {
+  padding: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.top-bar .sss-link::before {
+  margin: auto .5rem;
+  content: "|";
+}
+.top-bar .top-menu {
+  padding: 5px 0;
+  background-color: #c51230;
+}
+.top-bar .top-menu::after {
+  color: #fff;
+  content: "|";
+}
+.top-bar .top-menu:last-child::after {
+  content: "";
+}
+.top-bar .top-menu a {
+  padding: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.top-bar .top-menu .rotating {
+  width: 17px;
+  margin-right: .3rem;
+  -webkit-animation-name: steering;
+  animation-name: steering;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-timing-function: easing;
+  animation-timing-function: easing;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes steering {
+  0,
+  100%,
+  50% {
+    -webkit-transform: rotate(0);
+  }
+  25% {
+    -webkit-transform: rotate(-30deg);
+  }
+  75% {
+    -webkit-transform: rotate(60deg);
+  }
+}
+
+@keyframes steering {
+  0,
+  100%,
+  50% {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  25% {
+    -webkit-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+  75% {
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+}
+.top-bar .top-menu-icon {
+  margin-right: 0;
+}
+.top-bar .top-menu-icon a {
+  padding: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: .6;
+}
+.top-bar .top-menu-icon a:hover {
+  opacity: 1;
+}
+.top-bar .top-menu-icon img {
+  width: 17px;
+  margin-top: .3rem;
+}
+
+.nav-container {
+  position: relative;
+}
+
+.main-nav {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.main-nav .navbar-collapse {
+  flex-grow: 0;
+}
+@media screen and (min-width: 992px) {
+  .main-nav .navbar-collapse .navbar-nav {
+    padding-right: 40px;
+  }
+  .main-nav .navbar-collapse .navbar-nav::after {
+    padding: .25rem;
+    content: "|";
+  }
+}
+.main-nav .navbar-collapse .nav-item a {
+  font-weight: 600;
+  color: #333;
+}
+.main-nav .navbar-collapse .nav-item:hover {
+  color: #606060;
+}
+.main-nav .navbar-collapse .car-model-list {
+  position: absolute;
+  top: 113%;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  width: 100%;
+  box-shadow: 0 1px 11px 0 rgba(0, 0, 0, .05), 0 4px 10px 0 rgba(0, 0, 0, .12);
+}
+.main-nav .navbar-collapse .car-model-list .car-type {
+  width: 20%;
+  padding: 1rem;
+  background-color: #ededed;
+}
+.main-nav .navbar-collapse .car-model-list .car-type:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #c51230;
+}
+.main-nav .navbar-collapse .car-model-list .car-type p {
+  margin-bottom: 0;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main-nav .navbar-collapse .car-model-list::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  content: "";
+  border-top: 18px solid #c51230;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+.main-nav .navbar-collapse .car-model-list::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: "";
+  border-right: 10px solid transparent;
+  border-bottom: 18px solid #c51230;
+  border-left: 10px solid transparent;
+}
+.main-nav .navbar-collapse .kia-model:hover .car-model-list {
+  display: block;
+}
+.main-nav .searchright {
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  width: 60px;
+  padding: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+@media screen and (max-width: 991px) {
+  .main-nav .searchright {
+    position: relative;
+    width: 100%;
+  }
+}
+.main-nav .searchright i {
+  margin: .75rem .5rem;
+}
+.main-nav .searchright i:first-child {
+  margin-right: 1.5rem;
+  margin-left: .25rem;
+}
+.main-nav .searchright .search {
+  border-radius: 0;
+}
+
+.show-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .show-mobile {
+    display: block;
+  }
+  .top-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top-bar .sss-link::before {
+    margin: auto;
+    content: "";
+  }
+  .top-bar .sub-menu .mobile-width {
+    width: 65%;
+  }
+  .top-bar .top-menu-icon {
+    padding: .5rem 0;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .navbar-brand a img {
+    width: 95px;
+  }
+  .navbar-brand a .line {
+    width: 25px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .top-bar .sub-menu {
+    display: inline-block;
+  }
+  .top-bar .sub-menu .mobile-width {
+    width: 100%;
+  }
+}
+
+.flex-container,
+.flex-container1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 22px;
+  margin-bottom: 45px;
+}
+
+.con {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.img {
+  width: 50px;
+  height: 40px;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.bgfoot {
+  background: #c9c9c9;
+}
+
+.btn-info {
+  margin-left: 10px;
+  background: #626262;
+  border-color: #626262;
+}
+
+.btn-info:hover {
+  color: #fff;
+  background-color: #626262;
+  border-color: #626262;
+}
+
+@media screen and (max-width: 1200px) {
+  .flex-container1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 22px;
+    margin-bottom: 45px;
+  }
+  .btn-info {
+    width: 100%;
+    margin-left: 1px;
+    background: #626262;
+    border-color: #626262;
+  }
+}
+
+.contactus-wrap h4 {
+  padding-bottom: .75rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #606060;
+}
+
+.contactus-wrap p {
+  font-weight: 500;
+  color: #333;
+}
+
+.pre-owned-detail .car-parts-wrap {
+  margin-bottom: 2.5rem;
+}
+
+.pre-owned-detail .carousel-inner {
+  margin-bottom: .5rem;
+  border: 1px solid #ccc;
+}
+
+.pre-owned-detail .carousel-item img {
+  width: 100%;
+}
+
+.pre-owned-detail .carousel-control-next,
+.pre-owned-detail .carousel-control-prev {
+  width: 8%;
+}
+
+.pre-owned-detail .carousel-control-prev-icon,
+.pre-owned-detail .carousel-control-next-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.pre-owned-detail .carousel-control-prev-icon {
+  background-image: url("/assets/images/utils/arrow-left.png");
+}
+
+.pre-owned-detail .carousel-control-next-icon {
+  background-image: url("/assets/images/utils/arrow-right.png");
+}
+
+.pre-owned-detail .carousel-indicators {
+  position: relative;
+  bottom: 0;
+  justify-content: space-between;
+  margin-right: 0;
+  margin-left: 0;
+}
+.pre-owned-detail .carousel-indicators div {
+  margin-right: .1rem;
+  overflow: hidden;
+}
+.pre-owned-detail .carousel-indicators div:last-child {
+  margin-right: 0;
+}
+.pre-owned-detail .carousel-indicators div img {
+  width: 100%;
+}
+
+.pre-owned-detail .spare-part-wrap {
+  margin-bottom: 3rem;
+}
+.pre-owned-detail .spare-part-wrap .spare-part .img-spare-part {
+  margin-right: .5rem;
+  background-color: #f6f6f6;
+}
+.pre-owned-detail .spare-part-wrap .spare-part .img-spare-part:last-child {
+  margin-right: 0;
+}
+.pre-owned-detail .spare-part-wrap .spare-part img {
+  width: 100%;
+}
+.pre-owned-detail .spare-part-wrap .spare-part .slick-prev,
+.pre-owned-detail .spare-part-wrap .spare-part .slick-next {
+  top: -2rem;
+  width: 2.5rem;
+  height: 2rem;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+}
+.pre-owned-detail .spare-part-wrap .spare-part .slick-prev {
+  right: 4rem;
+  left: auto;
+}
+.pre-owned-detail .spare-part-wrap .spare-part .slick-prev::before {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: #000;
+  content: "\f053";
+}
+.pre-owned-detail .spare-part-wrap .spare-part .slick-next {
+  right: 1rem;
+}
+.pre-owned-detail .spare-part-wrap .spare-part .slick-next::before {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: #000;
+  content: "\f054";
+}
+
+.pre-owned-detail .car-spec {
+  padding: 0;
+  list-style-type: none;
+}
+.pre-owned-detail .car-spec li {
+  padding: .5rem 0;
+  font-weight: 500;
+}
+.pre-owned-detail .car-spec li img {
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+
+.pre-owned-detail .card {
+  border: 0;
+  border-radius: 0;
+}
+.pre-owned-detail .card .card-header {
+  font-weight: 500;
+  border-top: 1px solid rgba(0, 0, 0, .125);
+  border-bottom: 0;
+}
+.pre-owned-detail .card:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+.pre-owned-detail .card .card-header::after {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  font-size: 1.5rem;
+  content: "+";
+}
+.pre-owned-detail .card .card-header[aria-expanded="false"]::after {
+  content: "+";
+}
+.pre-owned-detail .card .card-header[aria-expanded="true"]::after {
+  content: "-";
+}
+
+.pre-owned-detail .sportage-reason {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 991px) {
+  .pre-owned-detail .sportage-reason {
+    display: block;
+  }
+}
+.pre-owned-detail .sportage-reason .img-wrap {
+  position: relative;
+  width: 33%;
+  margin: 0 auto;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+}
+.pre-owned-detail .sportage-reason .img-wrap:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 991px) {
+  .pre-owned-detail .sportage-reason .img-wrap {
+    display: inline-block;
+    width: 48.5%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pre-owned-detail .sportage-reason .img-wrap {
+    width: 100%;
+  }
+}
+.pre-owned-detail .sportage-reason .img-wrap img {
+  width: 100%;
+  vertical-align: middle;
+}
+.pre-owned-detail .sportage-reason .img-wrap .img-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  background: #000;
+  background: rgba(7, 66, 125, .73);
+}
+.pre-owned-detail .sportage-reason .img-wrap h4 {
+  margin-bottom: 0;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1199px) {
+  .pre-owned-detail .sportage-reason .img-wrap h4 {
+    font-size: 1.3rem;
+  }
+}
+
+.kia_myanmar {
+  padding-bottom: 100px;
+}
+.kia_myanmar .kiacar {
+  background: url("../images/utils/kiacarbg.png") no-repeat center center/100%;
+}
+
+.latest_new {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: #eee;
+}
+.latest_new .kiamyanmar,
+.latest_new .motor_oil {
+  position: relative;
+}
+.latest_new .kiamyanmar figcaption,
+.latest_new .motor_oil figcaption {
+  position: absolute;
+  top: 117px;
+  left: 0;
+  padding: 8px;
+  color: #fff;
+  background: #818181;
+}
+
+.latest_neww {
+  padding-right: 0;
+  padding-left: 0;
+  background: #fff;
+}
+
+.latenew {
+  align-items: center;
+  margin-bottom: 20px;
+}
+.latenew h3 {
+  position: relative;
+}
+.latenew h3::after {
+  position: absolute;
+  top: 114%;
+  left: 3px;
+  width: 69px;
+  height: 5px;
+  content: "";
+  background: #fafafa;
+}
+.latenew a {
+  padding-left: 15px;
+  margin-left: 15px;
+}
+
+.kiamyanmar_txt,
+.motor_oil_txt,
+.spengine_txt {
+  padding: 12px;
+}
+
+.spengine_txt {
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+  .latest_new .kiamyanmar,
+  .latest_new .motor_oil {
+    position: relative;
+  }
+  .latest_new .kiamyanmar figcaption,
+  .latest_new .motor_oil figcaption {
+    position: absolute;
+    top: 117px;
+    left: 0;
+    padding: 8px;
+    color: #fff;
+    background: #818181;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .latest_new .kiamyanmar,
+  .latest_new .motor_oil {
+    position: relative;
+  }
+  .latest_new .kiamyanmar figcaption,
+  .latest_new .motor_oil figcaption {
+    position: absolute;
+    top: 102px;
+    left: 0;
+    padding: 2px;
+    color: #fff;
+    background: #818181;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .latest_new .kiamyanmar,
+  .latest_new .motor_oil {
+    position: relative;
+  }
+  .latest_new .kiamyanmar figcaption,
+  .latest_new .motor_oil figcaption {
+    position: absolute;
+    top: 102px;
+    left: 0;
+    padding: 2px;
+    color: #fff;
+    background: #818181;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .latest_new .kiamyanmar,
+  .latest_new .motor_oil {
+    position: relative;
+  }
+  .latest_new .kiamyanmar figcaption,
+  .latest_new .motor_oil figcaption {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    padding: 8px;
+    color: #fff;
+    background: #818181;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .latest_new .kiamyanmar,
+  .latest_new .motor_oil {
+    position: relative;
+  }
+  .latest_new .kiamyanmar figcaption,
+  .latest_new .motor_oil figcaption {
+    position: absolute;
+    top: 69px;
+    left: 0;
+    padding: 3px;
+    font-size: 13px;
+    color: #fff;
+    background: #818181;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .latest_new .kiamyanmar,
+  .latest_new .motor_oil {
+    position: relative;
+  }
+  .latest_new .kiamyanmar figcaption,
+  .latest_new .motor_oil figcaption {
+    position: absolute;
+    top: 66px;
+    left: 0;
+    padding: 2px;
+    color: #fff;
+    background: #818181;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .latest_new .kiamyanmar,
+  .latest_new .motor_oil {
+    position: relative;
+  }
+  .latest_new .kiamyanmar figcaption,
+  .latest_new .motor_oil figcaption {
+    position: absolute;
+    top: 188px;
+    left: 0;
+    padding: 8px;
+    color: #fff;
+    background: #818181;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .latest_new .kiamyanmar,
+  .latest_new .motor_oil {
+    position: relative;
+  }
+  .latest_new .kiamyanmar figcaption,
+  .latest_new .motor_oil figcaption {
+    position: absolute;
+    top: 137px;
+    left: 0;
+    padding: 8px;
+    color: #fff;
+    background: #818181;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .latest_new .kiamyanmar,
+  .latest_new .motor_oil {
+    position: relative;
+  }
+  .latest_new .kiamyanmar figcaption,
+  .latest_new .motor_oil figcaption {
+    position: absolute;
+    top: 132px;
+    left: 0;
+    padding: 8px;
+    color: #fff;
+    background: #818181;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .latest_new .kiamyanmar,
+  .latest_new .motor_oil {
+    position: relative;
+  }
+  .latest_new .kiamyanmar figcaption,
+  .latest_new .motor_oil figcaption {
+    position: absolute;
+    top: 114px;
+    left: 0;
+    padding: 8px;
+    color: #fff;
+    background: #818181;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .latest_new .kiamyanmar,
+  .latest_new .motor_oil {
+    position: relative;
+  }
+  .latest_new .kiamyanmar figcaption,
+  .latest_new .motor_oil figcaption {
+    position: absolute;
+    top: 102px;
+    left: 0;
+    padding: 2px;
+    color: #fff;
+    background: #818181;
+  }
+}
+
+.kia-new h3 {
+  margin-bottom: 30px;
+}
+
+.kia-new h4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.kia-Subscribe .subscribes {
+  padding: 10px;
+  border-bottom: 1px solid;
+}
+
+.kia-Subscribe .text-subscribe input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.kia-Subscribe .text-subscribe p {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.kia-Subscribe .recent {
+  margin-top: 10px;
+}
+.kia-Subscribe .recent .tab {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+}
+.kia-Subscribe .recent .tab li {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+.kia-Subscribe .recent .row {
+  margin-bottom: 10px;
+}
+
+.service {
+  margin-top: 200px;
+}
+.service .services-row {
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+.service .services-row1 {
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+
+.h-color {
+  color: #3498db;
+}
+
+@media screen and (max-width: 576px) {
+  .service .services-row {
+    padding-bottom: 1px;
+    margin-top: 50px;
+  }
+  .service .services-row h4 {
+    margin-top: 24px;
+  }
+  .service .services-row1 {
+    padding-bottom: 1px;
+    margin-top: 50px;
+  }
+  .service .services-row1 h4 {
+    margin-top: 24px;
+  }
+}
+
+.nav-tabs .white {
+  background: #fff;
+}
+
+.nav-tabs .red {
+  background: #c51230;
+}
+
+.nav-tabs .blue {
+  background: #a7defa;
+}
+
+.nav-tabs .purple {
+  background: #9f77a8;
+}
+
+.nav-tabs .yellow {
+  background: #d3c631;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.nav-tabs .nav-item {
+  width: 219px;
+  margin-bottom: -1px;
+}
+
+.tab-pane {
+  position: relative;
+  margin-bottom: 0;
+  background: none;
+}
+.tab-pane figure .tab-div {
+  position: absolute;
+  top: 50px;
+  left: 399px;
+}
+.tab-pane figure .tab-div h2 {
+  width: 326px;
+  padding-bottom: 20px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.tab-pane figure .tab-div h6 {
+  color: #fff;
+}
+.tab-pane figure .tab-div h1 {
+  color: #fff;
+  text-shadow: -3px 3px #696969;
+}
+.tab-pane figure .tab-div .btn-danger {
+  border-radius: 37px;
+}
+
+.tabpanes {
+  background: #333;
+}
+
+.nav-tabs {
+  border-bottom: 0 solid #dee2e6;
+}
+.nav-tabs .nav-link.active {
+  position: relative;
+}
+.nav-tabs .nav-link.active::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  content: " ";
+  background: #c51230;
+}
+
+.kia-new .event {
+  margin-top: -33px;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 2560px) {
+  .tab-pane figure .tab-div {
+    top: 63px;
+    left: 732px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .tab-pane figure .tab-div {
+    top: 50px;
+    left: 169px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tab-pane figure .tab-div {
+    top: 50px;
+    left: 44px;
+  }
+  .tab-pane h1 {
+    font-size: 41px;
+    color: #fff;
+    text-shadow: -3px 3px #696969;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .tab-pane figure .tab-div {
+    position: absolute;
+    top: 50px;
+    left: 137px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-tabs .nav-link {
+    position: relative;
+    height: 105px;
+    border: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .nav-tabs .nav-item {
+    width: 185px;
+    margin-bottom: -1px;
+  }
+  .tab-pane figure .tab-div {
+    position: absolute;
+    top: 42px;
+    left: 47px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .tab-pane div h2 {
+    width: 204px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .tab-pane figure .tab-div {
+    position: absolute;
+    top: 42px;
+    left: 37px;
+  }
+  .nav-tabs .nav-link {
+    height: 109px;
+    border: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .nav-tabs .nav-item {
+    width: 185px;
+    margin-bottom: -1px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .tab-pane figure .tab-div {
+    position: absolute;
+    top: 97px;
+    left: 146px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-tabs .nav-link {
+    height: 139px;
+    border: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .nav-tabs .nav-item {
+    width: 137px;
+    margin-bottom: -1px;
+  }
+  .tab-pane figure .tab-div {
+    position: absolute;
+    top: 66px;
+    left: 43px;
+  }
+}
+
+.space-between h5 {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-tabs .nav-item {
+    width: 33%;
+    margin-bottom: -1px;
+  }
+  .nav-tabs .nav-link {
+    height: 103px;
+    border: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .nav-tabs .nav-link h4 {
+    font-size: 17px;
+  }
+  .nav-tabs .nav-link font {
+    font-size: 11px;
+  }
+  .tab-pane figure .tab-div {
+    position: absolute;
+    top: 24px;
+    left: 34px;
+  }
+  .tab-pane figure .tab-div h2 {
+    width: 146px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .tab-pane figure .tab-div h6 {
+    font-size: 15px;
+    color: #fff;
+  }
+  .tab-pane figure .tab-div h1 {
+    font-size: 23px;
+    color: #fff;
+    text-shadow: -3px 3px #696969;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .tab-pane .tab-div h2 {
+    display: none;
+    width: 146px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .tab-pane figure .tab-div {
+    position: absolute;
+    top: -11px;
+    left: 16px;
+  }
+  .tab-pane figure .tab-div h6 {
+    display: none;
+  }
+  .tab-pane figure .tab-div .btn-danger {
+    position: absolute;
+    top: 154px;
+    width: 117px;
+    font-size: 10px;
+    border-radius: 37px;
+  }
+  .tab-pane figure .tab-div .tab-br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .tab-pane figure .tab-div {
+    position: absolute;
+    top: -4px;
+    left: 16px;
+  }
+  .tab-pane figure .tab-div .btn-danger {
+    position: absolute;
+    top: 122px;
+    width: 85px;
+    font-size: 10px;
+    border-radius: 37px;
+  }
+  .tab-pane figure .tab-div h2 {
+    display: none;
+    width: 146px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .tab-pane figure .tab-div h1 {
+    font-size: 17px;
+    color: #fff;
+    text-shadow: -3px 3px #696969;
+  }
+  .nav-tabs .nav-item {
+    width: 33%;
+  }
+  .nav-tabs .nav-link {
+    height: 112px;
+    border: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .space-between h5 {
+    font-size: 12px;
+  }
+}
+
+.car-selector {
+  text-align: center;
+}
+.car-selector h1 {
+  position: relative;
+  display: inline-block;
+  padding: 0 15px;
+  margin: 0 0 4.375vw;
+  margin-bottom: 26px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+}
+.car-selector .selector .model-wrapper .models {
+  padding-bottom: 20px;
+  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.car-selector .selector .model-wrapper .models li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.car-selector .selector .model-wrapper .models li button {
+  position: relative;
+  z-index: 9;
+  display: inline-block;
+  padding: 0;
+  padding-bottom: 16px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.car-selector .selector .model-wrapper .models li button img {
+  display: block;
+  width: 130px;
+  height: 76px;
+  margin-bottom: 8px;
+}
+.car-selector .selector .model-wrapper .models li button span {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 14px;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+}
+.car-selector .selector .model-wrapper .models li button.active span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.car-selector .selector .category {
+  position: relative;
+  z-index: 1;
+  display: block;
+  color: #fff;
+  text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .car-selector .selector .category {
+    margin-bottom: 130px;
+  }
+}
+.car-selector .selector .category .stage-bg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+.car-selector .selector .category .stage-bg img.desktop {
+  position: absolute;
+  bottom: 0;
+  z-index: -99;
+  min-width: 100%;
+  height: unset;
+  min-height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .car-selector .selector .category .stage-bg img.desktop {
+    display: none;
+  }
+}
+.car-selector .selector .category .stage-bg img.mobile {
+  position: absolute;
+  bottom: 0;
+  z-index: -99;
+  display: none;
+  min-width: 100%;
+  height: unset;
+  min-height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .car-selector .selector .category .stage-bg img.mobile {
+    display: block;
+  }
+}
+.car-selector .selector .category .stage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  color: #fff;
+}
+.car-selector .selector .category .stage .stage-top {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.car-selector .selector .category .stage .stage-top .stage-content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  padding: 0 58px;
+  margin: 0 auto;
+  text-align: left;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 767px) {
+  .car-selector .selector .category .stage .stage-top .stage-content {
+    padding: 0 20px;
+  }
+}
+.car-selector .selector .category .stage .stage-top .stage-content .card-content {
+  position: relative;
+  top: 50%;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  padding: 60px 0;
+  color: #fff;
+  text-align: left;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 767px) {
+  .car-selector .selector .category .stage .stage-top .stage-content .card-content {
+    padding: 0;
+    transform: translateY(-70%);
+  }
+}
+.car-selector .selector .category .stage .stage-top .stage-content .card-content .model-year {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.car-selector .selector .category .stage .stage-top .stage-content .card-content .model-name {
+  display: inline-block;
+  padding-bottom: 15px;
+  margin: 0 0 25px;
+  font-size: 60px;
+  line-height: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 5px solid;
+}
+@media screen and (max-width: 767px) {
+  .car-selector .selector .category .stage .stage-top .stage-content .card-content .model-name {
+    font-size: 40px;
+  }
+}
+.car-selector .selector .category .stage .stage-top .stage-content .card-content .starting-at {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.car-selector .selector .category .stage .stage-top .stage-content .card-content .price {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.car-selector .selector .category .stage .stage-top .stage-content .card-content .price .dollar {
+  color: #fff;
+}
+.car-selector .selector .category .stage .stage-top .stage-content .card-content .vehicle-show {
+  margin-bottom: 35px;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.car-selector .selector .category .stage .stage-top .stage-content .card-content .buttons {
+  width: 100%;
+  max-width: 400px;
+  white-space: normal;
+}
+.car-selector .selector .category .stage .stage-top .stage-content .card-content .buttons .cta {
+  position: relative;
+  display: flex;
+  width: 50%;
+  text-decoration: none;
+}
+.car-selector .selector .category .stage .stage-top .stage-content .card-content .buttons .cta .stage-btn {
+  box-sizing: border-box;
+  display: inline-block;
+  align-items: center;
+  width: 100%;
+  padding: 14px 20px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #fff;
+  -webkit-border-radius: 0;
+  transition: all 150ms;
+  -webkit-appearance: none;
+}
+.car-selector .selector .category .stage .stage-top .stage-content .card-content .buttons .cta .stage-btn:hover {
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+}
+.car-selector .selector .category .stage .stage-top .stage-content-image {
+  z-index: -9;
+}
+.car-selector .selector .category .stage .stage-top .stage-content-image .stage-vehicle {
+  position: absolute;
+  right: 0;
+  bottom: 0%;
+  width: 100%;
+  padding-top: 100%;
+  margin: 0;
+  overflow: hidden;
+  transform: translateY(38%);
+}
+@media screen and (max-width: 767px) {
+  .car-selector .selector .category .stage .stage-top .stage-content-image .stage-vehicle {
+    transform: translateY(45%);
+  }
+}
+.car-selector .selector .category .stage .stage-top .stage-content-image .stage-vehicle img {
+  position: absolute;
+  top: 52%;
+  left: 0;
+  box-sizing: border-box;
+  display: none;
+  width: calc(100% - 570px);
+  padding: 0;
+  margin-left: 570px;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 767px) {
+  .car-selector .selector .category .stage .stage-top .stage-content-image .stage-vehicle img {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .car-selector .selector .category .stage .stage-top .stage-content-image .stage-vehicle img {
+    width: calc(100% - 200px);
+    margin-left: 250px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .car-selector .selector .category .stage .stage-top .stage-content-image .stage-vehicle img {
+    width: calc(100% - 500px);
+    margin-left: 500px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .car-selector .selector .category .stage .stage-top .stage-content-image .stage-vehicle img {
+    width: calc(100% - 570px);
+    margin-left: 570px;
+  }
+}
+.car-selector .selector .category .stage .stage-top .stage-content-image .stage-vehicle img.active {
+  display: block;
+}
+.car-selector .selector .category .stage .stage-bottom {
+  box-sizing: border-box;
+  padding: 15px 0;
+}
+@media screen and (max-width: 767px) {
+  .car-selector .selector .category .stage .stage-bottom {
+    margin-top: 100px;
+  }
+}
+.car-selector .selector .category .stage .stage-bottom .stage-content {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+}
+.car-selector .selector .category .stage .stage-bottom .module-wrapper {
+  padding: 0 58px;
+  text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .car-selector .selector .category .stage .stage-bottom .module-wrapper {
+    text-align: center;
+  }
+}
+.car-selector .selector .category .stage .stage-bottom .module-wrapper .swatches-wrapper {
+  display: inline-block;
+  max-width: 100%;
+  padding: 0;
+}
+.car-selector .selector .category .stage .stage-bottom .module-wrapper .swatches-wrapper .swatches-color .swatches-button {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  padding: 0;
+  margin: 0 1px;
+  color: inherit;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.car-selector .selector .category .stage .stage-bottom .module-wrapper .swatches-wrapper .swatches-color .swatches-button img {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 2px solid transparent;
+}
+.car-selector .selector .category .stage .stage-bottom .module-wrapper .swatches-wrapper .swatches-color .swatches-button img.active {
+  border-color: #b0965b !important;
+}
+.car-selector .selector .category .stage .stage-bottom .module-wrapper .swatches-wrapper .swatch-name {
+  font-style: italic;
+  color: #000;
+  text-align: center;
+}
+.car-selector .selector .category .stage.active {
+  display: block;
+}
+.car-selector .selector .divider {
+  padding: 0 58px;
+}
+.car-selector .selector .divider .module-divider {
+  padding: 65px 0 70px;
+  border-bottom: 1px solid #e5e5e5;
+}
+@media screen and (max-width: 767px) {
+  .car-selector .selector .divider {
+    display: none;
+  }
+}
+
+main {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 117px;
+}
+main * {
+  color: #606060;
+}
+main .h1,
+main .h2,
+main .h3,
+main .h4,
+main .h5,
+main .h6,
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  font-weight: 600;
+  color: #000;
+}
+main .btn {
+  padding: .375rem 1rem;
+}
+main .btn:hover,
+main .btn:active,
+main .btn:focus {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+}
+main .btn i {
+  color: #fff;
+}
+main .btn-rounded {
+  border-radius: 1.5rem;
+}
+main .btn-kia {
+  color: #fff;
+  background-color: #c51230;
+}
+main .btn-automotive {
+  color: #fff;
+  background-color: #373737;
+}
+main .radius-0 {
+  border-radius: 0;
+}
+main .btn-test-drive {
+  width: 100%;
+  margin-top: .5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+main .brecrum {
+  padding: 10px;
+  background-color: #c51230;
+}
+main .brecrum .brecrum-inner {
+  display: flex;
+  justify-content: space-between;
+}
+main .brecrum p {
+  margin-bottom: auto;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+main .brecrum ul {
+  display: flex;
+  padding: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+main .brecrum li {
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+main .brecrum li::after {
+  margin: 0 1rem;
+  content: "|";
+}
+main .brecrum li:last-child::after {
+  margin: 0;
+  content: "";
+}
+main .brecrum a {
+  color: #fff;
+}
+main .form-control {
+  border-radius: 0;
+}
+main .btn-sss {
+  color: #fff;
+  background-color: #373737;
+}
+main .content-body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    margin-top: 132px;
+  }
+  main .brecrum .brecrum-inner {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  main {
+    margin-top: 119.31px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  main {
+    margin-top: 163.63px;
+  }
+}
+
+.return-to-top {
+  position: fixed;
+  right: 10%;
+  bottom: 20px;
+  display: block;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  background: #373737;
+  background: rgba(55, 55, 55, .7);
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.return-to-top i {
+  position: relative;
+  top: 13px;
+  left: 16px;
+  margin: 0;
+  font-size: 19px;
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.return-to-top:hover {
+  background: rgba(55, 55, 55, .9);
+}
+
+.return-to-top:hover i {
+  top: 5px;
+  color: #fff;
+}

@@ -1,0 +1,199 @@
+include ./components/_var.pug
+
+include ./components/_head.pug
+include ./components/_header.pug
+main
+  div.brecrum
+    .container
+      .brecrum-inner
+        p
+          a(href="") Automotive
+          | / Pre-owned
+        ul
+          li 
+            a(href="") Kia   
+          li 
+            a(href="") Peugeot 
+          li 
+            a(href="") King Long
+  div.container
+    div.row 
+      .col-sm-8.kia-new
+        h3.event Event & Promotions
+    //..Nav Tabs.............//
+  div.tab-content
+    div#home.tab-pane.active
+      div.single-item
+        figure.tab-pane
+          img.w-100(src="assets/images/utils/peugot1.jpg", alt="promo1")
+          div.tab-div
+            h2 You own it <br/> Now make it yours 
+            
+            h6 Choose your vehicle 
+            br
+            button.btn.btn-danger(type="button") ACCESSORIZE 
+            br.tab-br
+            br.tab-br  
+            h1 Happy Thingyan Festival 
+            h1 Special Promotion
+        figure.tab-pane
+          img.w-100(src="assets/images/utils/p1.jpg", alt="promo1")
+          div.tab-div
+            h2 You own it <br/> Now make it yours 
+            
+            h6 Choose your vehicle 
+            br
+            button.btn.btn-danger(type="button") ACCESSORIZE 
+            br.tab-br
+            br.tab-br  
+            h1 Happy Thingyan Festival 
+            h1 Special Promotion
+
+    div#menu1.tab-pane
+      div.single-item
+        figure.tab-pane
+          img.w-100(src="assets/images/utils/p3.jpg", alt="promo2")
+          div.tab-div
+            h2 You own it <br/> Now make it yours 
+            
+            h6 Choose your vehicle 
+            br
+            button.btn.btn-danger(type="button") ACCESSORIZE 
+            br.tab-br
+            br.tab-br  
+            h1 Happy 2019 March 
+            h1 Special Promotion
+
+        figure.tab-pane
+          img.w-100(src="assets/images/utils/promo1.jpg", alt="promo2")
+          div.tab-div
+            h2 You own it <br/> Now make it yours 
+            
+            h6 Choose your vehicle 
+            br
+            button.btn.btn-danger(type="button") ACCESSORIZE 
+            br.tab-br
+            br.tab-br  
+            h1 Happy 2019 March 
+            h1 Special Promotion
+
+    div#menu2.tab-pane.fade
+      div.single-item
+        figure#home.tab-pane
+          img.w-100(src="assets/images/utils/peugot2.jpg", alt="promo3")
+          div.tab-div
+            h2 You own it <br/> Now make it yours 
+            
+            h6 Choose your vehicle 
+            br
+            a(href="#")
+              button.btn.btn-danger(type="button") ACCESSORIZE 
+            br.tab-br
+            br.tab-br  
+            h1 Happy 2019 KIA March 
+            h1 Special Promotion
+        figure#home.tab-pane
+          img.w-100(src="assets/images/utils/peugot7.jpg", alt="promo3")
+          div.tab-div
+            h2 You own it <br/> Now make it yours 
+            
+            h6 Choose your vehicle 
+            br
+            a(href="#")
+              button.btn.btn-danger(type="button") ACCESSORIZE 
+            br.tab-br
+            br.tab-br  
+            h1 Happy 2019 KIA March 
+            h1 Special Promotion
+
+    div#menu3.tab-pane.fade
+      div.single-item 
+        figure#home.tab-pane
+          img.w-100(src="assets/images/utils/peugot8.jpg", alt="promo4")
+          div.tab-div
+            h2 You own it <br/> Now make it yours 
+            
+            h6 Choose your vehicle 
+            br
+            a(href="#")
+              button.btn.btn-danger(type="button") ACCESSORIZE 
+            br.tab-br
+            br.tab-br  
+            h1 Happy 2019 Sweet December
+            h1 Special Promotion
+        figure#home.tab-pane
+          img.w-100(src="assets/images/utils/promo4.jpg", alt="promo4")
+          div.tab-div
+            h2 You own it <br/> Now make it yours 
+            
+            h6 Choose your vehicle 
+            br
+            a(href="#")
+              button.btn.btn-danger(type="button") ACCESSORIZE 
+            br.tab-br
+            br.tab-br  
+            h1 Happy 2019 Sweet December
+            h1 Special Promotion
+
+    div#menu4.tab-pane.fade
+      div.single-item 
+        figure#home.tab-pane
+          img.w-100(src="assets/images/utils/peugot1.jpg", alt="promo5")
+          div.tab-div
+            h2 You own it <br/> Now make it yours 
+            
+            h6 Choose your vehicle 
+            br
+            a(href="#")
+              button.btn.btn-danger(type="button") ACCESSORIZE 
+            br.tab-br
+            br.tab-br  
+            h1 Happy 2019 February
+            h1 Special Promotion 
+
+        figure#home.tab-pane
+          img.w-100(src="assets/images/utils/peugot8.jpg", alt="promo5")
+          div.tab-div
+            h2 You own it <br/> Now make it yours 
+            
+            h6 Choose your vehicle 
+            br
+            a(href="#")
+              button.btn.btn-danger(type="button") ACCESSORIZE 
+            br.tab-br
+            br.tab-br  
+            h1 Happy 2019 February
+            h1 Special Promotion   
+  //..Tab panes.............// 
+  .tabpanes
+    div.container
+      ul.nav.nav-tabs 
+        li.nav-item 
+          a.nav-link.active.white(href="#home") 
+            h4 2019 New Year 
+            font Promotion
+
+
+        li.nav-item 
+          a.nav-link.red(href="#menu1") 
+            h4 2019 March
+            font Promotion 
+
+
+        li.nav-item 
+          a.nav-link.blue(href="#menu2") 
+            h4 2019 KIA March 
+            font Promotion
+
+        li.nav-item 
+          a.nav-link.purple(href="#menu3") 
+            h4 2019 Sweet Dec 
+            font Promotion
+
+        li.nav-item 
+          a.nav-link.yellow(href="#menu4") 
+            h4 2019 February
+            font Promotion
+
+include ./components/_footer.pug
+script(src="./assets/js/core.min.js")

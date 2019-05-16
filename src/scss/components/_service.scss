@@ -1,0 +1,39 @@
+$header-color:#3498db;
+
+.service{
+    margin-top:200px;
+    .services-row{
+        // border-bottom: 1px solid;
+        margin-top: 50px;
+        padding-bottom: 50px;
+		}
+		.services-row1{
+
+			margin-top: 50px;
+			padding-bottom: 50px;
+	}
+}
+.h-color{
+    color:$header-color;
+}
+@media screen and (max-width:576px){
+	.service{
+		.services-row{
+			padding-bottom: 1px;
+			margin-top: 50px;
+			h4{
+				margin-top:24px;
+			}
+		}
+		.services-row1{
+			padding-bottom: 1px;
+			margin-top: 50px;
+			h4{
+				margin-top: 24px;
+			}
+		}
+
+	}
+
+
+}

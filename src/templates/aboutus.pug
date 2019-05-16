@@ -1,0 +1,65 @@
+include ./components/_var.pug
+
+include ./components/_head.pug
+include ./components/_header.pug
+main
+  div.brecrum
+    .container
+      .brecrum-inner
+        p
+          a(href="") Automotive
+          | / Pre-owned
+        ul
+          li 
+            a(href="") Kia   
+          li 
+            a(href="") Peugeot 
+          li 
+            a(href="") King Long
+
+  div.container.kia_myanmar.content-body
+    div.row 
+      .col-md-6 
+        h3 KIA Myanmar
+        p Firefox can't find the server at player.vimeo.com. Check the address for typing errors such as ww.example.com instead of www.example.com If you are unable to load any pages, check your computer's network connection. If your computer or network is protected by a firewall or proxy, make sure that Firefox is permitted to access the Web.Firefox can't find the server at player.vimeo.com.
+        p has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+        p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+      .col-md-6   
+        div.kiacar 
+          img.w-100(src="assets/images/utils/carimg_4.png", alt="kia_aboutus")   
+  div.latest_new 
+    div.container
+      div.d-flex.latenew
+        h3 LATEST NEWS        
+        a(href="") | SEE ALL NEWS
+      
+
+      .row 
+        .col-md-4
+          div.latest_neww             
+            figure.kiamyanmar
+              img.w-100(src="assets/images/utils/carimg_1.jpg", alt="")
+              figcaption October 30, 2019
+            div.kiamyanmar_txt   
+              h6 KIA MYANMAR
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ... 
+                a(href="#") READ MORE
+        .col-md-4
+          div.latest_neww
+            figure.motor_oil
+              img.w-100(src="assets/images/utils/carimg_2.jpg", alt="")
+              figcaption October 30, 2019
+            div.motor_oil_txt   
+              h6 MOTOR OIL
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ... 
+                a(href="#") READ MORE
+        .col-md-4
+          div.latest_neww
+            div.spengine 
+              img.w-100(src="assets/images/utils/carimg_3.jpg", alt="")
+            div.spengine_txt 
+              h6 SUPER POWER ENGINE              
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ... 
+                a(href="#") READ MORE
+include ./components/_footer.pug
+script(src="./assets/js/core.min.js")

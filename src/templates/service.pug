@@ -1,0 +1,81 @@
+include ./components/_var.pug
+
+include ./components/_head.pug
+include ./components/_header.pug
+main
+  div.brecrum
+    .container
+      .brecrum-inner
+        p
+          a(href="") Automotive
+          | / Pre-owned
+        ul
+          li 
+            a(href="") Kia   
+          li 
+            a(href="") Peugeot 
+          li 
+            a(href="") King Long
+  div.container-fluid
+    img.w-100(src="assets/images/utils/aboutus.jpg", alt="aboutus")
+  div.container.con-auto.content-body
+    h2 What we offer?
+    //..first row
+    .row.col-top
+      .col-md-2.col-sm-6 
+        img.w-100(src="assets/images/utils/kia-ser1.png", alt="")
+      .col-md-4.col-sm-6 
+        h4 MAINTENANCE
+        p One of the best things you can do for your car is stay up to date on the manufacturer's suggested maintenance, because doing so will extend the life and value of your car. Besides, maintenance is always cheaper than repair. 
+      .col-md-2.col-sm-6 
+        img.w-100(src="assets/images/utils/kia-ser2.png", alt="") 
+      .col-md-4.col-sm-6 
+        h4 ELECTRICAL 
+        p If you've ever left your lights on for too long, you know how important electricity is to keep your car running. Sometimes a jump-start or battery replacement is all you need, and sometimes it gets more complicated.
+    //... second row
+    .row.col-top
+      .col-md-2.col-sm-6 
+        img.w-100(src="assets/images/utils/kia-ser3.png", alt="")
+      .col-md-4.col-sm-6 
+        h4 BRAKE SYSTEM
+        p A critical component for your safety, brakes should always be checked if you are experiencing any problems. While a little noise is often normal for brakes, if you hear a grinding, screeching,growling or chirping, that could mean something serious. Also, if you're feeling a problem, such as grabbing, pulling, vibration, or your brake pedal feels like it is sinking into your car, it's time to have them looked at. 
+      .col-md-2.col-sm-6 
+        img.w-100(src="assets/images/utils/kia-ser4.png", alt="") 
+      .col-md-4.col-sm-6 
+        h4 STEERING & SUSPENSION 
+        p Often this is something you won't notice right away, but some symptoms that your car is out of alignment include the steering wheel pulling to one side the steering wheel not centered when the car is moving straight ahead and the tires not wearing evenly.
+    //... third row
+    .row.col-top
+      .col-md-2.col-sm-6  
+        img.w-100(src="assets/images/utils/kia-ser5.png", alt="")
+      .col-md-4.col-sm-6 
+        h4 DRIVETRAIN SYSTEM
+        p Your drivetrain includes all of the components of your car that work together to create the power that makes it run. The three main segments are the engine, the transmission, and the driveline.
+      .col-md-2.col-sm-6 
+        img.w-100(src="assets/images/utils/kia-ser6.png", alt="") 
+      .col-md-4.col-sm-6 
+        h4 COOLING SYSTEMS 
+        p Without a cooling system, your engine would be destroyed within 30 minutes of turning it on. Only 30% of the energy released from burning gasoline turns into energy to run your car, while the rest of the energy is converted to heat, which must be regulated. This is what your cooling system does for your car, while still allowing for the engine to maintain the manufacturers recommended temperature.
+    //... fourth row
+    .row.col-top
+      .col-md-2.col-sm-6 
+        img.w-100(src="assets/images/utils/kia-ser7.png", alt="")
+      .col-md-4.col-sm-6 
+        h4 TRANSMISSION
+        p Part of the drivetrain, your transmission is an integral part of your car. Your transmission fluid should be changed regularly, but just how often depends on your driving habits. It can be very detrimental to your vehicle if you drive it with a transmission leak.If you see a reddish or pinkish fluid under your car, you should call us to determine whether your car can be driven, or if it should be towed.
+      .col-md-2.col-sm-6 
+        img.w-100(src="assets/images/utils/kia-ser7.png", alt="") 
+      .col-md-4.col-sm-6 
+        h4 DRIVABILITY ANALYSIS 
+        p It's our job to read your cars mind. There are over 250 reasons that your Check Engine light will come on, and that doesn't include possible problems with the transmission, antilock braking system, heating and air conditioning, safety-restraint system, or airbags! It's an arduous process. We start with hooking it up to our computer, but then we have to analyze the data the computer gives us to decipher whether the data is abnormal or not. Then we test the particular circuits, sensors, and wires that could be the problem. We also test-drive the car to experience the system,and again after repairs are made to be sure everything is in proper working order.
+    //... fifth row
+    .row.col-top
+      .col-md-4 
+        img.w-100(src="assets/images/utils/abt1.jpg", alt="abt1")
+      .col-md-4
+        img.w-100(src="assets/images/utils/abt2.jpg", alt="abt2")
+      .col-md-4 
+        img.w-100(src="assets/images/utils/abt3.jpg", alt="abt3")
+    
+include ./components/_footer.pug
+script(src="./assets/js/core.min.js")

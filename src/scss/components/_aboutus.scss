@@ -1,0 +1,239 @@
+.kia_myanmar {
+    padding-bottom: 100px;
+    .kiacar{
+      background: url("../images/utils/kiacarbg.png") no-repeat center center /100%;
+
+    }
+}
+.latest_new{
+  background: #eeeeee;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  .kiamyanmar,.motor_oil{
+    position: relative;
+
+    figcaption{
+      position: absolute;
+      top: 117px;
+      left: 0px;
+      background: #818181;
+      color: #fff;
+      padding: 8px;
+      }
+    }
+  }
+  .latest_neww{
+    background: #fff;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .latenew{
+    align-items: center;
+    margin-bottom: 20px;
+    h3{
+      position: relative;
+      &::after{
+        position: absolute;
+        top: 114%;
+        left: 3px;
+        width: 69px;
+        height: 5px;
+        content: "";
+        background: #fafafa;
+    }
+    }
+    a{
+
+      margin-left: 15px;
+      padding-left: 15px;
+    }
+  }
+  .kiamyanmar_txt,.motor_oil_txt,.spengine_txt{
+    padding:12px;
+  }
+  .spengine_txt{
+    margin-top: 12px;
+  }
+@media screen and (max-width:1200px){
+  .latest_new{
+    .kiamyanmar,.motor_oil{
+      position: relative;
+
+      figcaption{
+        position: absolute;
+        top: 117px;
+        left: 0;
+        padding: 8px;
+        color: #fff;
+        background: #818181;
+        }
+      }
+    }
+}
+@media screen and (max-width:1199px){
+  .latest_new{
+    .kiamyanmar,.motor_oil{
+      position: relative;
+
+      figcaption{
+        position: absolute;
+        top: 102px;
+        left: 0;
+        padding: 2px;
+        color: #fff;
+        background: #818181;
+        }
+      }
+    }
+}
+@media screen and (max-width:1024px){
+  .latest_new{
+    .kiamyanmar,.motor_oil{
+      position: relative;
+
+      figcaption{
+        position: absolute;
+        top: 102px;
+        left: 0;
+        padding: 2px;
+        color: #fff;
+        background: #818181;
+        }
+      }
+    }
+}
+@media screen and (max-width:992px){
+
+  .latest_new{
+    .kiamyanmar,.motor_oil{
+      position: relative;
+
+      figcaption{
+        position: absolute;
+        top: 90px;
+        left: 0px;
+        background: #818181;
+        color: #fff;
+        padding: 8px;
+        }
+      }
+    }
+}
+@media screen and (max-width:991px){
+
+  .latest_new{
+    .kiamyanmar,.motor_oil{
+      position: relative;
+
+      figcaption{
+        position: absolute;
+        top: 69px;
+        left: 0;
+        padding: 3px;
+        color: #fff;
+        background: #818181;
+        font-size: 13px;
+        }
+      }
+    }
+}
+@media screen and (max-width:768px){
+  .latest_new{
+    .kiamyanmar,.motor_oil{
+      position: relative;
+
+      figcaption{
+        position: absolute;
+        top: 66px;
+        left: 0;
+        padding: 2px;
+        color: #fff;
+        background: #818181;
+        }
+      }
+    }
+
+}
+@media screen and (max-width:576px){
+  .latest_new{
+    .kiamyanmar,.motor_oil{
+      position: relative;
+
+      figcaption{
+        position: absolute;
+        top: 188px;
+        left: 0;
+        padding: 8px;
+        color: #fff;
+        background: #818181;
+        }
+      }
+    }
+}
+@media screen and (max-width:425px){
+  .latest_new{
+    .kiamyanmar,.motor_oil{
+      position: relative;
+
+      figcaption{
+        position: absolute;
+        top: 137px;
+        left: 0;
+        padding: 8px;
+        color: #fff;
+        background: #818181;
+        }
+      }
+    }
+}
+@media screen and (max-width:415px){
+  .latest_new{
+    .kiamyanmar,.motor_oil{
+      position: relative;
+
+      figcaption{
+        position: absolute;
+        top: 132px;
+        left: 0;
+        padding: 8px;
+        color: #fff;
+        background: #818181;
+        }
+      }
+    }
+
+}
+@media screen and (max-width:375px){
+  .latest_new{
+    .kiamyanmar,.motor_oil{
+      position: relative;
+
+      figcaption{
+        position: absolute;
+        top: 114px;
+        left: 0;
+        padding: 8px;
+        color: #fff;
+        background: #818181;
+        }
+      }
+    }
+
+}
+@media screen and (max-width:320px){
+  .latest_new{
+    .kiamyanmar,.motor_oil{
+      position: relative;
+
+      figcaption{
+        position: absolute;
+        top: 102px;
+        left: 0;
+        padding: 2px;
+        color: #fff;
+        background: #818181;
+        }
+      }
+    }
+
+}

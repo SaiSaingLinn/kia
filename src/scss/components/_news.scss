@@ -1,0 +1,42 @@
+.kia-new{
+	h3{
+		margin-bottom: 30px;
+	}
+	h4{
+		margin-bottom: 30px;
+    margin-top: 30px;
+	}
+
+}
+.kia-Subscribe{
+	.subscribes{
+		border-bottom: 1px solid;
+    padding: 10px;
+	}
+	.text-subscribe{
+		input{
+			margin-top: 15px;
+    	margin-bottom: 15px;
+		}
+		p{
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+	.recent{
+		margin-top:10px;
+		.tab {
+			display: flex;
+			padding-left: 0;
+			list-style: none;
+			border-bottom: 1px solid #dddddd;
+			li{
+				padding: 8px;
+				border: 1px solid #dddddd;
+			}
+		}
+		.row{
+			margin-bottom: 10px;
+		}
+}
+}
