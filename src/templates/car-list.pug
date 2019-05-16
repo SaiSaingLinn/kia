@@ -4,12 +4,18 @@ include ./components/_head.pug
 include ./components/_header.pug
 main
   div.brecrum
-    .container.d-flex.justify-content-between
-      p Automotive/ contact us
-      ul
-        li Kia   
-        li Peugeot 
-        li King Long
+    .container
+      .brecrum-inner
+        p
+          a(href="./index.html") Kia
+          | / KIA MODELS
+        ul
+          li 
+            a(href="") Kia   
+          li 
+            a(href="") Peugeot 
+          li 
+            a(href="") King Long
   section.content-body
     .car-selector
       h1 Explore Your KIA
