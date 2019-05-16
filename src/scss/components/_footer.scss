@@ -38,6 +38,7 @@
   background-color: #626262;
   border-color: #626262;
 }
+
 // .textbox{
 //   width:100%;
 // }
@@ -61,3 +62,27 @@
   
 
 }
+//update 
+.phonecall{
+  a{
+    color:#333;
+  }
+}
+
+
+.ftimage{
+  
+  img{
+    width:95px;
+  }
+}
+@media screen and (max-width:576px){
+  .ftrow{
+    text-align: center;
+    margin-top:28px;
+    .ftlogo{
+      justify-content: center;
+    }
+  }
+}
+

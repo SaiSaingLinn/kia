@@ -34,6 +34,23 @@ $header-color:#3498db;
 		}
 
 	}
-
-
+}
+//......update service 
+.first_row{
+	margin-top: 50px;
+}
+.account-item {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.account-item .check-square-img {
+    width: 147px;
+    padding-top: .3rem;
+}
+@media screen and (max-width:320px){
+	.account-item {
+		display: flex;
+		margin-bottom: 2rem;
+		flex-direction: column;
+	}
 }

@@ -657,6 +657,24 @@ header a:hover {
   }
 }
 
+.phonecall a {
+  color: #333;
+}
+
+.ftimage img {
+  width: 95px;
+}
+
+@media screen and (max-width: 576px) {
+  .ftrow {
+    margin-top: 28px;
+    text-align: center;
+  }
+  .ftrow .ftlogo {
+    justify-content: center;
+  }
+}
+
 .contactus-wrap h4 {
   padding-bottom: .75rem;
   margin-bottom: 1.5rem;
@@ -1169,6 +1187,28 @@ header a:hover {
   }
 }
 
+.first_row {
+  margin-top: 50px;
+}
+
+.account-item {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.account-item .check-square-img {
+  width: 147px;
+  padding-top: .3rem;
+}
+
+@media screen and (max-width: 320px) {
+  .account-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+}
+
 .nav-tabs .white {
   background: #fff;
 }
@@ -1470,6 +1510,10 @@ header a:hover {
   .space-between h5 {
     font-size: 12px;
   }
+}
+
+.tab-content {
+  margin-top: -38px;
 }
 
 .car-selector {
