@@ -7,8 +7,8 @@
 }
 .latest_new{
   background: #eeeeee;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   .kiamyanmar,.motor_oil{
     position: relative;
 
@@ -16,11 +16,18 @@
       position: absolute;
       top: 117px;
       left: 0px;
-      background: #818181;
+      background-color: rgba(173,173,173,.7);
       color: #fff;
       padding: 8px;
       }
     }
+  hr{
+    width: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-top: 4px solid #c51230;
+    margin-inline-start: 0;
+  }
   }
   .latest_neww{
     background: #fff;
@@ -29,22 +36,9 @@
   }
   .latenew{
     align-items: center;
-    margin-bottom: 20px;
-    h3{
-      position: relative;
-      &::after{
-        position: absolute;
-        top: 114%;
-        left: 3px;
-        width: 69px;
-        height: 5px;
-        content: "";
-        background: #fafafa;
-    }
-    }
+    
     a{
 
-      margin-left: 15px;
       padding-left: 15px;
     }
   }
@@ -65,7 +59,7 @@
         left: 0;
         padding: 8px;
         color: #fff;
-        background: #818181;
+        background-color: rgba(173,173,173,.7);
         }
       }
     }
@@ -81,7 +75,7 @@
         left: 0;
         padding: 2px;
         color: #fff;
-        background: #818181;
+        background-color: rgba(173,173,173,.7);
         }
       }
     }
@@ -97,7 +91,7 @@
         left: 0;
         padding: 2px;
         color: #fff;
-        background: #818181;
+        background-color: rgba(173,173,173,.7);
         }
       }
     }
@@ -112,7 +106,7 @@
         position: absolute;
         top: 90px;
         left: 0px;
-        background: #818181;
+        background-color: rgba(173,173,173,.7);
         color: #fff;
         padding: 8px;
         }
@@ -131,7 +125,7 @@
         left: 0;
         padding: 3px;
         color: #fff;
-        background: #818181;
+        background-color: rgba(173,173,173,.7);
         font-size: 13px;
         }
       }
@@ -148,7 +142,7 @@
         left: 0;
         padding: 2px;
         color: #fff;
-        background: #818181;
+        background-color: rgba(173,173,173,.7);
         }
       }
     }
@@ -165,7 +159,7 @@
         left: 0;
         padding: 8px;
         color: #fff;
-        background: #818181;
+        background-color: rgba(173,173,173,.7);
         }
       }
     }
@@ -181,7 +175,7 @@
         left: 0;
         padding: 8px;
         color: #fff;
-        background: #818181;
+        background-color: rgba(173,173,173,.7);
         }
       }
     }
@@ -197,7 +191,7 @@
         left: 0;
         padding: 8px;
         color: #fff;
-        background: #818181;
+        background-color: rgba(173,173,173,.7);
         }
       }
     }
@@ -214,7 +208,7 @@
         left: 0;
         padding: 8px;
         color: #fff;
-        background: #818181;
+        background-color: rgba(173,173,173,.7);
         }
       }
     }
@@ -231,7 +225,7 @@
         left: 0;
         padding: 2px;
         color: #fff;
-        background: #818181;
+        background-color: rgba(173,173,173,.7);
         }
       }
     }
