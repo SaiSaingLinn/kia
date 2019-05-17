@@ -5,11 +5,8 @@
   flex-wrap: nowrap;
   margin-top: 22px;
   margin-bottom: 45px;
+  
 
-}
-.con{
-  padding-top: 100px;
-  padding-bottom: 50px;
 }
 
 .img{
@@ -25,6 +22,28 @@
 }
 .bgfoot{
   background: #c9c9c9;
+  .con{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    ul {
+      margin-top: 15px !important;
+      padding: 0;
+      list-style: none;
+      li {
+        display: flex;
+        p {
+          min-width: 90px;
+        }
+        .address,.email {
+          transform: translateX(10px);
+          min-width: auto;
+          a{
+            color: #333;
+          }
+        }
+      }
+    }
+  }
 }
 .btn-info{
   background: #626262;
@@ -71,9 +90,18 @@
 
 
 .ftimage{
+  a{
+    padding-bottom: 33px;
+    img{
+      width:95px;
+    }
+  }
   
+}
+.ftlogo{
   img{
-    width:95px;
+    margin-right: -11px;
+    margin-left: 0px;
   }
 }
 @media screen and (max-width:576px){
@@ -85,4 +113,5 @@
     }
   }
 }
+
 

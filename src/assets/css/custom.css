@@ -609,11 +609,6 @@ header a:hover {
   margin-bottom: 45px;
 }
 
-.con {
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-
 .img {
   width: 50px;
   height: 40px;
@@ -629,6 +624,30 @@ header a:hover {
 
 .bgfoot {
   background: #c9c9c9;
+}
+.bgfoot .con {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.bgfoot .con ul {
+  padding: 0;
+  margin-top: 15px !important;
+  list-style: none;
+}
+.bgfoot .con ul li {
+  display: flex;
+}
+.bgfoot .con ul li p {
+  min-width: 90px;
+}
+.bgfoot .con ul li .address,
+.bgfoot .con ul li .email {
+  min-width: auto;
+  transform: translateX(10px);
+}
+.bgfoot .con ul li .address a,
+.bgfoot .con ul li .email a {
+  color: #333;
 }
 
 .btn-info {
@@ -663,8 +682,16 @@ header a:hover {
   color: #333;
 }
 
-.ftimage img {
+.ftimage a {
+  padding-bottom: 33px;
+}
+.ftimage a img {
   width: 95px;
+}
+
+.ftlogo img {
+  margin-right: -11px;
+  margin-left: 0;
 }
 
 @media screen and (max-width: 576px) {
