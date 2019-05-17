@@ -647,7 +647,7 @@ header a:hover {
 }
 .bgfoot .con ul li .address a,
 .bgfoot .con ul li .email a {
-  color: #333;
+  color: #212529;
 }
 
 .btn-info {
@@ -679,7 +679,7 @@ header a:hover {
 }
 
 .phonecall a {
-  color: #333;
+  color: #212529;
 }
 
 .ftimage a {
