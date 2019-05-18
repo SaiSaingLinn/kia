@@ -638,16 +638,18 @@ header a:hover {
   display: flex;
 }
 .bgfoot .con ul li p {
-  min-width: 90px;
+  min-width: 103px;
+  transform: translateX(-39px);
 }
 .bgfoot .con ul li .address,
 .bgfoot .con ul li .email {
   min-width: auto;
-  transform: translateX(10px);
+  transform: translateX(-23px);
 }
 .bgfoot .con ul li .address a,
 .bgfoot .con ul li .email a {
   color: #212529;
+  word-break: break-word;
 }
 
 .btn-info {
@@ -682,6 +684,10 @@ header a:hover {
   color: #212529;
 }
 
+.text-alignment {
+  text-align: right;
+}
+
 .ftimage a {
   padding-bottom: 33px;
 }
@@ -694,6 +700,14 @@ header a:hover {
   margin-left: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .bgfoot .con ul li .address a,
+  .bgfoot .con ul li .email a {
+    color: #212529;
+    word-break: break-word;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .ftrow {
     margin-top: 28px;
@@ -701,6 +715,40 @@ header a:hover {
   }
   .ftrow .ftlogo {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bgfoot .con ul li p {
+    min-width: 201px;
+  }
+  .bgfoot .con ul li .address,
+  .bgfoot .con ul li .email {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .bgfoot .con ul li p {
+    min-width: 169px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .bgfoot .con ul li p {
+    min-width: 150px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bgfoot .con ul li p {
+    min-width: 106px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .bgfoot .con ul li p {
+    min-width: 106px;
   }
 }
 

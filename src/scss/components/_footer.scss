@@ -32,13 +32,16 @@
       li {
         display: flex;
         p {
-          min-width: 90px;
+          min-width: 103px;
+          transform: translateX(-39px);
+
         }
         .address,.email {
-          transform: translateX(10px);
+          transform: translateX(-23px);
           min-width: auto;
           a{
             color: #212529;
+            word-break: break-word;
           }
         }
       }
@@ -87,7 +90,9 @@
     color:#212529;
   }
 }
-
+.text-alignment{
+  text-align: right;
+}
 
 .ftimage{
   a{
@@ -104,6 +109,12 @@
     margin-left: 0px;
   }
 }
+@media screen and (max-width:768px){
+  .bgfoot .con ul li .address a, .bgfoot .con ul li .email a {
+    color: #212529;
+    word-break: break-word;
+}
+}
 @media screen and (max-width:576px){
   .ftrow{
     text-align: center;
@@ -113,5 +124,35 @@
     }
   }
 }
+@media screen and (max-width:576px){
+  .bgfoot .con ul li p{
+    min-width: 201px;
+  }  
+  .bgfoot .con ul li .address, .bgfoot .con ul li .email{
+    text-align: left;
+  }
+}
+@media screen and (max-width:424px){
+  .bgfoot .con ul li p {
+    min-width: 169px;
+}
+}
+@media screen and (max-width: 374px){
+  .bgfoot .con ul li p {
+    min-width: 150px;
+}
+}
+@media screen and (max-width: 375px){
+  .bgfoot .con ul li p {
+    min-width: 106px;
+}
+}
+@media screen and (max-width: 320px)
+{
+  .bgfoot .con ul li p {
+    min-width: 106px;
+}
+}
+
 
 
