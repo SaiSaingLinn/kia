@@ -24,7 +24,8 @@ const host = require("gulp-connect");
 const gulpHost = function(cb) {
   host.server({
     root: 'dist',
-    livereload: true
+    livereload: true,
+    port: 8090
   }, cb);
 }
 // load fonts

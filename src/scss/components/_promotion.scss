@@ -8,6 +8,9 @@
 						@media screen and (max-width: 991px) {
 							top: 5px;
 						}
+						@media screen and (max-width: 424px) {
+							top: 0;
+						}
 						@media screen and (min-width: 992px) {
 							top: 0;
 							left: 4%;
@@ -23,6 +26,9 @@
 							@media screen and (max-width: 991px) {
 								font-size: 20px;
 							}
+							@media screen and (max-width: 424px) {
+								font-size: 16px;
+							}
 						}
 						hr {
 							background: #FFF;
@@ -37,6 +43,9 @@
 						}
 						a {
 							font-size: 14px;
+							@media screen and (max-width: 424px) {
+								font-size: 10px;
+							}
 						}
 						h1 {
 							color: #FFF;
@@ -56,28 +65,44 @@
 				.nav-tabs {
 					max-width: 1140px;
     			margin: 0 auto;
-					@media screen and (min-width: 576px) {
-						max-width: 540px;
-					}
-					@media screen and (min-width: 768px) {
-						max-width: 720px;
-					}
-					@media screen and (min-width: 992px) {
-						max-width: 960px;
+					@media screen and (min-width: 1199px) {
+						max-width: 100%;
 					}
 					@media screen and (min-width: 1200px) {
 						max-width: 1140px;
 					}
 					.nav-item {
-						min-width: 210px;
 						border-radius: 0;
 						transition: all 0.3s;
+						@media screen and (max-width: 424px) {
+							padding: 5px;
+						}
+						@media screen and (max-width: 1199px) {
+							width: 20%;
+						}
+						@media screen and (min-width: 1200px) {
+							width: 20%;
+						}
 						&:hover {
 							border: 1px solid #333;
 						}
 						span {
 							display: block;
 							font-weight: normal;
+							@media screen and (max-width: 767px) {
+								font-size: 12px;
+							}
+							@media screen and (max-width: 424px) {
+								font-size: 10px;
+							}
+						}
+						h4 {
+							@media screen and (max-width: 767px) {
+								font-size: 16px;
+							}
+							@media screen and (max-width: 424px) {
+								font-size: 12px;
+							}
 						}
 					}
 					.nav-item.active {
