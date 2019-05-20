@@ -1,4 +1,5 @@
 $kia:#c51230;
+
 .kia-main{
   .header-slider-wrap
   {
@@ -38,21 +39,34 @@ $kia:#c51230;
           @media screen and (max-width:600px) {
             font-size: 1.5rem;
           }
+          @media screen and (max-width: 424px) {
+            font-size: 1rem;
+          }
         }
 
       }
       .slick-prev{
         left: 10%;
+        @media screen and (max-width:425px){
+          left: 4%;
+        }
       }
       .slick-next{
         right: 10%;
+        @media screen and (max-width:425px){
+          right: 4%;
+        }
       }
       .slick-prev, .slick-next {
-        background: #c51230;
+        background: $kia;
         height: 30px;
         width: 30px;
         border-radius: 50%;
         z-index: 1;
+        @media screen and (max-width:425px){
+          height: 25px;
+          width: 25px;
+        }        
       }
       .slick-next {
         &:before {
@@ -85,15 +99,21 @@ $kia:#c51230;
       {
         border: 1px solid #ccc;
         border-radius: 0.25rem;
-        box-shadow: 5px 5px #333;
-        box-shadow: 0px 1px 9px 0px #bbb;
+        transition: all 0.3s;
+        &:hover{
+          box-shadow: 0px 1px 9px 0px #bbb;
+        }
+        a{
+          text-decoration: none;
+        }
         img{
           width: 100%;
           border-radius: 0.25rem 0.25rem 0 0;
         }
         .car-price{
-          border-bottom: 1px solid #ccc;
-          padding: 0.75rem;
+          // border-bottom: 1px solid #ccc;
+          // padding: 0.75rem;
+          padding: 1.5rem;
           p{
             font-weight: 500;
             color: #ee5726;
@@ -172,16 +192,37 @@ $kia:#c51230;
     padding-top: 3rem;
     .promotion-slider
     {
-      .promotion-content
-      {
-        position: absolute;
-        top: 10%;
-        padding: 0.5rem 1.5rem;
-        @media screen and (max-width:365px) {
-          top: 0;
+      .promotion-item {
+        @media screen and (max-width: 599px) {
+          position: relative;
         }
-        h3,p{
-          color: #ffffff;
+        .promotion-content
+        {
+          position: absolute;
+          top: 10%;
+          padding: 0.5rem 1.5rem;
+
+          @media screen and (max-width: 599px) {
+            width: 100%;
+            text-align: center;
+            top: 20%;
+          }
+          @media screen and (max-width:375px) {
+            top: 5%;
+          }
+          h3,p{
+            color: #ffffff;
+          }
+          h3 {
+            @media screen and (max-width: 425px) {
+              font-size: 1.5rem;
+            }
+          }
+          p {
+            @media screen and (max-width: 425px) {
+              margin-bottom: .5rem;
+            }
+          }
         }
       }
       .slick-next
@@ -195,7 +236,7 @@ $kia:#c51230;
         background: #000;
       }
       .slick-prev, .slick-next {
-        background: #c51230;
+        background: $kia;
         height: 30px;
         width: 30px;
         border-radius: 50%;
@@ -248,6 +289,23 @@ $kia:#c51230;
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: #eeeeee;
+    .latest-new-header{
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 1.5rem;
+      h1{
+        position: relative;
+        &::after{
+          position: absolute;
+          top: 114%;
+          left: 3px;
+          width: 100%;
+          height: 5px;
+          content: "";
+          background: $kia;
+        }
+      }
+    }
     .new-item{
       background-color: #ffffff;
       margin-bottom: 1rem;
@@ -271,6 +329,9 @@ $kia:#c51230;
         p{
           margin-bottom: 0;
         }
+        .read-more{
+          color:#3498db;
+        }
       }
     }
     .add-content-after::after{
@@ -280,13 +341,7 @@ $kia:#c51230;
       text-transform: uppercase;
       margin-left: 1rem;
     }
-    hr{
-      width: 23.5rem;
-      border-top: 4px solid $kia;
-      margin-inline-start: 0;
-      margin-top: 0;
-      margin-bottom: 1.5rem;
-    }
+
     .facebook-social-wrap{
       .facebook-header{
         background-color:#3b5998;
@@ -301,11 +356,14 @@ $kia:#c51230;
           margin-right: 0.5rem;
         }
       }
+
       .social-feed-wrap{
         padding: 1.5rem 0;
+        .social-feed-gap{
+          margin-bottom: 1rem;
+        }
         .social-feed-item{
           background-color: #fff;
-          margin-bottom: 1rem;
           .social-content{
             padding: 1.5rem;
             p{
@@ -324,7 +382,7 @@ $kia:#c51230;
               padding: .5rem .25rem;
               margin-right: 0.5rem;
               }
-            
+
             .kia-mm{
               color:#3b5998;
               font-weight: 600;

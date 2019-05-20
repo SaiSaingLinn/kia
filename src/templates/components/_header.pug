@@ -5,11 +5,13 @@ header
           .pt-1.mobile-width
             .contact-item
               i.fa.fa-phone
-              span  (+951) 657866, 657867, 657868
+              a(href="tel:01662914") (+951) 657866, 
+              a(href="tel:01662914") 657867, 
+              a(href="tel:01662914") 657868
             .contact-item
-              a.sss-link(href="info@supersevenstars.com")
+              a.sss-link(href="mailto:info@supersevenstars.com")
                 i.fa.fa-envelope
-                span  info @ supersevenstars.com
+                span  info@supersevenstars.com
           .top-menu-icon
             a(href="#") 
               img(src="./assets/images/utils/facebook-letter-logo.svg", alt="")       
@@ -22,10 +24,10 @@ header
           div
             ul.d-flex
               li.top-menu
-                a(href="#") Pre-Owned
+                a(href="http://sss.innovix-solutions.net/automotive/preowned.html") Pre-Owned
               li.top-menu
-                a(href="#") Trade In
-              li.top-menu
+                a(href="http://sss.innovix-solutions.net/automotive/tradein.html") Trade In
+              li.top-menu.show-text-drive
                 a.border-right-0(href="#") 
                   img.rotating(src="./assets/images/utils/steering-drive.svg", alt="")
                   span Test Drive
@@ -33,10 +35,10 @@ header
     nav.navbar.navbar-expand-lg.main-nav            
       .container.nav-container   
         div.navbar-brand     
-          a(href="#")
+          a(href="http://sss.innovix-solutions.net/automotive")
             img(src="./assets/images/utils/SuperSevenStars_Logo02.png", alt="")
-            img.line(src="./assets/images/utils/logo-line.png", alt="")
-          a(href="#")
+            img.line(src="./assets/images/utils/logo-line-red.png", alt="")
+          a(href="http://sss.innovix-solutions.net/kia/")
             img(src="./assets/images/utils/kia-logo.png", alt="")
         button.navbar-toggler(type='button', data-toggle='collapse', data-target='#collapsenavbar')
           span.navbar-toggler-icon 
@@ -88,18 +90,23 @@ header
             li.nav-item
               a.nav-link(href="./contactus.html") Contact Us
             li.nav-item.show-mobile
-              a.nav-link(href="#") Pre-Owned
+              a.nav-link(href="http://sss.innovix-solutions.net/automotive/preowned.html") Pre-Owned
             li.nav-item.show-mobile
-              a.nav-link(href="#") Trade In
-            li.nav-item.show-mobile
-              a.nav-link(href="#") Test Drive
-            //- li.nav-item
-            //-   span#open-search.nav-link.nav-search | &nbsp;&nbsp;
-            //-     i.fa.fa-search
+              a.nav-link(href="http://sss.innovix-solutions.net/automotive/tradein.html") Trade In
+            //- li.nav-item.show-mobile
+            //-   a.nav-link(href="#") Test Drive
+            li.nav-item.show-mobile-767
+              a.nav-link(href="http://sss.innovix-solutions.net/kia") Kia   
+            li.nav-item.show-mobile-767
+              a.nav-link(href="http://sss.innovix-solutions.net/peugeot") Peugeot 
+            li.nav-item.show-mobile-767
+              a.nav-link(href="#") King Long
           div.searchright
             i.fas.fa-search.btn-search-icon
-            input.form-control.search(type='text', placeholder='Search ...')            
-            i.fas.fa-times.ml-3.btn-search-icon               
+            .search-form
+              input.form-control.search(type='text', placeholder='Search ...')            
+              i.fas.fa-times.close
+              i.fas.fa-search.icon-search
         
 
            
