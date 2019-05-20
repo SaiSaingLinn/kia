@@ -1,7 +1,5 @@
 $header-color:#3498db;
-.service-banner {
-  padding: 0;
-}
+
 .service{
     margin-top:200px;
     .services-row{
@@ -36,23 +34,44 @@ $header-color:#3498db;
 		}
 
 	}
+
+
 }
 //......update service
+.con-auto{
+	ul{
+		padding: 0;
+	}
+  .service-img {
+    @media screen and (max-width: 767px) {
+      img {
+        margin-bottom: 1rem;
+      }  
+    }
+  }
+}
 .first_row{
 	margin-top: 50px;
 }
 .account-item {
     display: flex;
     margin-bottom: 2rem;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
 }
 .account-item .check-square-img {
-    width: 147px;
-    padding-top: .3rem;
-}
-@media screen and (max-width:320px){
-	.account-item {
-		display: flex;
-		margin-bottom: 2rem;
-		flex-direction: column;
+    // width: 147px;
+	padding-top: .3rem;
+	img{
+		background: #c51230;
+		padding: 10px;
+		border-radius: 50%;
+		width: 70px;
+		height: 70px;
+		margin-right: 1rem;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 1rem;
+    }
 	}
 }

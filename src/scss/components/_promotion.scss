@@ -1,342 +1,108 @@
-//...kia-promotions
-.nav-tabs{
-	.white{
-		background: #fff;
-	}
-	.red{
-		background: #c51230;
-	}
-	.blue{
-		background: #a7defa;
-	}
-	.purple{
-		background: #9f77a8;
-	}
-	.yellow{
-		background: #d3c631;
-	}
-	.nav-link {
-		border: none;
-		border-top-left-radius: 0px;
-		border-top-right-radius: 0px;
-
-	}
-	.nav-item {
-    margin-bottom: -1px;
-		width: 219px;
-
-}
-}
-.tab-pane{
-	background: none;
-	position: relative;
-	margin-bottom:0px;
-	figure .tab-div{
-		position: absolute;
-    top: 50px;
-    left: 399px;
-		h2{
-			color: #fff;
-			border-bottom: 1px solid #fff;
-			width: 326px;
-			padding-bottom: 20px;
+.promo-slide-wrap {
+	.promo-slide-tabs {
+		.carousel {
+			.carousel-inner {
+				.carousel-item {
+					.carousel-caption {
+						text-align: left;
+						@media screen and (max-width: 991px) {
+							top: 5px;
+						}
+						@media screen and (min-width: 992px) {
+							top: 0;
+							left: 4%;
+							right: auto;
+						}
+						@media screen and (min-width: 1200px) {
+							left: 21%;
+							top: 20px;
+							right: auto;
+						}
+						h2 {
+							color: #FFF;
+							@media screen and (max-width: 991px) {
+								font-size: 20px;
+							}
+						}
+						hr {
+							background: #FFF;
+							height: 2px;
+							@media screen and (max-width: 991px) {
+								display: none;
+							}
+						}
+						p {
+							color: #FFF;
+							font-weight: bold;
+						}
+						a {
+							font-size: 14px;
+						}
+						h1 {
+							color: #FFF;
+							margin-top: 1rem;
+							@media screen and (max-width: 991px) {
+								font-size: 20px;
+								margin-top: .5rem;
+							}
+						}
+					}
+				}
+			}
 		}
-		h6  {
-			color: #fff;
-		}
-		h1{
-			color: #fff;
-			text-shadow: -3px 3px #696969;
-		}
-		.btn-danger{
-			border-radius: 37px;
-
-		}
-	}
-
-}
-.tabpanes{
-	background: #333;
-}
-.nav-tabs {
-	border-bottom: 0px solid #dee2e6;
-	.nav-link {
-		&.active {
-			position: relative;
-			&:before {
-				content: " ";
-				width: 100%;
-				height: 5px;
-				background: #c51230;
-				position: absolute;
-				top: 0;
-				left: 0;
+		.tab-content {
+			nav {
+				background: #333;
+				.nav-tabs {
+					max-width: 1140px;
+    			margin: 0 auto;
+					@media screen and (min-width: 576px) {
+						max-width: 540px;
+					}
+					@media screen and (min-width: 768px) {
+						max-width: 720px;
+					}
+					@media screen and (min-width: 992px) {
+						max-width: 960px;
+					}
+					@media screen and (min-width: 1200px) {
+						max-width: 1140px;
+					}
+					.nav-item {
+						min-width: 210px;
+						border-radius: 0;
+						transition: all 0.3s;
+						&:hover {
+							border: 1px solid #333;
+						}
+						span {
+							display: block;
+							font-weight: normal;
+						}
+					}
+					.nav-item.active {
+						-webkit-box-shadow: inset 10px 10px 20px -5px rgba(0,0,0,0.7);
+						-moz-box-shadow: inset 10px 10px 20px -5px rgba(0,0,0,0.7);
+						box-shadow: inset 10px 10px 20px -5px rgba(0,0,0,0.7);
+						border-color: #333;
+					}
+					#nav-new-year-tab {
+						background: #FFF;
+					}
+					#nav-march-tab {
+						background: #c51230;
+					}
+					#nav-kia-march-tab {
+						background: #a7defa;
+					}
+					#nav-sweet-dec-tab {
+						background: #9f77a8;
+					}
+					#nav-february-tab {
+						background: #d3c631;
+					}
+				}
 			}
 		}
 	}
 }
-.kia-new {
-	.event{
-		margin-bottom: 14px;
-		margin-top: -33px;
-	}
-
-
-}
-
-@media screen and (min-width: 2560px){
-	.tab-pane figure .tab-div {
-		top: 63px;
-    left: 732px;
-	}
-}
-@media screen and (max-width:1440px){
-	.tab-pane figure .tab-div {
-		top: 50px;
-    left: 169px;
-	}
-}
-
-@media screen and (max-width:1200px){
-	.tab-pane{
-		figure .tab-div{
-			top: 50px;
-			left: 44px;
-		}
-			h1{
-				color: #fff;
-				text-shadow: -3px 3px #696969;
-				font-size: 41px;
-			}
-		}
-	}
-@media screen and (max-width:1199px){
-	.tab-pane{
-		figure .tab-div{
-			position: absolute;
-    	top: 50px;
-    	left: 137px;
-
-		}
-	}
-}
-
-@media screen and (max-width:1024px){
-
-	.nav-tabs{
-		.nav-link{
-			border: 0;
-			border-top-left-radius: 0;
-			border-top-right-radius: 0;
-			height: 105px;
-			position: relative;
-		}
-		.nav-item{
-			width: 185px;
-    	margin-bottom: -1px;
-		}
-
-
-	}
-
-	.tab-pane figure .tab-div{
-		position: absolute;
-		top: 42px;
-		left: 47px;
-
-	}
-}
-@media screen and (max-width:992px){
-
-	.tab-pane {
-		div h2 {
-			font-size: 20px;
-			width: 204px;
-			padding-bottom: 20px;
-			color: #fff;
-			border-bottom: 1px solid #fff;
-		}
-		figure .tab-div {
-			position: absolute;
-			top: 42px;
-			left: 37px;
-		}
-	}
-	.nav-tabs{
-		.nav-link{
-			border: 0;
-			border-top-left-radius: 0;
-			border-top-right-radius: 0;
-			height: 109px;
-		}
-		.nav-item {
-			width: 185px;
-			margin-bottom: -1px;
-		}
-	}
-
-}
-@media screen and (max-width:991px){
-	.tab-pane figure .tab-div{
-		position: absolute;
-		top: 97px;
-		left: 146px;
-	}
-}
-
-@media screen and (max-width:768px){
-	.nav-tabs{
-		.nav-link{
-			height: 139px;
-			border: 0;
-			border-top-left-radius: 0;
-			border-top-right-radius: 0;
-		}
-		.nav-item {
-			width: 137px;
-			margin-bottom: -1px;
-		}
-
-	}
-	.tab-pane figure .tab-div {
-		position: absolute;
-		top: 66px;
-		left: 43px;
-	}
-	}
-	.space-between{
-		h5{
-			font-size: 15px;
-		}
-	}
-
-
-@media screen and (max-width:576px){
-	.nav-tabs{
-		.nav-item{
-			width: 33%;
-    	margin-bottom: -1px;
-		}
-		.nav-link {
-			border: 0;
-			border-top-left-radius: 0;
-			border-top-right-radius: 0;
-			height: 103px;
-			h4{
-				font-size: 17px;
-			}
-			font {
-				font-size: 11px;
-			}
-
-		}
-
-
-	}
-	.tab-pane figure .tab-div{
-			position: absolute;
-    	top: 24px;
-			left: 34px;
-			h2 {
-				font-size: 15px;
-				width: 146px;
-				padding-bottom: 20px;
-				color: #fff;
-				border-bottom: 1px solid #fff;
-			}
-			h6 {
-				color: #fff;
-				font-size: 15px;
-			}
-			h1 {
-				color: #fff;
-				text-shadow: -3px 3px #696969;
-				font-size: 23px;
-			}
-		}
-	}
-
-@media screen and (max-width:425px){
-	.tab-pane{
-		.tab-div {
-			h2 {
-				width: 146px;
-				padding-bottom: 20px;
-				font-size: 15px;
-				color: #fff;
-				border-bottom: 1px solid #fff;
-				display: none;
-			}
-		}
-	}
-}
-@media screen and (max-width:375px){
-	.tab-pane figure .tab-div{
-		position: absolute;
-		top: -11px;
-		left: 16px;
-		h6{
-			display: none;
-		}
-		.btn-danger{
-			font-size: 10px;
-			border-radius: 37px;
-			width: 117px;
-			position: absolute;
-			top: 154px;
-
-		}
-		.tab-br{
-			display: none;
-		}
-		}
- }
-
-@media screen and (max-width:320px){
-	.tab-pane{
-		figure .tab-div{
-			position: absolute;
-			top: -4px;
-			left: 16px;
-			.btn-danger{
-				position: absolute;
-				top: 122px;
-				width: 85px;
-				font-size: 10px;
-				border-radius: 37px;
-			}
-			h2 {
-				display: none;
-				width: 146px;
-				padding-bottom: 20px;
-				font-size: 15px;
-				color: #fff;
-				border-bottom: 1px solid #fff;
-			}
-			h1 {
-				font-size: 17px;
-				color: #fff;
-				text-shadow: -3px 3px #696969;
-			}
-
-		}
-	}
-	.nav-tabs{
-		.nav-item{
-			width: 33%;
-		}
-		.nav-link {
-			height: 112px;
-			border: 0;
-			border-top-left-radius: 0;
-			border-top-right-radius: 0;
-	}
-	}
-	.space-between h5 {
-    font-size: 12px;
-}
-}
-//....update code
-// .tab-content{
-// 	margin-top: -38px;
-// }

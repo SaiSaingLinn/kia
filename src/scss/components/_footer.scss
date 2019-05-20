@@ -6,10 +6,7 @@
   margin-top: 22px;
   margin-bottom: 45px;
 
-}
-.con{
-  padding-top: 100px;
-  padding-bottom: 50px;
+
 }
 
 .img{
@@ -25,12 +22,40 @@
 }
 .bgfoot{
   background: #c9c9c9;
+  .con{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    @media screen and (max-width: 767px) {
+      padding: 0;
+    }
+    ul {
+      margin-top: 15px !important;
+      padding: 0;
+      list-style: none;
+      li {
+        display: flex;
+        p {
+          min-width: 103px;
+          transform: translateX(-39px);
+
+        }
+        .address,.email {
+          transform: translateX(-23px);
+          min-width: auto;
+          a{
+            color: #212529;
+            word-break: break-word;
+          }
+        }
+      }
+    }
+  }
 }
 .btn-info{
   background: #626262;
   border-color: #626262;
   margin-left:10px;
-  
+
 
 }
 .btn-info:hover {
@@ -50,39 +75,88 @@
     flex-wrap: nowrap;
     margin-top: 22px;
     margin-bottom: 45px;
-  
+
   }
   .btn-info{
     background: #626262;
     border-color: #626262;
     width:100%;
     margin-left:1px
-  
+
   }
-  
+
 
 }
-//update 
+//update
 .phonecall{
   a{
-    color:#333;
+    color:#212529;
   }
 }
-
+.text-alignment{
+  text-align: right;
+}
 
 .ftimage{
-  
+  a{
+    padding-bottom: 33px;
+    img{
+      width:95px;
+    }
+  }
+
+}
+.ftlogo{
   img{
-    width:95px;
+    margin-right: -11px;
+    margin-left: 0px;
   }
 }
-@media screen and (max-width:576px){
+@media screen and (max-width:768px){
+  .bgfoot .con ul li .address a, .bgfoot .con ul li .email a {
+    color: #212529;
+    word-break: break-word;
+}
+}
+@media screen and (max-width: 767px){
   .ftrow{
     text-align: center;
     margin-top:28px;
-    .ftlogo{
-      justify-content: center;
+    .followus {
+      .ftlogo {
+        justify-content: center;
+      }
     }
   }
 }
-
+@media screen and (max-width: 767px){
+  .bgfoot .con ul li p{
+    min-width: 145px;
+    transform: none;
+    text-align: left;
+  }
+  .bgfoot .con ul li .address, .bgfoot .con ul li .email{
+    text-align: left;
+  }
+}
+// @media screen and (max-width:424px){
+//   .bgfoot .con ul li p {
+//     min-width: 169px;
+// }
+// }
+@media screen and (max-width: 374px){
+  .bgfoot .con ul li p {
+    min-width: 150px;
+}
+}
+// @media screen and (max-width: 375px){
+//   .bgfoot .con ul li p {
+//     min-width: 106px;
+// }
+// }
+@media screen and (max-width: 320px)
+{
+  .bgfoot .con ul li p {
+    min-width: 106px;
+}
+}

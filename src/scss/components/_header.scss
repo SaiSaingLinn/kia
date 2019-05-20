@@ -3,7 +3,7 @@ $automotive:#373737;
 $kia:#c51230;
 header
   {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -48,11 +48,13 @@ header
     }
     .top-menu
     {
-      padding: 5px 0px;
-      background-color: $kia;
+      position: relative;
       &::after{
-        content:"|";
-        color:#fff;
+        color: #fff;
+        content: "|";
+        position: absolute;
+        top: 5px;
+        right: 0;
       }
       &:last-child::after{
         content: "";
@@ -60,16 +62,22 @@ header
       a{
         color:#fff;
         text-decoration: none;
-        padding: 0 10px;
+        padding: 5px 10px;
+        background-color: $kia;
+        display: block;
+        transition: all .8s;
         //border-right: 1px solid;
         //font-weight: 600;
-        //background: linear-gradient(to right,#fff 20%,#ababab 40%,#fff 60%,#ababab 80%);
+        // background: linear-gradient(to right,#fff 20%,#ababab 40%,#fff 60%,#ababab 80%);
         //background-size: 200% auto;
        // background-clip: text;
         //-webkit-background-clip:text;
         //-webkit-text-fill-color: transparent;
         //animation: shine 2s linear infinite;
-
+        &:hover {
+          //background-color: #174eaa;
+          text-decoration: underline;
+        }
       }
       //@keyframes shine {
       //  to {
@@ -116,9 +124,11 @@ header
         width:17px;
         margin-top: 0.3rem;
       }
-
+      @media screen and (max-width:991px) {
+        display: none;
+      }
     }
-
+   
 }
 .nav-container{
   position: relative;
@@ -135,7 +145,7 @@ header
 
       @media screen and (min-width:992px) {
         .navbar-nav{
-          padding-right: 40px;
+          // padding-right: 40px;
           &::after{
             content: "|";
             padding: 0.25rem;
@@ -149,11 +159,21 @@ header
       a{
         font-weight: 600;
         color:#333;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        transition: all 0.8s;
+        &:hover{
+          color: #c51230;
+        }
+        @media screen and (max-width: 991px) {
+          padding-right: 0;
+          padding-left: 0;
+        }
+        @media (max-width: 1199px) and (min-width: 992px) {
+          padding-right: .7rem;
+          padding-left: .7rem;
+        }
       }
-      &:hover{
-        color:$paragraph-color;
-      }
-
     }
     .car-model-list{
       width:100%;
@@ -206,36 +226,76 @@ header
 
   .searchright
   {
-    position: absolute;
-    z-index: 1000;
-    background-color: #fff;
-    width:60px;
-    right: 0;
-    padding: 1rem;
-    overflow: hidden;
-    display: flex;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    // position: absolute;
+    // z-index: 1000;
+    // background-color: #fff;
+    // width:60px;
+    // right: 0;
+    // padding: 1rem;
+    // overflow: hidden;
+    // display: flex;
     @media screen and (max-width:991px) {
-      position: relative;
-      width:100%;
+      padding:0.5rem 0;
     }
 
-    i{
-      margin: 0.75rem 0.5rem;
+    .btn-search-icon {
       cursor: pointer;
-      &:first-child{
-        margin-right: 1.5rem;
-        margin-left: 0.25rem;
-      }
+      // &:first-child{
+      //   margin-right: 1.5rem;
+      //   margin-left: 0.25rem;
+      // }
     }
     .search{
       border-radius: 0;
 
     }
+    .search-form {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: #FFF;
+      padding: 20px 15px;
+      display: none;
+      .close {
+        position: absolute;
+        left: calc(100% - 45px);
+        bottom: 30px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .icon-search{
+        display: none;
+      }
+
+      @media screen and (max-width: 991px) {
+        left: -1px;
+        display: block;
+        padding: 0;
+        .close{
+          display: none;
+        }
+        .icon-search{
+          display: block;
+          position: absolute;
+          bottom: 8px;
+          left: calc(100% - 35px);
+          font-size: 18px;
+          cursor: pointer;
+        }
+      }
+    }
+    @media screen and (max-width: 991px) {
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
 
 
 }
-.show-mobile{
+.show-mobile,.show-mobile-767{
   display: none;
 }
 @media screen and (max-width:991px){
@@ -244,6 +304,9 @@ header
   }
   .top-menu{
     display: none;
+  }
+  .show-text-drive{
+    display: block;
   }
 }
 @media screen and(max-width:767px){
@@ -260,8 +323,13 @@ header
     .top-menu-icon {
       padding: 0.5rem 0;
     }
+    .show-text-drive{
+     margin-top: 0.5rem;
+    }
   }
-
+  .show-mobile-767{
+    display: block;
+  }
 }
 @media screen and(max-width:424px){
   .navbar-brand{

@@ -11,190 +11,238 @@ main
           | / PROMOTIONS
         ul
           li 
-            a(href="") Kia   
+            a(href="http://sss.innovix-solutions.net/kia") Kia   
           li 
-            a(href="") Peugeot 
+            a(href="http://sss.innovix-solutions.net/peugeot") Peugeot 
           li 
-            a(href="") King Long
-  div.container.pt-5.pb-3
-    h3.event Event & Promotions
-    //..Nav Tabs.............//
-  div.tab-content
-    div#home.tab-pane.active
-      div.single-item
-        figure.tab-pane
-          img.w-100(src="assets/images/utils/peugot1.jpg", alt="promo1")
-          div.tab-div
-            h2 You own it <br/> Now make it yours 
-            
-            h6 Choose your vehicle 
-            br
-            button.btn.btn-kia.btn-rounded(type="button") ACCESSORIZE 
-            br.tab-br
-            br.tab-br  
-            h1 Happy Thingyan Festival 
-            h1 Special Promotion
-        figure.tab-pane
-          img.w-100(src="assets/images/utils/p1.jpg", alt="promo1")
-          div.tab-div
-            h2 You own it <br/> Now make it yours 
-            
-            h6 Choose your vehicle 
-            br
-            button.btn.btn-kia.btn-rounded(type="button") ACCESSORIZE 
-            br.tab-br
-            br.tab-br  
-            h1 Happy Thingyan Festival 
-            h1 Special Promotion
+            a(href="http://sss.innovix-solutions.net/kinglong/") King Long
+  .container.content-body
+    h1 Event & Promotions
+  div    
+    .promo-slide-wrap
+      .promo-slide-tabs
+        #nav-tabContent.tab-content
+          #nav-new-year.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-new-year-tab')
+            #carouselExampleControls1.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.d-block.w-100(src='assets/images/utils/procar-1.jpg', alt='First slide')
+                  .carousel-caption
+                    h2
+                      | Your own it
+                      br
+                      | Now make it yours
+                    hr
+                    p.d-none.d-md-block
+                      | Choose your vehicle
+                    a(href="car-detail.html").btn.btn-peugeot.btn-rounded ACCESSORIZE
+                    h1.d-none.d-md-block
+                      | Happy Thingyan Festival
+                      br 
+                      | Special Promotion
+                .carousel-item
+                  img.d-block.w-100(src='assets/images/utils/procar-2.jpg', alt='Second slide')
+                  .carousel-caption
+                    h2
+                      | Your own it
+                      br
+                      | Now make it yours
+                    hr
+                    p.d-none.d-md-block
+                      | Choose your vehicle
+                    a(href="car-detail.html").btn.btn-peugeot.btn-rounded ACCESSORIZE
+                    h1.d-none.d-md-block
+                      | Happy Thingyan Festival
+                      br 
+                      | Special Promotion
+              //- a.carousel-control-prev(href='#carouselExampleControls1', role='button', data-slide='prev')
+              //-   span.carousel-control-prev-icon(aria-hidden='true')
+              //-   span.sr-only Previous
+              //- a.carousel-control-next(href='#carouselExampleControls1', role='button', data-slide='next')
+              //-   span.carousel-control-next-icon(aria-hidden='true')
+              //-   span.sr-only Next
+                
+          #nav-march.tab-pane.fade(role='tabpanel', aria-labelledby='nav-march-tab')
+            #carouselExampleControls2.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.d-block.w-100(src='assets/images/utils/procar-3.jpg', alt='First slide')
+                  .carousel-caption
+                    h2
+                      | Your own it
+                      br
+                      | Now make it yours
+                    hr
+                    p.d-none.d-md-block
+                      | Choose your vehicle
+                    a(href="car-detail.html").btn.btn-peugeot.btn-rounded ACCESSORIZE
+                    h1.d-none.d-md-block
+                      | Happy Thingyan Festival
+                      br 
+                      | Special Promotion
+                .carousel-item
+                  img.d-block.w-100(src='assets/images/utils/procar-4.jpg', alt='Second slide')
+                  .carousel-caption
+                    h2
+                      | Your own it
+                      br
+                      | Now make it yours
+                    hr
+                    p.d-none.d-md-block
+                      | Choose your vehicle
+                    a(href="car-detail.html").btn.btn-peugeot.btn-rounded ACCESSORIZE
+                    h1.d-none.d-md-block
+                      | Happy Thingyan Festival
+                      br 
+                      | Special Promotion
+              //- a.carousel-control-prev(href='#carouselExampleControls2', role='button', data-slide='prev')
+              //-   span.carousel-control-prev-icon(aria-hidden='true')
+              //-   span.sr-only Previous
+              //- a.carousel-control-next(href='#carouselExampleControls2', role='button', data-slide='next')
+              //-   span.carousel-control-next-icon(aria-hidden='true')
+              //-   span.sr-only Next
 
-    div#menu1.tab-pane
-      div.single-item
-        figure.tab-pane
-          img.w-100(src="assets/images/utils/p3.jpg", alt="promo2")
-          div.tab-div
-            h2 You own it <br/> Now make it yours 
-            
-            h6 Choose your vehicle 
-            br
-            button.btn.btn-kia.btn-rounded(type="button") ACCESSORIZE 
-            br.tab-br
-            br.tab-br  
-            h1 Happy 2019 March 
-            h1 Special Promotion
+          #nav-kia-march.tab-pane.fade(role='tabpanel', aria-labelledby='nav-kia-march-tab')
+            #carouselExampleControls3.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.d-block.w-100(src='assets/images/utils/procar-5.jpg', alt='First slide')
+                  .carousel-caption
+                    h2
+                      | Your own it
+                      br
+                      | Now make it yours
+                    hr
+                    p.d-none.d-md-block
+                      | Choose your vehicle
+                    a(href="car-detail.html").btn.btn-peugeot.btn-rounded ACCESSORIZE
+                    h1.d-none.d-md-block
+                      | Happy Thingyan Festival
+                      br 
+                      | Special Promotion
+                .carousel-item
+                  img.d-block.w-100(src='assets/images/utils/procar-6.jpg', alt='Second slide')
+                  .carousel-caption
+                    h2
+                      | Your own it
+                      br
+                      | Now make it yours
+                    hr
+                    p.d-none.d-md-block
+                      | Choose your vehicle
+                    a(href="car-detail.html").btn.btn-peugeot.btn-rounded ACCESSORIZE
+                    h1.d-none.d-md-block
+                      | Happy Thingyan Festival
+                      br 
+                      | Special Promotion
+              //- a.carousel-control-prev(href='#carouselExampleControls3', role='button', data-slide='prev')
+              //-   span.carousel-control-prev-icon(aria-hidden='true')
+              //-   span.sr-only Previous
+              //- a.carousel-control-next(href='#carouselExampleControls3', role='button', data-slide='next')
+              //-   span.carousel-control-next-icon(aria-hidden='true')
+              //-   span.sr-only Next
+          
+          #nav-sweet-dec.tab-pane.fade(role='tabpanel', aria-labelledby='nav-sweet-dec-tab')
+            #carouselExampleControls4.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.d-block.w-100(src='assets/images/utils/procar-7.jpg', alt='First slide')
+                  .carousel-caption.d-none.d-md-block
+                    h2
+                      | Your own it
+                      br
+                      | Now make it yours
+                    hr
+                    p
+                      | Choose your vehicle
+                    a(href="car-detail.html").btn.btn-peugeot.btn-rounded ACCESSORIZE
+                    h1
+                      | Happy Thingyan Festival
+                      br 
+                      | Special Promotion
+                .carousel-item
+                  img.d-block.w-100(src='assets/images/utils/procar-1.jpg', alt='Second slide')
+                  .carousel-caption.d-none.d-md-block
+                    h2
+                      | Your own it
+                      br
+                      | Now make it yours
+                    hr
+                    p
+                      | Choose your vehicle
+                    a(href="car-detail.html").btn.btn-peugeot.btn-rounded ACCESSORIZE
+                    h1
+                      | Happy Thingyan Festival
+                      br 
+                      | Special Promotion
+              //- a.carousel-control-prev(href='#carouselExampleControls4', role='button', data-slide='prev')
+              //-   span.carousel-control-prev-icon(aria-hidden='true')
+              //-   span.sr-only Previous
+              //- a.carousel-control-next(href='#carouselExampleControls4', role='button', data-slide='next')
+              //-   span.carousel-control-next-icon(aria-hidden='true')
+              //-   span.sr-only Next
 
-        figure.tab-pane
-          img.w-100(src="assets/images/utils/promo1.jpg", alt="promo2")
-          div.tab-div
-            h2 You own it <br/> Now make it yours 
-            
-            h6 Choose your vehicle 
-            br
-            button.btn.btn-kia.btn-rounded(type="button") ACCESSORIZE 
-            br.tab-br
-            br.tab-br  
-            h1 Happy 2019 March 
-            h1 Special Promotion
+          #nav-february.tab-pane.fade(role='tabpanel', aria-labelledby='nav-february-tab')
+            #carouselExampleControls5.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.d-block.w-100(src='assets/images/utils/procar-2.jpg', alt='First slide')
+                  .carousel-caption.d-none.d-md-block
+                    h2
+                      | Your own it
+                      br
+                      | Now make it yours
+                    hr
+                    p
+                      | Choose your vehicle
+                    a(href="car-detail.html").btn.btn-peugeot.btn-rounded ACCESSORIZE
+                    h1
+                      | Happy Thingyan Festival
+                      br 
+                      | Special Promotion
+                .carousel-item
+                  img.d-block.w-100(src='assets/images/utils/procar-3.jpg', alt='Second slide')
+                  .carousel-caption.d-none.d-md-block
+                    h2
+                      | Your own it
+                      br
+                      | Now make it yours
+                    hr
+                    p
+                      | Choose your vehicle
+                    a(href="car-detail.html").btn.btn-peugeot.btn-rounded ACCESSORIZE
+                    h1
+                      | Happy Thingyan Festival
+                      br 
+                      | Special Promotion
+              //- a.carousel-control-prev(href='#carouselExampleControls5', role='button', data-slide='prev')
+              //-   span.carousel-control-prev-icon(aria-hidden='true')
+              //-   span.sr-only Previous
+              //- a.carousel-control-next(href='#carouselExampleControls5', role='button', data-slide='next')
+              //-   span.carousel-control-next-icon(aria-hidden='true')
+              //-   span.sr-only Next
+                
+          nav
+            #nav-tab.nav.nav-tabs(role='tablist')
+              a#nav-new-year-tab.nav-item.nav-link.active(data-toggle='tab', href='#nav-new-year', role='tab', aria-controls='nav-new-year', aria-selected='true') 
+                h4 2019 New Year
+                span Promotion
+              a#nav-march-tab.nav-item.nav-link(data-toggle='tab', href='#nav-march', role='tab', aria-controls='nav-march', aria-selected='false') 
+                h4 2019 March
+                span Promotion
+              a#nav-kia-march-tab.nav-item.nav-link(data-toggle='tab', href='#nav-kia-march', role='tab', aria-controls='nav-kia-march', aria-selected='false') 
+                h4 2019 KIA March
+                span Promotion
+              a#nav-sweet-dec-tab.nav-item.nav-link(data-toggle='tab', href='#nav-sweet-dec', role='tab', aria-controls='nav-sweet-dec', aria-selected='false') 
+                h4 2019 Sweet Dec
+                span Promotion
+              a#nav-february-tab.nav-item.nav-link(data-toggle='tab', href='#nav-february', role='tab', aria-controls='nav-february', aria-selected='false') 
+                h4 2019 February
+                span Promotion
 
-    div#menu2.tab-pane.fade
-      div.single-item
-        figure#home.tab-pane
-          img.w-100(src="assets/images/utils/peugot2.jpg", alt="promo3")
-          div.tab-div
-            h2 You own it <br/> Now make it yours 
-            
-            h6 Choose your vehicle 
-            br
-            a(href="#")
-              button.btn.btn-kia.btn-rounded(type="button") ACCESSORIZE 
-            br.tab-br
-            br.tab-br  
-            h1 Happy 2019 KIA March 
-            h1 Special Promotion
-        figure#home.tab-pane
-          img.w-100(src="assets/images/utils/peugot7.jpg", alt="promo3")
-          div.tab-div
-            h2 You own it <br/> Now make it yours 
-            
-            h6 Choose your vehicle 
-            br
-            a(href="#")
-              button.btn.btn-kia.btn-rounded(type="button") ACCESSORIZE 
-            br.tab-br
-            br.tab-br  
-            h1 Happy 2019 KIA March 
-            h1 Special Promotion
-
-    div#menu3.tab-pane.fade
-      div.single-item 
-        figure#home.tab-pane
-          img.w-100(src="assets/images/utils/peugot8.jpg", alt="promo4")
-          div.tab-div
-            h2 You own it <br/> Now make it yours 
-            
-            h6 Choose your vehicle 
-            br
-            a(href="#")
-              button.btn.btn-kia.btn-rounded(type="button") ACCESSORIZE 
-            br.tab-br
-            br.tab-br  
-            h1 Happy 2019 Sweet December
-            h1 Special Promotion
-        figure#home.tab-pane
-          img.w-100(src="assets/images/utils/promo4.jpg", alt="promo4")
-          div.tab-div
-            h2 You own it <br/> Now make it yours 
-            
-            h6 Choose your vehicle 
-            br
-            a(href="#")
-              button.btn.btn-kia.btn-rounded(type="button") ACCESSORIZE 
-            br.tab-br
-            br.tab-br  
-            h1 Happy 2019 Sweet December
-            h1 Special Promotion
-
-    div#menu4.tab-pane.fade
-      div.single-item 
-        figure#home.tab-pane
-          img.w-100(src="assets/images/utils/peugot1.jpg", alt="promo5")
-          div.tab-div
-            h2 You own it <br/> Now make it yours 
-            
-            h6 Choose your vehicle 
-            br
-            a(href="#")
-              button.btn.btn-kia.btn-rounded(type="button") ACCESSORIZE 
-            br.tab-br
-            br.tab-br  
-            h1 Happy 2019 February
-            h1 Special Promotion 
-
-        figure#home.tab-pane
-          img.w-100(src="assets/images/utils/peugot8.jpg", alt="promo5")
-          div.tab-div
-            h2 You own it <br/> Now make it yours 
-            
-            h6 Choose your vehicle 
-            br
-            a(href="#")
-              button.btn.btn-kia.btn-rounded(type="button") ACCESSORIZE 
-            br.tab-br
-            br.tab-br  
-            h1 Happy 2019 February
-            h1 Special Promotion   
-  //..Tab panes.............// 
-  .tabpanes
-    div.container
-      ul.nav.nav-tabs 
-        li.nav-item 
-          a.nav-link.active.white(href="#home") 
-            h4 2019 New Year 
-            font Promotion
-
-
-        li.nav-item 
-          a.nav-link.red(href="#menu1") 
-            h4 2019 March
-            font Promotion 
-
-
-        li.nav-item 
-          a.nav-link.blue(href="#menu2") 
-            h4 2019 KIA March 
-            font Promotion
-
-        li.nav-item 
-          a.nav-link.purple(href="#menu3") 
-            h4 2019 Sweet Dec 
-            font Promotion
-
-        li.nav-item 
-          a.nav-link.yellow(href="#menu4") 
-            h4 2019 February
-            font Promotion
-
+  
 
   a.return-to-top(href='javascript:')
-    i.fas.fa-arrow-up   
+    i.fas.fa-arrow-up 
 include ./components/_footer.pug
 script(src="./assets/js/core.min.js")
