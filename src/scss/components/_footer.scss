@@ -65,6 +65,22 @@
   border-color: #626262;
 }
 
+//...update footer copyright
+.footertxt{
+  background: #231f20;
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom:30px;
+}
+.ft_cptext{
+  font{
+    a{
+      color: #c41230;
+      text-decoration: none;
+    }
+  }
+}
+
 // .textbox{
 //   width:100%;
 // }
@@ -76,7 +92,11 @@
     flex-wrap: nowrap;
     margin-top: 22px;
     margin-bottom: 45px;
-
+    //...update footer
+    input{
+      margin-bottom: 10px;
+      height: 37px;
+    }
   }
   .btn-info{
     background: #626262;

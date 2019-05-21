@@ -800,6 +800,18 @@ header a:hover {
   border-color: #626262;
 }
 
+.footertxt {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+  background: #231f20;
+}
+
+.ft_cptext font a {
+  color: #c41230;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1200px) {
   .flex-container1 {
     display: flex;
@@ -807,6 +819,10 @@ header a:hover {
     flex-wrap: nowrap;
     margin-top: 22px;
     margin-bottom: 45px;
+  }
+  .flex-container1 input {
+    height: 37px;
+    margin-bottom: 10px;
   }
   .btn-info {
     width: 100%;
