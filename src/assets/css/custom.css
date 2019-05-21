@@ -1446,7 +1446,15 @@ header a:hover {
   border: 1px solid #ddd;
 }
 .kia-Subscribe .recent .row {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .kia-Subscribe .recent .row span {
+    padding-top: 10px;
+  }
+}
+.kia-Subscribe .recent .row a {
+  color: #3498db;
 }
 
 .service {
