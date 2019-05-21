@@ -69,7 +69,11 @@ const styleBuild = function() {
     "./node_modules/@fortawesome/fontawesome-free/css/all.css",
     "./node_modules/slick-carousel/slick/slick.css",
     "./node_modules/slick-carousel/slick/slick-theme.css",
-    "./node_modules/animate.css/animate.min.css"
+    "./node_modules/animate.css/animate.min.css",
+    "./node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css",
+    "./node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.min.css",
+    "./node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css",
+    "./node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.min.css"
   ])
   .pipe(concat("bundle.min.css"))
   .pipe(uglifycss({
@@ -118,7 +122,8 @@ const jsBuild = function() {
     "./node_modules/jquery-lazy/jquery.lazy.min.js",
     "./node_modules/slick-carousel/slick/slick.min.js",
     "./node_modules/paroller.js/dist/jquery.paroller.min.js",
-    "./node_modules/wowjs/dist/wow.min.js"
+    "./node_modules/wowjs/dist/wow.min.js",
+    "./node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"
   ])
   .pipe(concat("bundle.js"))
   .pipe(dest("./src/assets/js/"))
@@ -141,7 +146,7 @@ const gulpJs = function() {
     "./src/assets/js/es/custom.js"
   ])
   .pipe(concat("core.min.js"))
-  .pipe(jsUgly())
+  // .pipe(jsUgly())
   .pipe(dest("./dist/assets/js/"))
   .pipe(host.reload());
 }

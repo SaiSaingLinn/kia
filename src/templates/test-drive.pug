@@ -1,0 +1,168 @@
+include ./components/_var.pug
+
+include ./components/_head.pug
+include ./components/_header.pug
+main
+  div.brecrum
+    .container
+      .brecrum-inner
+        p
+          a(href="./index.html") KIA
+          | / ABOUT US
+        ul
+          li 
+            a(href="http://sss.innovix-solutions.net/kia") Kia   
+          li 
+            a(href="http://sss.innovix-solutions.net/peugeot") Peugeot 
+          li 
+            a(href="http://sss.innovix-solutions.net/kinglong/") King Long
+      
+  section.test-drive
+    .container.kia_myanmar.content-body
+      .row
+        .col-lg-12
+          h2.test-title Choose your dream car for a test drive
+      .car-list
+        .row
+          .col-lg-3.col-md-6.car-list-gap
+            .car-list-inner-wrap.select-change(data-value='caren')
+              .car-list-inner.img-hover-zoom
+                img.img-fluid(src='./assets/images/utils/caren.jpg')
+              .car-list-title
+                h5 Caren
+          .col-lg-3.col-md-6.car-list-gap
+            .car-list-inner-wrap.select-change(data-value='carnival')
+              .car-list-inner.img-hover-zoom
+                img.img-fluid(src='./assets/images/utils/carnival.jpg')
+              .car-list-title
+                h5 Carnival
+          .col-lg-3.col-md-6.car-list-gap
+            .car-list-inner-wrap.select-change(data-value='sportage')
+              .car-list-inner.img-hover-zoom
+                img.img-fluid(src='./assets/images/utils/sportage.jpg')
+              .car-list-title
+                h5 Sportage
+          .col-lg-3.col-md-6.car-list-gap
+            .car-list-inner-wrap.select-change(data-value='optima')
+              .car-list-inner.img-hover-zoom
+                img.img-fluid(src='./assets/images/utils/optima.jpg')
+              .car-list-title
+                h5 Optima
+          .col-lg-3.col-md-6.car-list-gap
+            .car-list-inner-wrap.select-change(data-value='picanto')
+              .car-list-inner.img-hover-zoom
+                img.img-fluid(src='./assets/images/utils/picanto.jpg')
+              .car-list-title
+                h5 Picanto
+          .col-lg-3.col-md-6.car-list-gap
+            .car-list-inner-wrap.select-change(data-value='rio')
+              .car-list-inner.img-hover-zoom
+                img.img-fluid(src='./assets/images/utils/rio.jpg')
+              .car-list-title
+                h5 Rio
+          .col-lg-3.col-md-6.car-list-gap
+            .car-list-inner-wrap.select-change(data-value='sorento')
+              .car-list-inner.img-hover-zoom
+                img.img-fluid(src='./assets/images/utils/sorento.jpg')
+              .car-list-title
+                h5 Sorento
+          .col-lg-3.col-md-6.car-list-gap
+            .car-list-inner-wrap.select-change(data-value='stinger')
+              .car-list-inner.img-hover-zoom
+                img.img-fluid(src='./assets/images/utils/stinger.jpg')
+              .car-list-title
+                h5 Stinger
+      .book-test
+        .row
+          .col-lg-12
+            .book-test-title
+              h3.text-uppercase BOOK A TEST DRIVE
+              .connect-fb
+                button.btn.btn-blue
+                  i.fab.fa-facebook-f
+                  |  CONNECT WITH FACEBOOK
+        .test-form-wrap
+          .row
+            .col-lg-6.book-call-wrap
+              .form-img
+                img#my_changing_image(src='./assets/images/utils/caren.jpg', alt='')
+              .book-call
+                img(src='./assets/images/utils/book-call.png', alt='')
+                p
+                  | Book to call : 
+                  a(href='tel:+959123456789') +95 9 123456789
+            .col-lg-6
+              .test-form
+                p Looking to Test Drive a Kia?
+                p
+                  | Identify a model of your choice, give us your details and our dealers will contact you soon.
+                form
+                  input.getImgPath(type='hidden', name='imageUrl', value='image/caren.jpg')
+                  .form-group.row
+                    label.sr-only(for='inlineFormInputGroup') Full Name
+                    .input-group.mb-2.col-lg-12
+                      .input-group-prepend
+                        .input-group-text
+                          i.fa.fa-asterisk
+                          |  Name
+                      input#inlineFormInputGroup.form-control(type='text', placeholder='Full Name')
+                  .form-group.row
+                    label.sr-only(for='inlineFormInputGroup') Phone Number
+                    .input-group.mb-2.col-lg-12
+                      .input-group-prepend
+                        .input-group-text
+                          i.fa.fa-asterisk
+                          |  Mobile No.
+                      input#inlineFormInputGroup.form-control.phone(type='text', placeholder='Phone Number')
+                  .form-group.row
+                    label.sr-only(for='inlineFormInputGroup') Email
+                    .input-group.mb-2.col-lg-12
+                      .input-group-prepend
+                        .input-group-text
+                          i.fa.fa-asterisk
+                          |  Email
+                      input#inlineFormInputGroup.form-control(type='text', placeholder='Email')
+                  .form-group.row
+                    label.sr-only(for='inlineFormInputGroup') Model to Test Drive
+                    .input-group.mb-2.col-lg-12
+                      .input-group-prepend
+                        .input-group-text
+                          i.fa.fa-asterisk
+                          |  Model to Test Drive
+                      select#my_select_box.form-control.custom-select.my-1.mr-sm-2.modelseelct
+                        option(value='carnival') Carnival
+                        option(value='caren') Caren
+                        option(value='sportage') Sportage
+                        option(value='optima') Optima
+                        option(value='picanto') Picanto
+                        option(value='rio') Rio
+                        option(value='sorento') Sorento
+                        option(value='stinger') Stinger
+                  .form-group.row
+                    label.sr-only(for='inlineFormInputGroup') Date for Test Drive
+                    .input-group.mb-2.col-lg-12
+                      .input-group-prepend
+                        .input-group-text
+                          i.fa.fa-asterisk
+                          |  Date for Test Drive
+                      input.form-control(type='text', placeholder='Select a Date')
+                    
+                  .form-group
+                    label(for='inlineFormInputGroup') Message
+                    .input-group.mb-2
+                      textarea#inlineFormInputGroup.form-control(rows='6')
+                  .form-check
+                    input#exampleCheck1.form-check-input(type='checkbox')
+                    label.form-check-label(for='exampleCheck1')
+                      | I agree for to fulfill my information request. I affirm that I have read, understood, and agree to the policies in Privacy Notice and consent to my personal data being processed and used by as stipulated in the said Privacy Notice.
+                  .form-group.row
+                    .col-lg-12.text-center
+                      button.btn.mb-2(type='submit')
+                        | SUBMIT 
+                        i.fa.fa-angle-double-right
+                        
+  a.return-to-top(href='javascript:')
+    i.fas.fa-arrow-up        
+
+include ./components/_footer.pug
+script(src="./assets/js/core.min.js")
