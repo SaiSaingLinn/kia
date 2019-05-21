@@ -700,7 +700,7 @@ header a:hover {
     content: "";
   }
   .top-bar .sub-menu .mobile-width {
-    width: 65%;
+    width: calc(100% - 106px);
   }
   .top-bar .top-menu-icon {
     padding: .5rem 0;
@@ -722,12 +722,10 @@ header a:hover {
   }
 }
 
-@media screen and (max-width: 374px) {
-  .top-bar .sub-menu {
-    display: inline-block;
-  }
-  .top-bar .sub-menu .mobile-width {
-    width: 100%;
+@media screen and (max-width: 355px) {
+  .top-bar {
+    height: 47px;
+    font-size: .75rem;
   }
 }
 
@@ -2439,12 +2437,6 @@ main .content-body {
 @media screen and (max-width: 424px) {
   main {
     margin-top: 121.27px;
-  }
-}
-
-@media screen and (max-width: 374px) {
-  main {
-    margin-top: 161.27px;
   }
 }
 

@@ -317,7 +317,7 @@ header
     }
     .sub-menu{
       .mobile-width{
-        width: 65%;
+        width: calc(100% - 106px);
       }
     }
     .top-menu-icon {
@@ -343,14 +343,10 @@ header
     }
   }
 }
-@media screen and(max-width:374px){
+@media screen and(max-width:355px){
   .top-bar{
-    .sub-menu{
-      display: inline-block;
-      .mobile-width{
-        width: 100%;
-      }
-    }
+    font-size: 0.75rem;
+    height: 47px;;
   }
 
 }
