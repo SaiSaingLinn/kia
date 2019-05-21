@@ -1,8 +1,9 @@
 .car-selector {
   text-align: center;
+  padding-top: 1rem;
   h1 {
     font-size: 24px;
-    margin-bottom: 26px;
+    margin-bottom: 1rem;
     letter-spacing: 2.3px;
     text-transform: uppercase;
     display: inline-block;
@@ -19,7 +20,7 @@
         overflow-x: auto;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
-        padding-bottom: 20px;
+        // padding-bottom: 20px;
         white-space: nowrap;
         li {
           display: inline-block;
@@ -65,11 +66,11 @@
       display: block;
       color: #FFF;
       @media screen and (max-width: 767px) {
-        margin-bottom: 130px;
+        margin-bottom: 170px;
       }
       .stage-bg {
         position: relative;
-        height: 450px;
+        height: 380px;
         overflow: hidden;
         width: 100%;
         display: block;
