@@ -397,6 +397,9 @@
   font-weight: 600;
   color: #3b5998;
 }
+.kia-main .latest-new-wrap .facebook-social-wrap .social-feed-wrap .social-feed-item .social-content a {
+  color: #3498db;
+}
 
 header {
   position: fixed;
@@ -1727,7 +1730,7 @@ header a:hover {
 }
 .car-selector .selector .category .stage-bg {
   position: relative;
-  z-index: -9;
+  z-index: -99999;
   display: block;
   width: 100%;
   height: 450px;
@@ -1736,20 +1739,21 @@ header a:hover {
 .car-selector .selector .category .stage-bg img.desktop {
   position: absolute;
   bottom: 0;
-  z-index: -99;
+  z-index: -99999;
   min-width: 100%;
   height: unset;
   min-height: 100%;
 }
 @media screen and (max-width: 768px) {
   .car-selector .selector .category .stage-bg img.desktop {
+    z-index: -99999;
     display: none;
   }
 }
 .car-selector .selector .category .stage-bg img.mobile {
   position: absolute;
   bottom: 0;
-  z-index: -99;
+  z-index: -99999;
   display: none;
   min-width: 100%;
   height: unset;
@@ -1757,6 +1761,7 @@ header a:hover {
 }
 @media screen and (max-width: 768px) {
   .car-selector .selector .category .stage-bg img.mobile {
+    z-index: -99999;
     display: block;
   }
 }
@@ -1766,6 +1771,7 @@ header a:hover {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 99999;
   display: none;
   color: #fff;
 }
@@ -1903,7 +1909,7 @@ header a:hover {
   position: absolute;
   right: 0;
   bottom: 0%;
-  z-index: 9;
+  z-index: 99999;
   width: 100%;
   padding-top: 100%;
   margin: 0;
@@ -1919,6 +1925,7 @@ header a:hover {
   position: absolute;
   top: 52%;
   left: 0;
+  z-index: 99999;
   box-sizing: border-box;
   display: none;
   width: calc(100% - 570px);
@@ -1928,29 +1935,34 @@ header a:hover {
 }
 @media screen and (max-width: 767px) {
   .car-selector .selector .category .stage .stage-top .stage-content-image .stage-vehicle img {
+    z-index: 99999;
     width: calc(100% - 20px);
     margin-left: 10px;
   }
 }
 @media screen and (min-width: 768px) {
   .car-selector .selector .category .stage .stage-top .stage-content-image .stage-vehicle img {
+    z-index: 99999;
     width: calc(100% - 200px);
     margin-left: 250px;
   }
 }
 @media screen and (min-width: 992px) {
   .car-selector .selector .category .stage .stage-top .stage-content-image .stage-vehicle img {
+    z-index: 99999;
     width: calc(100% - 500px);
     margin-left: 500px;
   }
 }
 @media screen and (min-width: 1200px) {
   .car-selector .selector .category .stage .stage-top .stage-content-image .stage-vehicle img {
+    z-index: 99999;
     width: calc(100% - 570px);
     margin-left: 570px;
   }
 }
 .car-selector .selector .category .stage .stage-top .stage-content-image .stage-vehicle img.active {
+  z-index: 99999;
   display: block;
 }
 .car-selector .selector .category .stage .stage-bottom {

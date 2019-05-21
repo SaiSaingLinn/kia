@@ -73,16 +73,17 @@
         overflow: hidden;
         width: 100%;
         display: block;
-        z-index: -9;
+        z-index: -99999;
         img.desktop {
           position: absolute;
           bottom: 0;
           min-width: 100%;
           height: unset;
           min-height: 100%;
-          z-index: -99;
+          z-index: -99999;
           @media screen and (max-width: 768px) {
             display: none;
+            z-index: -99999;
           }
         }
         img.mobile {
@@ -91,10 +92,11 @@
           min-width: 100%;
           height: unset;
           min-height: 100%;
-          z-index: -99;
+          z-index: -99999;
           display: none;
           @media screen and (max-width: 768px) {
             display: block;
+            z-index: -99999;
           }
         }
       }
@@ -106,6 +108,7 @@
         bottom: 0;
         color: #FFF;
         display: none;
+        z-index: 99999;
         .stage-top {
           position: relative;
           width: 100%;
@@ -237,7 +240,7 @@
               transform: translateY(38%);
               width: 100%;
               overflow: hidden;
-              z-index: 9;
+              z-index: 99999;
               @media screen and (max-width: 767px) {
                 transform: translateY(45%);
               }
@@ -251,25 +254,31 @@
                 width: calc(100% - 570px);
                 margin-left: 570px;
                 display: none;
+                z-index: 99999;
                 @media screen and (max-width: 767px) {
                   width: calc(100% - 20px);
                   margin-left: 10px;
+                  z-index: 99999;
                 }
                 @media screen and (min-width: 768px) {
                   width: calc(100% - 200px);
                   margin-left: 250px;
+                  z-index: 99999;
                 }
                 @media screen and (min-width: 992px) {
                   width: calc(100% - 500px);
                   margin-left: 500px;
+                  z-index: 99999;
                 }
                 @media screen and (min-width: 1200px) {
                   width: calc(100% - 570px);
                   margin-left: 570px;
+                  z-index: 99999;
                 }
               }
               img.active {
                 display: block;
+                z-index: 99999;
               }
             }
           }
