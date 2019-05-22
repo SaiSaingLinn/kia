@@ -30,7 +30,7 @@ const gulpHost = function(cb) {
 }
 // load fonts
 const gulpFont = function() {
-  return src(["./node_modules/@fortawesome/fontawesome-free/webfonts/*.*", "./src/webfonts/*.*"])
+  return src(["./node_modules/@fortawesome/fontawesome-free/webfonts/*.*", "./src/assets/webfonts/*.*"])
     .pipe(dest("./dist/assets/webfonts"))
     .pipe(host.reload());
 }
