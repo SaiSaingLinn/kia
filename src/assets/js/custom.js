@@ -73,8 +73,7 @@ $(document).ready(function(){
 
   // test form date datepicker
   $('.datepicker').datepicker({
-    format: 'mm/dd/yyyy',
-    startDate: '-3d'
+    startDate: '1d'
   });
   $('.phone').on('keypress keyup blur', function(){
     $(this).val($(this).val().replace(/[^\d].+/,''));
