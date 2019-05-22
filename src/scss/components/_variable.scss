@@ -1,1 +1,13 @@
 $color-1 : #002233;
+
+// fonts-family
+$fonts : (
+  MM-Font: '../webfonts/Zawgyi-One.ttf'
+);
+
+@each $key in map-keys($fonts) {
+  @font-face {
+    font-family: $key;
+    src: url(map-get($fonts, $key));
+  }
+}

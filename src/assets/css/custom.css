@@ -1,3 +1,8 @@
+@font-face {
+  font-family: MM-Font;
+  src: url("../webfonts/Zawgyi-One.ttf");
+}
+
 .kia-main .header-slider-wrap .header-slider .slide-item {
   text-align: center;
 }
@@ -752,6 +757,8 @@ header a:hover {
 }
 
 .bgfoot {
+  position: relative;
+  z-index: 10;
   background: #c9c9c9;
 }
 .bgfoot .con {
@@ -2306,16 +2313,30 @@ header a:hover {
   }
 }
 
-.pro-detail {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
 .pro-detail .p-detail {
   line-height: 30px;
 }
 .pro-detail .p-detail .pdetail_img {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+.pro-detail .p-detail p {
+  font-family: MM-Font, sans-serif;
+}
+.pro-detail .p-detail .list-item ul {
+  padding: 0;
+  list-style-type: none;
+}
+.pro-detail .p-detail .list-item ul li {
+  display: flex;
+  padding-bottom: 5px;
+}
+.pro-detail .p-detail .list-item ul li i {
+  padding-top: 8px;
+}
+.pro-detail .p-detail .list-item ul li span {
+  font-family: MM-Font, sans-serif;
+  transform: translateX(15px);
 }
 
 body {
