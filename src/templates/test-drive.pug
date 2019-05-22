@@ -105,7 +105,7 @@ main
                         .input-group-text
                           i.fa.fa-asterisk
                           |  Name
-                      input#inlineFormInputGroup.form-control(type='text', placeholder='Full Name')
+                      input#inlineFormInputGroup.form-control(type='text', placeholder='Full Name', required='')
                   .form-group.row
                     label.sr-only(for='inlineFormInputGroup') Phone Number
                     .input-group.mb-2.col-lg-12
@@ -113,7 +113,7 @@ main
                         .input-group-text
                           i.fa.fa-asterisk
                           |  Mobile No.
-                      input#inlineFormInputGroup.form-control.phone(type='text', placeholder='Phone Number')
+                      input#inlineFormInputGroup.form-control.phone(type='text', placeholder='Phone Number', required='')
                   .form-group.row
                     label.sr-only(for='inlineFormInputGroup') Email
                     .input-group.mb-2.col-lg-12
@@ -121,7 +121,7 @@ main
                         .input-group-text
                           i.fa.fa-asterisk
                           |  Email
-                      input#inlineFormInputGroup.form-control(type='text', placeholder='Email')
+                      input#inlineFormInputGroup.form-control(type='text', placeholder='Email', required='')
                   .form-group.row
                     label.sr-only(for='inlineFormInputGroup') Model to Test Drive
                     .input-group.mb-2.col-lg-12
@@ -145,14 +145,14 @@ main
                         .input-group-text
                           i.fa.fa-asterisk
                           |  Date for Test Drive
-                      input.form-control(type='text', placeholder='Select a Date')
+                      input.form-control(type='text', placeholder='Select a Date', required='')
                     
                   .form-group
                     label(for='inlineFormInputGroup') Message
                     .input-group.mb-2
                       textarea#inlineFormInputGroup.form-control(rows='6')
                   .form-check
-                    input#exampleCheck1.form-check-input(type='checkbox')
+                    input#exampleCheck1.form-check-input(type='checkbox', required='')
                     label.form-check-label(for='exampleCheck1')
                       | I agree for to fulfill my information request. I affirm that I have read, understood, and agree to the policies in Privacy Notice and consent to my personal data being processed and used by as stipulated in the said Privacy Notice.
                   .form-group.row
