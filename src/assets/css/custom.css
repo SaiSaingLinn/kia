@@ -890,12 +890,6 @@ header a:hover {
   }
 }
 
-@media screen and (max-width: 320px) {
-  .bgfoot .con ul li p {
-    min-width: 106px;
-  }
-}
-
 .contactus-wrap h4 {
   padding-bottom: .75rem;
   margin-bottom: 1.5rem;
