@@ -2313,14 +2313,6 @@ header a:hover {
   }
 }
 
-.datepicker-orient-bottom {
-  top: 1347px !important;
-}
-
-.datepicker-orient-top {
-  top: 1053px !important;
-}
-
 .pro-detail .p-detail {
   line-height: 30px;
 }
@@ -2345,6 +2337,10 @@ header a:hover {
 .pro-detail .p-detail .list-item ul li span {
   font-family: MM-Font, sans-serif;
   transform: translateX(15px);
+}
+
+.pro-detail h4 {
+  margin-top: 1rem;
 }
 
 body {

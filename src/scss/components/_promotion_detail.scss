@@ -1,29 +1,32 @@
 .pro-detail{
-    .p-detail{
-			line-height: 30px;
-			.pdetail_img {
-				padding-top: 50px;
-				padding-bottom:50px;
-			}
-			p {
-				font-family: MM-Font, sans-serif;
-			}
-			.list-item {
-				ul {
-					list-style-type: none;
-					padding: 0;
-					li {
-						display: flex;
-						padding-bottom: 5px;
-						i {
-							padding-top: 8px;
-						}
-						span {
-							font-family: MM-Font, sans-serif;
-							transform: translateX(15px);
-						}
+  .p-detail{
+		line-height: 30px;
+		.pdetail_img {
+			padding-top: 50px;
+			padding-bottom:50px;
+		}
+		p {
+			font-family: MM-Font, sans-serif;
+		}
+		.list-item {
+			ul {
+				list-style-type: none;
+				padding: 0;
+				li {
+					display: flex;
+					padding-bottom: 5px;
+					i {
+						padding-top: 8px;
+					}
+					span {
+						font-family: MM-Font, sans-serif;
+						transform: translateX(15px);
 					}
 				}
 			}
-    }
+		}
+  }
+	h4 {
+		margin-top: 1rem;
+	}
 }
