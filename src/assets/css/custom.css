@@ -762,8 +762,8 @@ header a:hover {
   background: #c9c9c9;
 }
 .bgfoot .con {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
   .bgfoot .con {
@@ -792,6 +792,27 @@ header a:hover {
   color: #212529;
   word-break: break-word;
 }
+.bgfoot .con .ftrow h4 {
+  margin-bottom: 1.5rem;
+}
+.bgfoot .con .links-wrap ul {
+  padding: 2rem 1rem 1rem 2rem;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 991px) {
+  .bgfoot .con .links-wrap ul {
+    padding: 0;
+  }
+}
+.bgfoot .con .links-wrap .ftlinks li {
+  margin-bottom: .5rem;
+}
+@media screen and (max-width: 767px) {
+  .bgfoot .con .links-wrap .ftlinks li {
+    display: block;
+    text-align: center;
+  }
+}
 
 .btn-info {
   margin-left: 10px;
@@ -806,9 +827,9 @@ header a:hover {
 }
 
 .footertxt {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
   background: #c9c9c9;
+  border-top: 1px solid #fff;
 }
 
 .ft_cptext font a {
@@ -850,7 +871,7 @@ header a:hover {
 }
 
 .ftimage a {
-  padding-bottom: 33px;
+  padding-bottom: 1.5rem;
 }
 .ftimage a img {
   width: 95px;

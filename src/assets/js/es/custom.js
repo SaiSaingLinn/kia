@@ -73,7 +73,6 @@ $(document).ready(function () {
     startDate: 'defaultDate',
     container: '#datepicker'
   });
-  $('.datepicker:focus').parent();
   $('.phone').on('keypress keyup blur', function () {
     $(this).val($(this).val().replace(/[^\d].+/, ''));
 
