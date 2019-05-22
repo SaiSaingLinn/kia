@@ -76,7 +76,6 @@ $(document).ready(function(){
     startDate: 'defaultDate',
     container: '#datepicker'
   });
-  $('.datepicker:focus').parent();
   $('.phone').on('keypress keyup blur', function(){
     $(this).val($(this).val().replace(/[^\d].+/,''));
     if((event.which < Number('48') || event.which > Number('57'))) {
