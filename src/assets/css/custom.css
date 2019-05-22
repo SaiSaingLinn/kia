@@ -2306,6 +2306,18 @@ header a:hover {
   }
 }
 
+.pro-detail {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.pro-detail .p-detail {
+  line-height: 30px;
+}
+.pro-detail .p-detail .pdetail_img {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 body {
   font-family: Roboto, sans-serif;
 }
