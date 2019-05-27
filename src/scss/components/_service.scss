@@ -38,6 +38,7 @@ $header-color:#3498db;
 
 }
 //......update service
+
 .con-auto{
 	ul{
 		padding: 0;
@@ -64,12 +65,12 @@ $header-color:#3498db;
     // width: 147px;
 	padding-top: .3rem;
 	img{
-		background: #c51230;
-		padding: 10px;
-		border-radius: 50%;
 		width: 70px;
-		height: 70px;
-		margin-right: 1rem;
+    height: 70px;
+    padding: 10px;
+    margin-right: 1rem;
+    background: #c51230;
+    border-radius: 50%;
     @media screen and (max-width: 768px) {
       margin-bottom: 1rem;
     }
