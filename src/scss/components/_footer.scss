@@ -25,6 +25,7 @@
   background: #c9c9c9;
   position: relative;
   z-index: 10;
+  border-top: 6px solid #c51230;
   .con{
     padding-top: 30px;
     padding-bottom: 10px;
@@ -155,9 +156,16 @@
     padding-bottom: 1.5rem;
     img{
       width:95px;
+      -webkit-filter: grayscale(100%); 
+      filter: grayscale(100%);
+      transition: all 0.3s;
+      opacity: 0.7;
+      &:hover {
+        filter: none;
+        opacity: 1;
+      }
     }
   }
-
 }
 .ftlogo{
   img{

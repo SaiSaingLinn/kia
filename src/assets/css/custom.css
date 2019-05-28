@@ -760,6 +760,7 @@ header a:hover {
   position: relative;
   z-index: 10;
   background: #c9c9c9;
+  border-top: 6px solid #c51230;
 }
 .bgfoot .con {
   padding-top: 30px;
@@ -876,6 +877,14 @@ header a:hover {
 }
 .ftimage a img {
   width: 95px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: .7;
+  transition: all .3s;
+}
+.ftimage a img:hover {
+  filter: none;
+  opacity: 1;
 }
 
 .ftlogo img {
