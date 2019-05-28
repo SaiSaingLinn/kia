@@ -773,25 +773,26 @@ header a:hover {
 }
 .bgfoot .con ul {
   padding: 0;
-  margin-top: 15px !important;
-  list-style: none;
+  margin: 0;
+  list-style-type: none;
 }
 .bgfoot .con ul li {
   display: flex;
 }
 .bgfoot .con ul li p {
-  min-width: 103px;
-  transform: translateX(-39px);
-}
-.bgfoot .con ul li .address,
-.bgfoot .con ul li .email {
-  min-width: auto;
-  transform: translateX(-23px);
-}
-.bgfoot .con ul li .address a,
-.bgfoot .con ul li .email a {
-  color: #212529;
+  text-align: left;
   word-break: break-word;
+}
+.bgfoot .con ul li p.title {
+  width: 25%;
+  font-weight: bold;
+}
+.bgfoot .con ul li p.semi {
+  width: 5%;
+  font-weight: bold;
+}
+.bgfoot .con ul li p.address {
+  width: 70%;
 }
 .bgfoot .con .ftrow h4 {
   margin-bottom: 1.5rem;
@@ -804,6 +805,9 @@ header a:hover {
   .bgfoot .con .links-wrap ul {
     padding: 0;
   }
+}
+.bgfoot .con .links-wrap .ftlinks {
+  margin-top: 0 !important;
 }
 .bgfoot .con .links-wrap .ftlinks li {
   margin-bottom: .5rem;
@@ -892,14 +896,6 @@ header a:hover {
   margin-left: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .bgfoot .con ul li .address a,
-  .bgfoot .con ul li .email a {
-    color: #212529;
-    word-break: break-word;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .ftrow {
     margin-top: 28px;
@@ -910,22 +906,8 @@ header a:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .bgfoot .con ul li p {
-    min-width: 145px;
-    text-align: left;
-    transform: none;
-  }
-  .bgfoot .con ul li .address,
-  .bgfoot .con ul li .email {
-    text-align: left;
-  }
-}
-
-@media screen and (max-width: 374px) {
-  .bgfoot .con ul li p {
-    min-width: 150px;
-  }
+.address a {
+  color: #212529;
 }
 
 .contactus-wrap h4 {
