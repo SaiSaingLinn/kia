@@ -911,7 +911,8 @@ header a:hover {
 }
 
 .contactus-wrap h4 {
-  padding-bottom: .75rem;
+  padding-bottom: 12px;
+  margin-top: 7px;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #606060;
 }
@@ -919,6 +920,98 @@ header a:hover {
 .contactus-wrap p {
   font-weight: 500;
   color: #333;
+}
+
+nav > .nav.nav-tabs {
+  font-size: 21px;
+  font-weight: 900;
+  color: #333;
+  border: none;
+  border-bottom: 2px solid #606060;
+  border-radius: 0;
+}
+
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active {
+  border: none;
+  border-radius: 0;
+}
+
+nav > div a.nav-item.nav-link.active::after {
+  position: absolute;
+  bottom: -30px;
+  left: 45%;
+  content: "";
+  border: 15px solid transparent;
+  border-top-color: #e74c3c;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus {
+  color: #606060;
+  border: none;
+  border-radius: 0;
+  transition: background .2s linear;
+}
+
+.message p {
+  padding-bottom: 17px;
+}
+
+.call,
+.showroom {
+  color: #212529;
+}
+
+#nav-profile-tab,
+#nav-home-tab {
+  position: relative;
+}
+#nav-profile-tab::before,
+#nav-home-tab::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  content: " ";
+  background: #fff;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #333;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+nav > .nav-link:hover,
+nav > div a.nav-item.nav-link:focus {
+  color: #333;
+  border: 0;
+  border-radius: 0;
+  transition: background .2s linear;
+}
+
+nav > div a.nav-item.nav-link:focus {
+  color: #333;
+  border: 0;
+  border-radius: 0;
+  transition: background .2s linear;
+}
+
+@media screen and (max-width: 576px) {
+  .call,
+  .showroom {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .phone,
+  .map {
+    display: none;
+  }
 }
 
 .pre-owned-detail .car-parts-wrap {

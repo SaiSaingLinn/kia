@@ -19,9 +19,9 @@ main
         
   section.content-body
     div.container.contactus-wrap     
-      h1.mb-3 Contact Us
+      h2.mb-3 Contact Us
       div.row.mb-5
-        div.col-md-6.pt-3
+        div.col-lg-6.col-md-12.pt-3
           form
             h4 Send an Inquriy
             div.form-group
@@ -37,25 +37,37 @@ main
               div
                 textarea.form-control(rows='5', placeholder='Your Message', required="required")
             div.form-group.text-right
-              button.btn.btn-peugeot(type='submit') Send Message
-        div.col-md-6.pt-3
-            h4 Call Us   
-            p
-              | Operating hours for all hotlines
-              br
-              | Monday to Friday: 8:30am to 8:30pm
-              br
-              | Sunday & public holidays: Closed
-              br
-              br
-              p Phone: (+951) 567866, 567867, 567868
-      .row
-        .col-md-12
-          h4 Visit Our Show Room
-          p Address: No.22-B, 23-A, Kabar Aye Pagoda Road, Yankin Township, Yangon, Myanmar
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4541.218640409659!2d96.15503550835265!3d16.841506313494612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1935e5feb7cf9%3A0x7148ef8aeac999e3!2sSSS+Auto+Leasing+Co.%2C+Ltd!5e0!3m2!1sen!2smm!4v1557743863012!5m2!1sen!2smm" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              button.btn.btn-sss(type='submit') Send Message
+        div.col-lg-6.col-md-12.pt-3
+          nav
+            div.nav.nav-tabs.nav-fill#nav-tab(role="tablist")
+              a.nav-item.nav-link.active#nav-home-tab(data-toggle="tab" href="#nav-home" aria-selected="true") 
+                font.call Call Us
+                i.fas.fa-phone.phone
+              
+              a.nav-item.nav-link#nav-profile-tab(data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false") 
+                font.showroom Visit Our Show Room
+                i.fas.fa-map-marked-alt.map
+               
+          div.tab-content.py-3.px-3.px-sm-0#nav-tabContent
+            div.tab-pane.fade.show.active#nav-home.callus(role="tabpanel" aria-labelledby="nav-home-tab")
+                  
+              p
+                | Operating hours for all hotlines
+                br
+                | Monday to Friday: 8:30am to 8:30pm
+                br
+                | Sunday & public holidays: Closed
+                br
+                br
+                p Phone: (+951) 567866, 567867, 567868
+            div.tab-pane.fade#nav-profile.message(role="tabpanel" aria-labelledby="nav-profile-tab")
+              
+              p Address: No.22-B, 23-A, Kabar Aye Pagoda Road, Yankin Township, Yangon, Myanmar
+              iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4541.218640409659!2d96.15503550835265!3d16.841506313494612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1935e5feb7cf9%3A0x7148ef8aeac999e3!2sSSS+Auto+Leasing+Co.%2C+Ltd!5e0!3m2!1sen!2smm!4v1557743863012!5m2!1sen!2smm" width="100%" height="220" frameborder="0" style="border:0" allowfullscreen)       
+      
   a.return-to-top(href='javascript:')
-    i.fas.fa-arrow-up               
+    i.fas.fa-arrow-up            
                   
              
 
