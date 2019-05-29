@@ -2449,6 +2449,26 @@ nav > div a.nav-item.nav-link:focus {
   margin-top: 1rem;
 }
 
+.content-color {
+  background: #eee;
+}
+.content-color .kia-myanmar .border-row {
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .content-color .kia-myanmar .border-row h4 {
+    padding-top: 10px;
+  }
+}
+.content-color .kia-myanmar .border-row .calendar i {
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.content-color .kia-myanmar .border-row a {
+  color: #3498db;
+}
+
 body {
   font-family: Roboto, sans-serif;
 }
