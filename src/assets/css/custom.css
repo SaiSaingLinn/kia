@@ -11,11 +11,13 @@
 }
 .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
   position: absolute;
+  top: 40%;
   width: 100%;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
+    top: 35%;
     bottom: 6rem;
   }
 }
@@ -24,9 +26,29 @@
     bottom: 3rem;
   }
 }
+@media screen and (max-width: 992px) {
+  .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
+    top: 36%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
+    top: 42%;
+  }
+}
 @media screen and (max-width: 600px) {
   .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
     bottom: 1.3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
+    top: 40%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
+    top: 44%;
   }
 }
 .kia-main .header-slider-wrap .header-slider .slide-item h1 {
@@ -85,11 +107,25 @@
   background: #c51230;
   border-radius: 50%;
 }
+@media screen and (max-width: 576px) {
+  .kia-main .header-slider-wrap .header-slider .slick-prev,
+  .kia-main .header-slider-wrap .header-slider .slick-next {
+    width: 25px;
+    height: 25px;
+  }
+}
 @media screen and (max-width: 425px) {
   .kia-main .header-slider-wrap .header-slider .slick-prev,
   .kia-main .header-slider-wrap .header-slider .slick-next {
     width: 25px;
     height: 25px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .kia-main .header-slider-wrap .header-slider .slick-prev,
+  .kia-main .header-slider-wrap .header-slider .slick-next {
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -99,12 +135,22 @@
   font-weight: 900;
   content: "\f054";
 }
+@media screen and (max-width: 320px) {
+  .kia-main .header-slider-wrap .header-slider .slick-next::before {
+    font-size: 12px;
+  }
+}
 
 .kia-main .header-slider-wrap .header-slider .slick-prev::before {
   font-family: "Font Awesome 5 Free", sans-serif;
   font-size: 18px;
   font-weight: 900;
   content: "\f053";
+}
+@media screen and (max-width: 320px) {
+  .kia-main .header-slider-wrap .header-slider .slick-prev::before {
+    font-size: 12px;
+  }
 }
 
 .kia-main .popular-car-wrap {
