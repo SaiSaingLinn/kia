@@ -11,19 +11,18 @@
 }
 .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
   position: absolute;
-  top: 40%;
   width: 100%;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
-    top: 35%;
+    top: 40%;
     bottom: 6rem;
   }
 }
 @media screen and (max-width: 1199px) {
   .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
-    bottom: 3rem;
+    bottom: 6rem;
   }
 }
 @media screen and (max-width: 992px) {
@@ -44,6 +43,16 @@
 @media screen and (max-width: 576px) {
   .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
     top: 40%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
+    top: 44%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .kia-main .header-slider-wrap .header-slider .slide-item .slide-content {
+    top: 44%;
   }
 }
 @media screen and (max-width: 320px) {
@@ -121,6 +130,13 @@
     height: 25px;
   }
 }
+@media screen and (max-width: 375px) {
+  .kia-main .header-slider-wrap .header-slider .slick-prev,
+  .kia-main .header-slider-wrap .header-slider .slick-next {
+    width: 20px;
+    height: 20px;
+  }
+}
 @media screen and (max-width: 320px) {
   .kia-main .header-slider-wrap .header-slider .slick-prev,
   .kia-main .header-slider-wrap .header-slider .slick-next {
@@ -135,6 +151,11 @@
   font-weight: 900;
   content: "\f054";
 }
+@media screen and (max-width: 375px) {
+  .kia-main .header-slider-wrap .header-slider .slick-next::before {
+    font-size: 10px;
+  }
+}
 @media screen and (max-width: 320px) {
   .kia-main .header-slider-wrap .header-slider .slick-next::before {
     font-size: 12px;
@@ -146,6 +167,11 @@
   font-size: 18px;
   font-weight: 900;
   content: "\f053";
+}
+@media screen and (max-width: 375px) {
+  .kia-main .header-slider-wrap .header-slider .slick-prev::before {
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 320px) {
   .kia-main .header-slider-wrap .header-slider .slick-prev::before {

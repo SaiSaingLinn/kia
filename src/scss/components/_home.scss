@@ -13,13 +13,13 @@ $kia:#c51230;
           position: absolute;
           width: 100%;
           text-align: center;
-          top: 40%;
+          
           @media screen and (min-width: 1200px) {
             bottom: 6rem;
-            top: 35%;
+            top: 40%;
           }
           @media screen and (max-width: 1199px) {
-            bottom: 3rem;
+            bottom: 6rem;
 
           }
           @media screen and (max-width: 992px){
@@ -33,6 +33,12 @@ $kia:#c51230;
           }
           @media screen and (max-width:576px){
             top:40%;
+          }
+          @media screen and (max-width:425px){
+            top:44%;
+          }
+          @media screen and (max-width:375px){
+            top:44%;
           }
           @media screen and (max-width:320px){
             top:44%;
@@ -87,6 +93,10 @@ $kia:#c51230;
           height: 25px;
           width: 25px;
         }
+        @media screen and (max-width:375px){
+          height: 20px;
+          width: 20px;
+        }
         @media screen and (max-width:320px){
           height: 20px;
           width: 20px;
@@ -98,6 +108,9 @@ $kia:#c51230;
           font-weight: 900;
           font-family: 'Font Awesome 5 Free', sans-serif;
           font-size: 18px;
+          @media screen and (max-width:375px){
+            font-size:10px;
+          }
           @media screen and (max-width:320px){
             font-size: 12px;
           }
@@ -109,6 +122,9 @@ $kia:#c51230;
           font-weight: 900;
           font-family: 'Font Awesome 5 Free', sans-serif;
           font-size: 18px;
+          @media screen and (max-width:375px){
+            font-size:10px;
+          }
           @media screen and (max-width:320px){
             font-size: 12px;
           }
