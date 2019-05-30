@@ -255,32 +255,37 @@
 }
 .kia-main .popular-car-wrap .popular-car-list .slick-prev,
 .kia-main .popular-car-wrap .popular-car-list .slick-next {
-  top: 1rem;
-  width: 2.5rem;
-  height: 2rem;
-  border: 1px solid #ccc;
-  border-radius: .25rem;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  background: #c51230;
+  border-radius: 50%;
 }
-.kia-main .popular-car-wrap .popular-car-list .slick-prev {
-  right: 4rem;
-  left: auto;
+@media screen and (max-width: 767px) {
+  .kia-main .popular-car-wrap .popular-car-list .slick-prev {
+    left: 4%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .kia-main .popular-car-wrap .popular-car-list .slick-next {
+    right: 4%;
+  }
 }
 .kia-main .popular-car-wrap .popular-car-list .slick-prev::before {
   font-family: "Font Awesome 5 Free", sans-serif;
   font-size: 18px;
   font-weight: 900;
-  color: #000;
   content: "\f053";
-}
-.kia-main .popular-car-wrap .popular-car-list .slick-next {
-  right: 1rem;
 }
 .kia-main .popular-car-wrap .popular-car-list .slick-next::before {
   font-family: "Font Awesome 5 Free", sans-serif;
   font-size: 18px;
   font-weight: 900;
-  color: #000;
   content: "\f054";
+}
+.kia-main .popular-car-wrap .popular-car-list .slick-next.slick-disabled::before,
+.kia-main .popular-car-wrap .popular-car-list .slick-prev.slick-disabled::before {
+  opacity: .75;
 }
 
 .kia-main .new-promotion-wrap {
@@ -488,6 +493,13 @@
   color: #3498db;
 }
 
+.kia-main .center-btn {
+  text-align: center;
+}
+.kia-main .center-btn a i {
+  padding-left: 8px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -545,7 +557,7 @@ header a:hover {
   padding: 5px 10px;
   color: #fff;
   text-decoration: none;
-  background-color: #373737;
+  background-color: #c51230;
   transition: all .8s;
 }
 .top-bar .top-menu a:hover {
@@ -651,7 +663,7 @@ header a:hover {
   transition: all .8s;
 }
 .main-nav .navbar-collapse .nav-item a:hover {
-  color: #174eaa;
+  color: #c51230;
 }
 @media screen and (max-width: 991px) {
   .main-nav .navbar-collapse .nav-item a {
@@ -666,7 +678,7 @@ header a:hover {
   }
 }
 .main-nav .navbar-collapse .nav-item a.active {
-  color: #174eaa;
+  color: #c51230;
 }
 .main-nav .navbar-collapse .car-model-list {
   position: absolute;

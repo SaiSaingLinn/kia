@@ -13,7 +13,7 @@ $kia:#c51230;
           position: absolute;
           width: 100%;
           text-align: center;
-          
+
           @media screen and (min-width: 1200px) {
             bottom: 6rem;
             top: 40%;
@@ -67,14 +67,14 @@ $kia:#c51230;
       }
       .slick-prev{
         left: 10%;
-        
+
         @media screen and (max-width:425px){
           left: 4%;
         }
       }
       .slick-next{
         right: 10%;
-        
+
         @media screen and (max-width:425px){
           right: 4%;
         }
@@ -203,31 +203,41 @@ $kia:#c51230;
         }
       }
       .slick-prev, .slick-next{
-        top: 1rem;
-        border: 1px solid #ccc;
-        width: 2.5rem;
-        height: 2rem;
-        border-radius: 0.25rem;
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+        background: #c51230;
+        border-radius: 50%;
+      }
+      .slick-prev {
+        @media screen and (max-width: 767px) {
+          left: 4%;
+        }
+      }
+      .slick-next {
+        @media screen and (max-width: 767px) {
+          right: 4%;
+        }
       }
       .slick-prev{
-        right: 4rem;
-        left: auto;
         &:before{
           content: '\f053';
           font-weight: 900;
           font-family: 'Font Awesome 5 Free', sans-serif;
           font-size: 18px;
-          color: #000;
         }
       }
       .slick-next{
-        right: 1rem;
         &:before{
           content: '\f054';
           font-weight: 900;
           font-family: 'Font Awesome 5 Free', sans-serif;
           font-size: 18px;
-          color: #000;
+        }
+      }
+      .slick-next.slick-disabled, .slick-prev.slick-disabled {
+        &:before {
+          opacity: .75;
         }
       }
     }
@@ -439,6 +449,14 @@ $kia:#c51230;
             }
           }
         }
+      }
+    }
+  }
+  .center-btn {
+    text-align: center;
+    a {
+      i {
+        padding-left: 8px;
       }
     }
   }

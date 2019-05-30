@@ -62,7 +62,7 @@ header
         color:#fff;
         text-decoration: none;
         padding: 5px 10px;
-        background-color: $automotive;
+        background-color: $kia;
         display: block;
         transition: all .8s;
         //border-right: 1px solid;
@@ -168,7 +168,7 @@ header
         padding-left: 1.5rem;
         transition: all 0.8s;
         &:hover{
-          color: #174eaa;
+          color: $kia;
         }
         @media screen and (max-width: 991px) {
           padding-right: 0;
@@ -180,7 +180,7 @@ header
         }
       }
       a.active {
-        color: #174eaa;
+        color: $kia;
       }
     }
     .car-model-list{

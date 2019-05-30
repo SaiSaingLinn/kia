@@ -36,7 +36,7 @@ main
             h1 THE POWER TO SURPRISE
     .popular-car-wrap    
       .container
-        h1 Our Most Popular Cars
+        h1 Our Product Line
         .row.popular-car-list
           .col-sm-4.col-md-3.wow.fadeIn
             .car-item
@@ -160,8 +160,7 @@ main
         .container
           .latest-new-header 
             h1 Latest News
-            a.pl-3(href="newlist.html") | SEE ALL NEWS
-          .row.mb-5
+          .row
             .col-lg-4.col-md-6.wow.fadeIn
               .new-item
                 img(src='./assets/images/utils/latest-new-1.jpg', alt='',width="100%")                
@@ -190,6 +189,9 @@ main
                   p 
                     | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ... 
                   a.read-more(href="./news.html") Read more >>
+          .center-btn.mb-5
+            a.btn.btn-rounded.btn-peugeot(href="newlist.html") See all news
+            
           .facebook-social-wrap
             .facebook-header                    
               h3 
@@ -236,6 +238,12 @@ main
                           a(href="") 3 hrs
                       p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ...
                       a.read-more(href="./news.html") Read more >>
+                      
+              .center-btn
+                a.btn.btn-rounded.btn-peugeot(href="#") 
+                  | Load more
+                  i.fas.fa-chevron-down
+                
   a.return-to-top(href='javascript:')
     i.fas.fa-arrow-up        
 include ./components/_footer.pug
