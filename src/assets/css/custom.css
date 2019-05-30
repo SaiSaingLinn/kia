@@ -1036,7 +1036,7 @@ header a:hover {
   color: #333;
 }
 
-nav > .nav.nav-tabs {
+.contactus-wrap nav > .nav.nav-tabs {
   font-size: 21px;
   font-weight: 900;
   color: #333;
@@ -1045,13 +1045,13 @@ nav > .nav.nav-tabs {
   border-radius: 0;
 }
 
-nav > div a.nav-item.nav-link,
-nav > div a.nav-item.nav-link.active {
+.contactus-wrap nav > div a.nav-item.nav-link,
+.contactus-wrap nav > div a.nav-item.nav-link.active {
   border: none;
   border-radius: 0;
 }
 
-nav > div a.nav-item.nav-link.active::after {
+.contactus-wrap nav > div a.nav-item.nav-link.active::after {
   position: absolute;
   bottom: -30px;
   left: 45%;
@@ -1060,29 +1060,35 @@ nav > div a.nav-item.nav-link.active::after {
   border-top-color: #e74c3c;
 }
 
-nav > div a.nav-item.nav-link:hover,
-nav > div a.nav-item.nav-link:focus {
+.contactus-wrap nav > div a.nav-item.nav-link:hover,
+.contactus-wrap nav > div a.nav-item.nav-link:focus {
   color: #606060;
   border: none;
   border-radius: 0;
   transition: background .2s linear;
 }
 
-.message p {
+.contactus-wrap .message p {
   padding-bottom: 17px;
 }
 
-.call,
-.showroom {
+.contactus-wrap .call,
+.contactus-wrap .showroom {
   color: #212529;
 }
+@media screen and (max-width: 576px) {
+  .contactus-wrap .call,
+  .contactus-wrap .showroom {
+    display: none;
+  }
+}
 
-#nav-profile-tab,
-#nav-home-tab {
+.contactus-wrap #nav-profile-tab,
+.contactus-wrap #nav-home-tab {
   position: relative;
 }
-#nav-profile-tab::before,
-#nav-home-tab::before {
+.contactus-wrap #nav-profile-tab::before,
+.contactus-wrap #nav-home-tab::before {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1092,43 +1098,36 @@ nav > div a.nav-item.nav-link:focus {
   background: #fff;
 }
 
-.btn-kia {
+.contactus-wrap .btn-kia {
   color: #fff;
   background: #c51230;
 }
 
-.nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
+.contactus-wrap .nav-tabs .nav-item.show .nav-link,
+.contactus-wrap .nav-tabs .nav-link.active {
   color: #333;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
 
-nav > .nav-link:hover,
-nav > div a.nav-item.nav-link:focus {
+.contactus-wrap nav > .nav-link:hover,
+.contactus-wrap nav > div a.nav-item.nav-link:focus {
   color: #333;
   border: 0;
   border-radius: 0;
   transition: background .2s linear;
 }
 
-nav > div a.nav-item.nav-link:focus {
+.contactus-wrap nav > div a.nav-item.nav-link:focus {
   color: #333;
   border: 0;
   border-radius: 0;
   transition: background .2s linear;
-}
-
-@media screen and (max-width: 576px) {
-  .call,
-  .showroom {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 577px) {
-  .phone,
-  .map {
+  .contactus-wrap .phone,
+  .contactus-wrap .map {
     display: none;
   }
 }

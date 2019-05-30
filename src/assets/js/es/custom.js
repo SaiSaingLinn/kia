@@ -69,6 +69,18 @@ $(document).ready(function () {
         $(this).removeClass('active');
       }
     });
+  }); // test form date datepicker
+
+  $('.datepicker').datepicker({
+    startDate: 'defaultDate',
+    container: '#datepicker'
+  });
+  $('.phone').on('keypress keyup blur', function () {
+    $(this).val($(this).val().replace(/[^\d].+/, ''));
+
+    if (event.which < Number('48') || event.which > Number('57')) {
+      event.preventDefault();
+    }
   }); // home page tab
 
   $('.nav-pills > .nav-link ').hover(function () {
@@ -162,4 +174,49 @@ var wow = new WOW({
   scrollContainer: null // optional scroll container selector, otherwise use window
 
 });
-wow.init();
+wow.init(); // test drive
+
+function scrollDown() {
+  $('html, body').animate({
+    scrollTop: $('div.test-form-wrap').offset().top - Number('200')
+  }, Number('1000'));
+}
+
+function checkSelected(data, target) {
+  for (var i = 0; i < data.length; i++) {
+    data[i].classList.remove('selected');
+  }
+
+  target.classList.add('selected'); // change images
+
+  var img = target.querySelector('.car-list-inner .img-fluid').getAttribute('src');
+  document.querySelector('#my_changing_image').setAttribute('src', img); // change checkSelected
+
+  var getValue = target.getAttribute('data-value');
+  var setValue = document.querySelector('.modelseelct');
+  setValue.value = getValue;
+  document.querySelector('.getImgPath').value = img;
+}
+
+function selectTrigger() {
+  var selectBox = document.querySelector('#my_select_box');
+  selectBox.addEventListener('change', function () {
+    var val = this.value;
+    var icns = document.querySelectorAll('.select-change');
+    var target = document.querySelector(".select-change[data-value=".concat(val, "]"));
+    checkSelected(icns, target);
+  });
+}
+
+window.addEventListener('load', function () {
+  var icns = document.querySelectorAll('.select-change');
+
+  for (var i = 0; i < icns.length; i++) {
+    icns[i].addEventListener('click', function () {
+      checkSelected(icns, this);
+      scrollDown();
+    });
+  }
+
+  selectTrigger();
+});

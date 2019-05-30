@@ -73,6 +73,18 @@ $(document).ready(function(){
       })
     })
 
+    // test form date datepicker
+    $('.datepicker').datepicker({
+      startDate: 'defaultDate',
+      container: '#datepicker'
+    });
+    $('.phone').on('keypress keyup blur', function(){
+      $(this).val($(this).val().replace(/[^\d].+/,''));
+      if((event.which < Number('48') || event.which > Number('57'))) {
+        event.preventDefault();
+      }
+    });
+
     // home page tab
     $('.nav-pills > .nav-link ').hover(function() {
       $(this).tab('show');
@@ -175,3 +187,52 @@ var wow = new WOW(
   }
 );
 wow.init();
+
+// test drive
+function scrollDown() {
+  $('html, body').animate({
+    scrollTop: $("div.test-form-wrap").offset().top - Number('200')
+  }, Number('1000'))
+}
+
+function checkSelected(data, target) {
+  for(let i=0; i<data.length; i++) {
+    data[i].classList.remove('selected');
+  }
+  target.classList.add('selected');
+
+  // change images
+  let img = target.querySelector('.car-list-inner .img-fluid').getAttribute('src');
+  document.querySelector('#my_changing_image').setAttribute('src', img);
+
+  // change checkSelected
+  let getValue = target.getAttribute('data-value');
+  let setValue = document.querySelector('.modelseelct');
+  setValue.value = getValue;
+
+  document.querySelector('.getImgPath').value = img;
+}
+
+function selectTrigger() {
+  let selectBox = document.querySelector('#my_select_box');
+  selectBox.addEventListener('change', function() {
+    let val = this.value;
+    let icns = document.querySelectorAll(".select-change");
+    let target = document.querySelector(`.select-change[data-value=${val}]`);
+    checkSelected(icns, target);
+  })
+}
+
+window.addEventListener('load', function() {
+  let icns = document.querySelectorAll(".select-change");
+
+  for(let i=0; i<icns.length; i++) {
+    icns[i].addEventListener('click', function() {
+      checkSelected(icns, this);
+      scrollDown();
+    });
+  }
+
+  selectTrigger();
+
+})
