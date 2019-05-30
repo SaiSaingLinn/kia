@@ -3,6 +3,16 @@
   src: url("../webfonts/Zawgyi-One.ttf");
 }
 
+@font-face {
+  font-family: KIA-Font-M;
+  src: url("../webfonts/KIAM.ttf");
+}
+
+@font-face {
+  font-family: KIA-Font-B;
+  src: url("../webfonts/KIAB.ttf");
+}
+
 /* test drive */
 
 /* test drive form */

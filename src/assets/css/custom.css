@@ -3,6 +3,16 @@
   src: url("../webfonts/Zawgyi-One.ttf");
 }
 
+@font-face {
+  font-family: KIA-Font-M;
+  src: url("../webfonts/KIAM.ttf");
+}
+
+@font-face {
+  font-family: KIA-Font-B;
+  src: url("../webfonts/KIAB.ttf");
+}
+
 .kia-main .header-slider-wrap .header-slider .slide-item {
   text-align: center;
 }
@@ -483,10 +493,9 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 999999;
   width: 100%;
   font-size: 1rem;
-  font-weight: 400;
   line-height: 1.5;
   color: #606060;
   background-color: #fff;
@@ -536,7 +545,7 @@ header a:hover {
   padding: 5px 10px;
   color: #fff;
   text-decoration: none;
-  background-color: #c51230;
+  background-color: #373737;
   transition: all .8s;
 }
 .top-bar .top-menu a:hover {
@@ -616,10 +625,18 @@ header a:hover {
 
 .main-nav {
   width: 100%;
+  font-family: KIA-Font-B, sans-serif;
   border-bottom: 1px solid #ccc;
 }
 .main-nav .navbar-collapse {
   flex-grow: 0;
+}
+@media screen and (max-width: 576px) {
+  .main-nav .navbar-collapse {
+    max-height: 320px;
+    overflow: auto;
+    overflow-y: scroll;
+  }
 }
 @media screen and (min-width: 992px) {
   .main-nav .navbar-collapse .navbar-nav::after {
@@ -630,12 +647,11 @@ header a:hover {
 .main-nav .navbar-collapse .nav-item a {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
-  font-weight: 600;
   color: #333;
   transition: all .8s;
 }
 .main-nav .navbar-collapse .nav-item a:hover {
-  color: #c51230;
+  color: #174eaa;
 }
 @media screen and (max-width: 991px) {
   .main-nav .navbar-collapse .nav-item a {
@@ -648,6 +664,9 @@ header a:hover {
     padding-right: .7rem;
     padding-left: .7rem;
   }
+}
+.main-nav .navbar-collapse .nav-item a.active {
+  color: #174eaa;
 }
 .main-nav .navbar-collapse .car-model-list {
   position: absolute;
@@ -670,7 +689,6 @@ header a:hover {
 }
 .main-nav .navbar-collapse .car-model-list .car-type p {
   margin-bottom: 0;
-  font-weight: 600;
   text-align: center;
   text-transform: uppercase;
 }
@@ -753,6 +771,13 @@ header a:hover {
     padding-left: 0;
   }
 }
+.main-nav .searchright .search-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .show-mobile,
 .show-mobile-767 {
@@ -777,7 +802,7 @@ header a:hover {
     content: "";
   }
   .top-bar .sub-menu .mobile-width {
-    width: calc(100% - 106px);
+    width: 65%;
   }
   .top-bar .top-menu-icon {
     padding: .5rem 0;
@@ -799,10 +824,12 @@ header a:hover {
   }
 }
 
-@media screen and (max-width: 355px) {
-  .top-bar {
-    height: 47px;
-    font-size: .75rem;
+@media screen and (max-width: 374px) {
+  .top-bar .sub-menu {
+    display: inline-block;
+  }
+  .top-bar .sub-menu .mobile-width {
+    width: 100%;
   }
 }
 
@@ -2542,13 +2569,63 @@ nav > div a.nav-item.nav-link:focus {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: KIA-Font-M, sans-serif !important;
 }
 
-@media screen and (max-width: 767px) {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: KIA-Font-B, sans-serif !important;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+@media (max-width: 1199.98px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 991.98px) {
   h1 {
     font-size: 1.8rem;
   }
+}
+
+h2 {
+  font-size: 2rem;
+}
+@media (max-width: 1199.98px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 991.98px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+@media (max-width: 1199.98px) {
+  h3 {
+    font-size: 1.65rem;
+  }
+}
+@media (max-width: 991.98px) {
+  h3 {
+    font-size: 1.45rem;
+  }
+}
+
+p {
+  font-size: 1rem;
 }
 
 main {
@@ -2573,7 +2650,6 @@ main h3,
 main h4,
 main h5,
 main h6 {
-  font-weight: 600;
   color: #000;
 }
 main .btn {
@@ -2604,7 +2680,7 @@ main .radius-0 {
 main .btn-test-drive {
   width: 100%;
   margin-top: .5rem;
-  font-weight: 600;
+  font-family: KIA-Font-B, sans-serif;
   text-transform: uppercase;
 }
 main .brecrum {
@@ -2619,7 +2695,7 @@ main .brecrum .brecrum-inner {
 }
 main .brecrum p {
   margin-bottom: auto;
-  font-weight: 600;
+  font-family: KIA-Font-B, sans-serif;
   color: #fff;
   text-transform: uppercase;
 }
@@ -2635,7 +2711,7 @@ main .brecrum ul {
   }
 }
 main .brecrum li {
-  font-weight: 600;
+  font-family: KIA-Font-B, sans-serif;
   color: #fff;
   text-transform: uppercase;
 }

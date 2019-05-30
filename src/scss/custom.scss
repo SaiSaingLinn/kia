@@ -17,12 +17,56 @@ $peugeot:#c51230;
 $heading-color:#000000;
 $paragraph-color:#606060;
 body {
-  font-family: Roboto, sans-serif;
+  font-family: KIA-Font-M, sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: KIA-Font-B, sans-serif !important;
+  text-transform: uppercase;
 }
 h1 {
-  @media screen and (max-width: 767px) {
+  font-size: 2.5rem;
+
+  // Large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) {
+    font-size: 2rem;
+  }
+
+  // Medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) {
     font-size: 1.8rem;
   }
+}
+
+h2 {
+  font-size: 2rem;
+
+  // Large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) {
+    font-size: 1.8rem;
+  }
+
+  // Medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) {
+    font-size: 1.6rem;
+  }
+}
+
+h3 {
+  font-size: 1.75rem;
+
+  // Large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) {
+    font-size: 1.65rem;
+  }
+
+  // Medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) {
+    font-size: 1.45rem;
+  }
+}
+
+p {
+  font-size: 1rem;
 }
 main {
   width: 100%;
@@ -35,7 +79,6 @@ main {
   }
 
   .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
-    font-weight: 600;
     color:$heading-color
   }
   .btn{
@@ -65,7 +108,7 @@ main {
   }
   .btn-test-drive{
     text-transform: uppercase;
-    font-weight: 600;
+    font-family: KIA-Font-B, sans-serif;
     margin-top: 0.5rem;
     width:100%;
   }
@@ -81,7 +124,7 @@ main {
     p{
       text-transform: uppercase;
       color:#fff;
-      font-weight: 600;
+      font-family: KIA-Font-B, sans-serif;
       margin-bottom: auto;
 
     }
@@ -97,7 +140,7 @@ main {
     li{
       color:#fff;
       text-transform: uppercase;
-      font-weight: 600;
+      font-family: KIA-Font-B, sans-serif;
       &::after{
         content: "|";
         margin: 0 1rem;

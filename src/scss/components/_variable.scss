@@ -2,7 +2,9 @@ $color-1 : #002233;
 
 // fonts-family
 $fonts : (
-  MM-Font: '../webfonts/Zawgyi-One.ttf'
+  MM-Font: '../webfonts/Zawgyi-One.ttf',
+  KIA-Font-M: '../webfonts/KIAM.ttf',
+  KIA-Font-B: '../webfonts/KIAB.ttf'
 );
 
 @each $key in map-keys($fonts) {

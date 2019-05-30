@@ -3,16 +3,15 @@ $automotive:#373737;
 $kia:#c51230;
 header
   {
-    
+
     font-size: 1rem;
-    font-weight: 400;
     line-height: 1.5;
     color:$paragraph-color;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
-    z-index: 1000;
+    z-index: 999999;
     width: 100%;
     background-color: #fff;
     a,a:hover
@@ -63,7 +62,7 @@ header
         color:#fff;
         text-decoration: none;
         padding: 5px 10px;
-        background-color: $kia;
+        background-color: $automotive;
         display: block;
         transition: all .8s;
         //border-right: 1px solid;
@@ -128,7 +127,7 @@ header
         display: none;
       }
     }
-   
+
 }
 .nav-container{
   position: relative;
@@ -137,9 +136,16 @@ header
 {
   width:100%;
   border-bottom: 1px solid #ccc;
+  font-family: KIA-Font-B, sans-serif;
   .navbar-collapse
   {
-     flex-grow: 0;
+    flex-grow: 0;
+    @media screen and (max-width: 576px) {
+      max-height: 320px;
+      overflow-y: scroll;
+      overflow: auto;
+    }
+
     // position: relative;
 
 
@@ -157,13 +163,12 @@ header
     .nav-item
     {
       a{
-        font-weight: 600;
         color:#333;
         padding-right: 1.5rem;
         padding-left: 1.5rem;
         transition: all 0.8s;
         &:hover{
-          color: #c51230;
+          color: #174eaa;
         }
         @media screen and (max-width: 991px) {
           padding-right: 0;
@@ -173,6 +178,9 @@ header
           padding-right: .7rem;
           padding-left: .7rem;
         }
+      }
+      a.active {
+        color: #174eaa;
       }
     }
     .car-model-list{
@@ -194,7 +202,6 @@ header
         }
         p{
           margin-bottom: 0;
-          font-weight: 600;
           text-transform: uppercase;
           text-align: center;
         }
@@ -246,6 +253,8 @@ header
       //   margin-right: 1.5rem;
       //   margin-left: 0.25rem;
       // }
+
+
     }
     .search{
       border-radius: 0;
@@ -291,6 +300,13 @@ header
       padding-right: 0;
       padding-left: 0;
     }
+    .search-wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 
 
@@ -317,7 +333,7 @@ header
     }
     .sub-menu{
       .mobile-width{
-        width: calc(100% - 106px);
+        width: 65%;
       }
     }
     .top-menu-icon {
@@ -343,10 +359,14 @@ header
     }
   }
 }
-@media screen and(max-width:355px){
+@media screen and(max-width:374px){
   .top-bar{
-    font-size: 0.75rem;
-    height: 47px;;
+    .sub-menu{
+      display: inline-block;
+      .mobile-width{
+        width: 100%;
+      }
+    }
   }
 
 }
