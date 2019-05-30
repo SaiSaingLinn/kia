@@ -1,71 +1,112 @@
-.about{
-  height: 63px;
-  margin-top: 121px;
-  // margin-bottom: 50px;
+$automotive:#373737;
+.contactus-wrap{
+  h4{
+    padding-bottom: 12px;
+    margin-top: 7px;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #606060;
+  }
+  p{
+    color: #333;
+    font-weight: 500;
+  }
+}
+//.... nav tab 
+nav > .nav.nav-tabs{
+
+  border: none;
+  color:#333;
+  border-bottom:2px solid #606060;
+  border-radius:0;
+  font-size: 21px;
+  font-weight: 900;
+
+}
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active
+{
+  border: none;
+    border-radius:0;   
+}
+nav > div a.nav-item.nav-link.active:after
+ {
+  
+  position: absolute;
+  bottom: -30px;
+  left: 45%;
+  content: "";
+  border: 15px solid transparent;
+  border-top-color: #e74c3c;
+}
+// .tab-content{
+//   background: #fdfdfd;
+//   line-height: 25px;
+//   border: 1px solid #ddd;
+//   border-top:5px solid #e74c3c;
+//   border-bottom:5px solid #e74c3c;
+//   padding:30px 25px;
+// }
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus
+{
+  border: none;
+    // background: #e74c3c;
+    color:#606060;
+    border-radius:0;
+    transition:background 0.20s linear;
+}
+
+.message{
+  p{
+    padding-bottom: 17px;
+  }
+}
+.call , .showroom{
+  color:#212529;
+}
+
+#nav-profile-tab,
+#nav-home-tab {
+  position: relative;
+  &:before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    left: 0;
+    bottom: 0;
+  }
+}
+.btn-kia{
   background: #c51230;
-  padding-top: 15px;
-  .ftcolor{
-    color:#fff;
-  }
-
-
+  color:#FFF;
 }
-.abtbtn{
-  margin-bottom: 20px;
-  h5{
-    font-weight:700;
-  }
-}
-.abt-us{
-  margin-bottom: 50px;
-}
-@media screen and (max-width:767px){
-  .about .about1 {
 
-    border-right: none;
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #333;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
 }
+nav>.nav-link:hover, nav>div a.nav-item.nav-link:focus {
+  color: #333;
+  border: 0;
+  border-radius: 0;
+  transition: background .2s linear;
 }
-.about-wrap{
-  // margin-bottom:20%;
-  .about1{
-
-    border-right: 1px solid;
-    padding-right: 50px;
-
-
-  }
-  .about2{
-    padding-left: 50px;
-    h5{
-      font-weight:700;
-    }
-    .sgp{
-      .abtbtn{
-        padding-left: 0;
-        list-style-type: none;
-      }
-    }
+nav>div a.nav-item.nav-link:focus {
+  color: #333;
+  border: 0;
+  border-radius: 0;
+  transition: background .2s linear;
+}
+@media screen and (max-width:576px){
+  .call , .showroom{
+    display:none;
   }
 }
-@media screen and (max-width:768px){
-  .about-wrap{
-    // margin-bottom:20%;
-    .about1{
-
-      border-right: 0px solid;
-      padding-right: 15px;
-
-    }
-    .about2{
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-
-}
-}
-@media screen and (max-width:375px){
-  .abtbtn {
-    margin-bottom: 30px;
-    margin-right: 15px;
-}
-}
+@media screen and (min-width:577px){
+  .phone , .map{
+    display: none;
+  }
+} 
