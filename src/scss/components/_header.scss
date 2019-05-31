@@ -230,7 +230,23 @@ header
       display: block;
     }
   }
+  .navbar-collapse::-webkit-scrollbar {
+    @media screen and (max-width: 576px) {
+      width: 5px;
+    }
+  }
 
+  .navbar-collapse::-webkit-scrollbar-track {
+    @media screen and (max-width: 576px) {
+      background: #ddd;
+    }
+  }
+
+  .navbar-collapse::-webkit-scrollbar-thumb {
+    @media screen and (max-width: 576px) {
+      background: #666;
+    }
+  }
   .searchright
   {
     padding-right: 1rem;
