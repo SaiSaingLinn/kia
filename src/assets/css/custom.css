@@ -645,17 +645,32 @@ header a:hover {
 .main-nav .navbar-collapse {
   flex-grow: 0;
 }
+@media screen and (min-width: 992px) {
+  .main-nav .navbar-collapse .navbar-nav::after {
+    padding: .25rem;
+    content: "|";
+  }
+}
 @media screen and (max-width: 576px) {
-  .main-nav .navbar-collapse {
+  .main-nav .navbar-collapse .navbar-nav {
     max-height: 320px;
     overflow: auto;
     overflow-y: scroll;
   }
 }
-@media screen and (min-width: 992px) {
-  .main-nav .navbar-collapse .navbar-nav::after {
-    padding: .25rem;
-    content: "|";
+@media screen and (max-width: 576px) {
+  .main-nav .navbar-collapse .navbar-nav::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main-nav .navbar-collapse .navbar-nav::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main-nav .navbar-collapse .navbar-nav::-webkit-scrollbar-thumb {
+    background: #666;
   }
 }
 .main-nav .navbar-collapse .nav-item a {
@@ -726,21 +741,6 @@ header a:hover {
 }
 .main-nav .navbar-collapse .kia-model:hover .car-model-list {
   display: block;
-}
-@media screen and (max-width: 576px) {
-  .main-nav .navbar-collapse::-webkit-scrollbar {
-    width: 5px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .main-nav .navbar-collapse::-webkit-scrollbar-track {
-    background: #ddd;
-  }
-}
-@media screen and (max-width: 576px) {
-  .main-nav .navbar-collapse::-webkit-scrollbar-thumb {
-    background: #666;
-  }
 }
 .main-nav .searchright {
   padding-right: 1rem;
