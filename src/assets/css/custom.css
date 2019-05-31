@@ -420,9 +420,11 @@
   position: absolute;
   top: -1.8rem;
   left: 0;
+  min-width: 30%;
   padding: .25rem .75rem;
   font-size: 14px;
   color: #fff;
+  text-align: center;
   background-color: rgba(173, 173, 173, .7);
 }
 .kia-main .latest-new-wrap .new-item .new-item-content h5 {
