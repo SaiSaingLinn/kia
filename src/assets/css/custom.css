@@ -1896,7 +1896,7 @@ header a:hover {
 }
 @media screen and (max-width: 424px) {
   .promo-slide-wrap .promo-slide-tabs .tab-content nav .nav-tabs .nav-item h4 {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 .promo-slide-wrap .promo-slide-tabs .tab-content nav .nav-tabs .nav-item.active {
