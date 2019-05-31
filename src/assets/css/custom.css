@@ -498,7 +498,8 @@
 .kia-main .center-btn {
   text-align: center;
 }
-.kia-main .center-btn a i {
+.kia-main .center-btn a i,
+.kia-main .center-btn button i {
   padding-left: 8px;
 }
 

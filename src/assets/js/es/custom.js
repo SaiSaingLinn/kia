@@ -86,6 +86,14 @@ $(document).ready(function () {
   $('.nav-pills > .nav-link ').hover(function () {
     $(this).tab('show');
   });
+  $('#more').hide();
+  $('#loadmore').click(function () {
+    $('#more').show();
+    $('#loadmore').hide();
+    $('html,body').animate({
+      scrollTop: $('#more').offset().top - Number('150')
+    }, Number('1500'));
+  });
 }); // ----------- Begin JS for Kia main page ----------//
 
 $('.header-slider').slick({

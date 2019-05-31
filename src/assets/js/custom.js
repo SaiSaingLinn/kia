@@ -90,6 +90,14 @@ $(document).ready(function(){
       $(this).tab('show');
     });
 
+    $('#more').hide();
+    $('#loadmore').click(function(){
+      $('#more').show();
+      $('#loadmore').hide();
+      $('html,body').animate({
+          scrollTop: $('#more').offset().top - Number('150')
+      }, Number('1500'));
+    })
 
  });
 
