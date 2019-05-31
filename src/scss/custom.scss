@@ -181,14 +181,19 @@ main {
 }
 @media screen and(max-width:424px){
   main{
-    margin-top: 121.27px;
+    margin-top: 136px;
   }
 }
-// @media screen and(max-width:374px){
-//   main{
-//     margin-top: 161.27px;
-//   }
-// }
+@media screen and(max-width:375px){
+  main{
+    margin-top: 175px;
+  }
+}
+@media screen and(max-width:338px){
+  main{
+    margin-top: 215px;
+  }
+}
 .return-to-top
     {
       position: fixed;

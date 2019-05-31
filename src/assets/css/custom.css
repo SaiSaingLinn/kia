@@ -844,15 +844,6 @@ header a:hover {
   }
 }
 
-@media screen and (max-width: 424px) {
-  .navbar-brand a img {
-    width: 95px;
-  }
-  .navbar-brand a .line {
-    width: 25px;
-  }
-}
-
 @media screen and (max-width: 374px) {
   .top-bar .sub-menu {
     display: inline-block;
@@ -2787,7 +2778,19 @@ main .content-body {
 
 @media screen and (max-width: 424px) {
   main {
-    margin-top: 121.27px;
+    margin-top: 136px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    margin-top: 175px;
+  }
+}
+
+@media screen and (max-width: 338px) {
+  main {
+    margin-top: 215px;
   }
 }
 
