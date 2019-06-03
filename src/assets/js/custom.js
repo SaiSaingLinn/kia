@@ -117,7 +117,7 @@ $(document).ready(function(){
       $('.social-feed-gap:hidden').slice(0, Number('3')).show();
       $('html,body').animate({
           scrollTop: $('#loadmore').offset().top - cartCount
-      }, Number('2000'), 'swing');
+      }, Number('1500'), 'swing');
       if($('.social-feed-gap:hidden').length === 0) {
         $('#loadmore').fadeOut('slow');
       }
