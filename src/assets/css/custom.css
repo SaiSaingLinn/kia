@@ -2599,7 +2599,9 @@ header a:hover {
 }
 
 body {
+  overflow-x: hidden;
   font-family: KIA-Font-M, sans-serif !important;
+  font-size: 15px;
 }
 
 h1,
@@ -2655,7 +2657,7 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 15px;
 }
 
 main {
@@ -2726,6 +2728,7 @@ main .brecrum .brecrum-inner {
 main .brecrum p {
   margin-bottom: auto;
   font-family: KIA-Font-B, sans-serif;
+  font-size: 14px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -2733,6 +2736,7 @@ main .brecrum ul {
   display: flex;
   padding: 0;
   margin-bottom: 0;
+  font-size: 14px;
   list-style-type: none;
 }
 @media screen and (max-width: 767px) {

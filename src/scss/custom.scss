@@ -18,6 +18,8 @@ $heading-color:#000000;
 $paragraph-color:#606060;
 body {
   font-family: KIA-Font-M, sans-serif !important;
+  font-size: 15px;
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: KIA-Font-B, sans-serif !important;
@@ -66,7 +68,7 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 15px;
 }
 main {
   width: 100%;
@@ -126,6 +128,7 @@ main {
       color:#fff;
       font-family: KIA-Font-B, sans-serif;
       margin-bottom: auto;
+      font-size: 14px;
 
     }
     ul{
@@ -133,6 +136,7 @@ main {
       padding: 0;
       margin-bottom: 0;
       display: flex;
+      font-size: 14px;
       @media screen and (max-width: 767px) {
         display: none;
       }
