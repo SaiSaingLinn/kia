@@ -90,13 +90,37 @@ $(document).ready(function(){
       $(this).tab('show');
     });
 
-    $('#more').hide();
+    // $('#more').hide();
+    // $('#loadmore').click(function(){
+    //   $('#more').show();
+    //   $('#loadmore').hide();
+    //   $('html,body').animate({
+    //       scrollTop: $('#more').offset().top - Number('150')
+    //   }, Number('1500'));
+    // })
+
+    if (window.matchMedia('(max-width: 767px)').matches) {
+      cartCount= Number('1500');
+    } else if (window.matchMedia('(max-width: 1023px)').matches) {
+      cartCount = Number('1000');
+    } else if (window.matchMedia('(max-width: 1365px)').matches) {
+      cartCount = Number('600');
+    } else {
+      cartCount = Number('800');
+    }
+
+    $('.social-feed-gap').hide();
+
+    $('.social-feed-gap').slice(0, Number('3')).show();
+
     $('#loadmore').click(function(){
-      $('#more').show();
-      $('#loadmore').hide();
+      $('.social-feed-gap:hidden').slice(0, Number('3')).show();
       $('html,body').animate({
-          scrollTop: $('#more').offset().top - Number('150')
-      }, Number('1500'));
+          scrollTop: $('#loadmore').offset().top - cartCount
+      }, Number('2000'), 'swing');
+      if($('.social-feed-gap:hidden').length === 0) {
+        $('#loadmore').fadeOut('slow');
+      }
     })
 
  });
