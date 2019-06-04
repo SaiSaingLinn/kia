@@ -268,3 +268,9 @@ window.addEventListener('load', function() {
   selectTrigger();
 
 })
+
+if(!navigator.userAgent.match(/Chrome/i) && !navigator.userAgent.match(/Firefox/i) ) {
+  $('.top-bar .top-menu a').css({'min-width': '80px'});
+  $('.main-nav .navbar-collapse .nav-item a').css({'display': 'inline'});
+  $('.main-nav .navbar-collapse').append('<style>.navbar-nav:after{padding:0 !important}');
+}

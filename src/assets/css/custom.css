@@ -648,7 +648,7 @@ header a:hover {
 }
 @media screen and (min-width: 992px) {
   .main-nav .navbar-collapse .navbar-nav::after {
-    padding: .25rem;
+    padding: .5rem .25rem;
     content: "|";
   }
 }
