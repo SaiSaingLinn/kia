@@ -82,9 +82,25 @@
 
         li{
           margin-bottom: 0.5rem;
+          position: relative;
           @media screen and (max-width:767px){
             text-align: center;
             display: block;
+          }
+          a {
+            &:after {
+              position: absolute;
+              top: 8px;
+              left: -15px;
+              font-family: "Font Awesome 5 Free",sans-serif;
+              font-size: 5px;
+              font-weight: 900;
+              color: #212529;
+              content: "\f111";
+              @media screen and (max-width: 767px) {
+                display: none;
+              }
+            }
           }
         }
       }
