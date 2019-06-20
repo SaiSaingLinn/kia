@@ -123,6 +123,11 @@ $(document).ready(function(){
       }
     })
 
+    // cookies
+    $('.cookie-alert .btn').click(function(){
+      $('.cookie-alert').hide();
+    })
+
  });
 
 //----------- Begin JS for Kia main page ----------//

@@ -115,6 +115,10 @@ $(document).ready(function () {
     if ($('.social-feed-gap:hidden').length === 0) {
       $('#loadmore').fadeOut('slow');
     }
+  }); // cookies
+
+  $('.cookie-alert .btn').click(function () {
+    $('.cookie-alert').hide();
   });
 }); // ----------- Begin JS for Kia main page ----------//
 

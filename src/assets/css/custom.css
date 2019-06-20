@@ -854,6 +854,49 @@ header a:hover {
   }
 }
 
+.cookie-alert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  display: none;
+  width: 100%;
+  min-height: 48px;
+  padding: 5px 0;
+  background: rgba(0, 0, 0, .85);
+}
+
+.cookie-alert.active {
+  display: block;
+}
+.cookie-alert.active p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  color: #fff;
+  text-align: center;
+}
+.cookie-alert.active p a {
+  margin: 10px 0 10px 10px;
+  color: #fff;
+}
+.cookie-alert.active p .btn.secondary-outline {
+  text-transform: uppercase;
+  background: 0;
+  border: 2px solid #fff;
+}
+.cookie-alert.active p .btn {
+  transition: all .2s;
+}
+.cookie-alert.active p .btn:hover,
+.cookie-alert.active p .btn:active,
+.cookie-alert.active p .btn:focus {
+  color: #d5d5d5;
+  border-color: #d5d5d5;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -1822,6 +1865,7 @@ header a:hover {
   }
 }
 .promo-slide-wrap .promo-slide-tabs .carousel .carousel-inner .carousel-item .carousel-caption hr {
+  display: none;
   height: 2px;
   background: #fff;
 }

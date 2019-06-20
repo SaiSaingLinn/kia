@@ -385,3 +385,43 @@ header
   }
 
 }
+
+.cookie-alert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+  min-height: 48px;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  padding: 5px 0;
+}
+.cookie-alert.active {
+  display: block;
+  p {
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    a {
+      color: #fff;
+      margin: 10px 0 10px 10px;
+    }
+    .btn.secondary-outline {
+      background: 0;
+      border: 2px solid #fff;
+      text-transform: uppercase;
+    }
+    .btn {
+      transition: all .2s;
+      &:hover, &:active, &:focus{
+        border-color: #d5d5d5;
+        color: #d5d5d5;
+      }
+    }
+  }
+}
