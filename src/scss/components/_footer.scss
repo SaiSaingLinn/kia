@@ -1,27 +1,3 @@
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin-bottom: 45px;
-  a {
-    padding-right: 10px;
-    img {
-      width: 30px;
-      height: 30px;
-      transition: all .3s;
-      &:hover {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        opacity: .7;
-      }
-    }
-  }
-}
-.flex-column{
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-}
 .bgfoot{
   background: #c9c9c9;
   position: relative;
@@ -30,41 +6,138 @@
   .con{
     padding-top: 30px;
     padding-bottom: 10px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
       padding: 0;
-    }
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      li {
-        display: flex;
-        p {
-          text-align: left;
-          word-break: break-word;
-        }
-        p.title {
-          width: 25%;
-          font-weight: bold;
-        }
-        p.semi {
-          width: 5%;
-          font-weight: bold;
-        }
-        p.address {
-          width: 70%;
-        }
-      }
     }
     .ftrow{
+      @media screen and (max-width: 991px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .flex-column{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        @media screen and (max-width: 991px) {
+          flex-direction: row !important;
+          justify-content: center;
+        }
+      }
+      .ftimage {
+        a {
+          padding-bottom: 1.5rem;
+          @media screen and (max-width: 991px) {
+            width: 33%;
+            text-align: center;
+          }
+          img {
+            width: 80px;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            transition: all 0.3s;
+            opacity: 0.7;
+            &:hover {
+              filter: none;
+              opacity: 1;
+            }
+          }
+        }
+      }
       h4{
         margin-bottom: 1.5rem;
+        @media screen and (max-width: 991px) {
+          text-align: center;
+        }
       }
       .ftlogo {
+        a {
+          margin-right: 1rem;
+          padding: 1rem;
+          border-bottom: 2px solid transparent;
+          border-radius: 0%;
+          transition: all .2s ease-in-out;
+          &:after {
+            content: '';
+          }
+          i {
+            font-size: 16px;
+          }
+          i.fa-facebook-f {
+            color: #4267b2;
+          }
+          i.fa-viber {
+            color: #574e92;
+          }
+          i.fa-youtube {
+            color: #ff0000;
+          }
+          i.fa-instagram {
+            color: #505bd6;
+          }
+          &:hover {
+            border-radius: 40%;
+          }
+        }
+        a.facebook {
+          border-bottom-color: #4267b2;
+        }
+        a.viber {
+          border-bottom-color: #574e92;
+        }
+        a.youtube {
+          border-bottom-color: #ff0000;
+        }
+        a.instagram {
+          border-bottom-color: #505bd6;
+        }
         .btn-info {
           &:hover {
             background-color: #c41230;
             border-color: #c41230;
+          }
+        }
+      }
+      .newseletter {
+        .textbox {
+          width: 100%;
+        }
+        a {
+          padding: 0;
+          .btn-info {
+            margin: 0;
+            border-radius: 0;
+          }
+        }
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          display: flex;
+          @media screen and (max-width: 991px) {
+            justify-content: center;
+            flex-direction: column;
+          }
+          p {
+            text-align: left;
+            word-break: break-word;
+            @media screen and (max-width: 991px) {
+              text-align: center;
+              font-size: 24px;
+            }
+            i {
+              width: 15px;
+            }
+          }
+          p.address {
+            transform: translateX(10px);
+            @media screen and (max-width: 991px) {
+              font-size: 15px;
+            }
+            a{
+              color: #212529;
+            }
           }
         }
       }
@@ -83,7 +156,7 @@
         li{
           margin-bottom: 0.5rem;
           position: relative;
-          @media screen and (max-width:767px){
+          @media screen and (max-width:991px){
             text-align: center;
             display: block;
           }
@@ -97,153 +170,70 @@
               font-weight: 900;
               color: #212529;
               content: "\f111";
-              @media screen and (max-width: 767px) {
+              @media screen and (max-width: 991px) {
                 display: none;
               }
             }
           }
         }
       }
-
     }
-
-
-  }
-}
-.btn-info{
-  background: #626262;
-  border-color: #626262;
-  margin-left:10px;
-
-
-}
-.btn-info:hover {
-  color: #fff;
-  background-color: #626262;
-  border-color: #626262;
-}
-
-//...update footer copyright
-.footertxt{
-  background: #c9c9c9;
-  padding-top: 10px;
-  border-top: 1px solid #fff;
-}
-.ft_cptext{
-  font{
-    a{
-      color: #c41230;
-      text-decoration: none;
-      @media screen and (max-width: 668px) and (min-width: 599px) {
-        display: block;
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-bottom: 45px;
+      @media screen and (max-width: 991px) {
+        justify-content: center;
+      }
+      a {
+        padding-right: 10px;
+        img {
+          width: 30px;
+          height: 30px;
+          transition: all .3s;
+          &:hover {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            opacity: .7;
+          }
+        }
+      }
+      .btn-info{
+        background: #626262;
+        border-color: #626262;
+        margin-left:10px;
+        transition: all .2s ease-in-out;
+      }
+      .btn-info:hover {
+        color: #fff;
+        background-color: #393939;
+        border-color: #626262;
       }
     }
-  }
-}
-
-// .textbox{
-//   width:100%;
-// }
-@media screen and (max-width:1200px){
-  .flex-container1 {
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin-top: 22px;
-    margin-bottom: 45px;
-    //...update footer
-    input{
-      margin-bottom: 10px;
-      height: 37px;
-    }
-  }
-  .btn-info{
-    background: #626262;
-    border-color: #626262;
-    width:100%;
-    margin-left:1px
-
-  }
-
-
-}
-//update
-.phonecall{
-  a{
-    color:#212529;
-  }
-}
-.text-alignment{
-  text-align: right;
-  font-weight: 500;
-}
-
-.ftimage{
-  a{
-    padding-bottom: 1.5rem;
-    img{
-      width:95px;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-      transition: all 0.3s;
-      opacity: 0.7;
-      &:hover {
-        filter: none;
-        opacity: 1;
+    //...update footer copyright
+    .footertxt{
+      background: #c9c9c9;
+      padding-top: 10px;
+      border-top: 1px solid #fff;
+      .ft_cptext {
+        p {
+          font-size: 12px;
+        }
+        font{
+          a{
+            color: #c41230;
+            text-decoration: none;
+            transition: all .2s ease-in-out;
+            @media screen and (max-width: 668px) and (min-width: 599px) {
+              display: block;
+            }
+            &:hover {
+              color: #a6112a;
+            }
+          }
+        }
       }
     }
-  }
-}
-
-// @media screen and (max-width:768px){
-//   .bgfoot .con ul li .address a, .bgfoot .con ul li .email a {
-//     color: #212529;
-//     word-break: break-word;
-// }
-// }
-@media screen and (max-width: 767px){
-  .ftrow{
-    text-align: center;
-    margin-top:28px;
-    .ftlogo {
-      justify-content: center;
-    }
-  }
-}
-// @media screen and (max-width: 767px){
-//   .bgfoot .con ul li p{
-//     min-width: 145px;
-//     transform: none;
-//     text-align: left;
-//   }
-//   .bgfoot .con ul li .address, .bgfoot .con ul li .email{
-//     text-align: left;
-//   }
-// }
-// @media screen and (max-width:424px){
-//   .bgfoot .con ul li p {
-//     min-width: 169px;
-// }
-// }
-// @media screen and (max-width: 374px){
-//   .bgfoot .con ul li p {
-//     min-width: 150px;
-// }
-// }
-// @media screen and (max-width: 375px){
-//   .bgfoot .con ul li p {
-//     min-width: 106px;
-// }
-// }
-// @media screen and (max-width: 320px)
-// {
-//   .bgfoot .con ul li p {
-//     min-width: 106px;
-// }
-// }
-.address{
-  a{
-    color: #212529;
   }
 }

@@ -31,6 +31,9 @@ header
       justify-content: space-between;
       .contact-item{
         display:inline-block;
+        i {
+          padding-right: 5px;
+        }
       }
 
     }

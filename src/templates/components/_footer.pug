@@ -1,37 +1,7 @@
 .footer.container-fluid.bgfoot
   div.container.con 
     div.row 
-      .col-lg-4.col-md-6.ftrow
-        h4 Super Seven Stars
-        ul
-          li  
-            p.title Address
-            p.semi :
-            p.address No.22-B, 23-A, Kabar Aye Pagoda Road,Yankin Township, Yangon, Myanmar.   
-          li
-            p.title Phone
-            P.semi :
-            p.address
-              a(href="tel:01662914") (+951) 657866, 
-              a(href="tel:01662914") 657867, 
-              a(href="tel:01662914") 657868
-          li
-            p.title Fax
-            P.semi :
-            p.address
-              a(href="tel:01662914") (+ 951) 662914 
-              
-          li 
-            p.title Email
-            p.semi :
-            p.address 
-              a(href="mailto:info@supersevenstars.com.mm") info@supersevenstars.com.mm
-            
-          //- li
-          //-   p.title Working Hours
-          //-   p.semi :
-          //-   p.address 08:00 AM - 4:00 PM (Monday to Friday)     
-      div.col-lg-2.col-md-6.ftrow.text-center
+      div.col-lg-2.ftrow
         
         div.flex-column.ftimage
           a(href="http://sss.innovix-solutions.net/kia/")
@@ -42,49 +12,69 @@
 
           a(href="http://sss.innovix-solutions.net/kinglong/")
             img(src="assets/images/utils/auto_kinglong.png", alt="facebook")
+      .col-lg-6.ftrow.text-center
+        h4
+          b Contact
+        ul
+          li  
+            p
+              i.fas.fa-map-marker-alt
+            p.address No.22-B, 23-A, Kabar Aye Pagoda Road, Yankin Township, Yangon, Myanmar.   
+          li
+            p
+              i.fas.fa-phone-alt
+            p.address
+              a(href="tel:01662914") (+951) 657866, 
+              a(href="tel:01662914") 657867, 
+              a(href="tel:01662914") 657868
+          li
+            p
+              i.fas.fa-fax
+            p.address
+              a(href="tel:01662914") (+ 951) 662914 
+              
+          li 
+            p
+              i.fas.fa-envelope
+            p.address 
+              a(href="mailto:info@supersevenstars.com.mm") info@supersevenstars.com.mm
+            
+          //- li
+          //-   p.title Working Hours
+          //-   p.semi :
+          //-   p.address 08:00 AM - 4:00 PM (Monday to Friday)     
             
 
-      .col-lg-2.col-md-6.phonecall.ftrow.links-wrap
-        ul.ftlinks.pt-0
-          li
-            a(href="./index.html") Home
-          li
-            a(href="./aboutus.html") About Us
-          li
-            a(href="./car-list.html") Kia Models 
-          li
-            a(href="./promotion.html") Promotions
-          li
-            a(href="./service.html") Services
-          li
-            a(href="./contactus.html") Contact Us 
-          li
-            a(href="http://sss.innovix-solutions.net/automotive/tradein.html") Trade-In
-          li
-            a(href="http://sss.innovix-solutions.net/automotive/preowned.html") Pre-Own	
-          li
-            a(href="./test-drive.html") Test Drive
+      //- .col-lg-2.col-md-6.phonecall.ftrow.links-wrap
+      //-   ul.ftlinks.pt-0
+      //-     li
+      //-       a(href="./index.html") Home
+      //-     li
+      //-       a(href="./aboutus.html") About Us
+      //- 
+      //-     li
+      //-       a(href="./service.html") Services
+      //-     li
+      //-       a(href="./contactus.html") Contact Us 
+          
           
         
-      div.col-lg-4.col-md-6.ftrow
+      div.col-lg-4.ftrow
         .followus
-          h4 FOLLOW US
           div.flex-container.ftlogo
-            a(href="https://www.facebook.com/KiaMyanmar/")
-              img.img(src="assets/images/utils/fb.png", alt="facebook")
-            a(href="#")
-              img.img(src="assets/images/utils/viber.png", alt="viber")
-            a(href="#")
-              img.img(src="assets/images/utils/youtube.png", alt="viber")
-            a(href="#")
-              img.img(src="assets/images/utils/insta.png", alt="viber")
+            a(href="#").facebook
+              i.fab.fa-facebook-f
+            a(href="#").viber
+              i.fab.fa-viber
+            a(href="#").youtube
+              i.fab.fa-youtube
+            a(href="#").instagram
+              i.fab.fa-instagram
         .newseletter
-          h4 NEWSLETTER			
-          div.flex-container.ftlogo
+          div.flex-container
             input.textbox(type="text")
             a(href="#")
               button.btn.btn-info(type="button") SUBSCRIBE
-
     //..update footer copyright
     div.row.footertxt  
       div.container-fluid
