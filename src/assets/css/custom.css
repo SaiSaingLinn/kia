@@ -2287,7 +2287,7 @@ header a:hover {
   bottom: 0%;
   z-index: 99999;
   width: 100%;
-  padding-top: 100%;
+  padding-top: 80%;
   margin: 0;
   overflow: hidden;
   transform: translateY(38%);
