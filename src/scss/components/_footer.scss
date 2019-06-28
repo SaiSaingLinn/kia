@@ -125,6 +125,7 @@
             @media screen and (max-width: 991px) {
               text-align: center;
               font-size: 24px;
+              margin-bottom: 0;
             }
             i {
               width: 15px;
@@ -134,6 +135,7 @@
             transform: translateX(10px);
             @media screen and (max-width: 991px) {
               font-size: 15px;
+              margin-bottom: 1.5rem;
             }
             a{
               color: #212529;

@@ -1034,6 +1034,7 @@ header a:hover {
 }
 @media screen and (max-width: 991px) {
   .bgfoot .con .ftrow ul li p {
+    margin-bottom: 0;
     font-size: 24px;
     text-align: center;
   }
@@ -1046,6 +1047,7 @@ header a:hover {
 }
 @media screen and (max-width: 991px) {
   .bgfoot .con .ftrow ul li p.address {
+    margin-bottom: 1.5rem;
     font-size: 15px;
   }
 }
