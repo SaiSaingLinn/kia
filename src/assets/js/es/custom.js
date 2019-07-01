@@ -263,4 +263,20 @@ if (!navigator.userAgent.match(/Chrome/i) && !navigator.userAgent.match(/Firefox
     display: 'inline'
   });
   $('.main-nav .navbar-collapse').append('<style>.navbar-nav:after{padding:0 !important}');
+} // ACCEPT cookie
+
+
+var acceptcookie = document.cookie.toString().indexOf('accept_cookie'); // accept cookie
+
+var cookiebox = document.querySelector('.cookie-alert');
+
+if (cookiebox) {
+  if (acceptcookie === -1) {
+    cookiebox.classList.add('active');
+  }
+
+  var acceptcookiestorage = document.querySelector('.accept_cookie');
+  acceptcookiestorage.addEventListener('click', function () {
+    document.cookie = "accept_cookie=true expires=Thu, 18 Dec ".concat(Number(new Date().getFullYear()) + 1, " 12:00:00 UTC"); // location.reload();
+  });
 }
