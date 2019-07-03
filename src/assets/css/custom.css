@@ -698,6 +698,7 @@ header a:hover {
 }
 @media screen and (max-width: 991px) {
   .main-nav .navbar-collapse .nav-item a {
+    display: block !important;
     padding-right: 0;
     padding-left: 0;
   }
