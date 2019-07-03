@@ -144,6 +144,9 @@ header
   {
     flex-grow: 0;
     // position: relative;
+    @media screen and (max-width: 991px) {
+      position: relative;
+    }
     @media screen and (min-width:992px) {
       .navbar-nav{
         // padding-right: 40px;
@@ -155,6 +158,9 @@ header
     }
 
     .navbar-nav {
+      @media screen and (max-width: 991px) {
+        margin-top: 50px;
+      }
       @media screen and (max-width: 576px) {
         max-height: 320px;
         overflow-y: scroll;
@@ -262,7 +268,7 @@ header
     // overflow: hidden;
     // display: flex;
     @media screen and (max-width:991px) {
-      padding:0.5rem 0;
+      padding: 0;
     }
 
     .btn-search-icon {
@@ -271,7 +277,9 @@ header
       //   margin-right: 1.5rem;
       //   margin-left: 0.25rem;
       // }
-
+      @media screen and (max-width:991px) {
+        display: none;
+      }
 
     }
     .search{
@@ -298,7 +306,9 @@ header
       }
 
       @media screen and (max-width: 991px) {
-        left: -1px;
+        height: 38px;
+        left: 0;
+        top: 10px;
         display: block;
         padding: 0;
         .close{
@@ -307,16 +317,12 @@ header
         .icon-search{
           display: block;
           position: absolute;
-          bottom: 8px;
+          top: 10px;
           left: calc(100% - 35px);
           font-size: 18px;
           cursor: pointer;
         }
       }
-    }
-    @media screen and (max-width: 991px) {
-      padding-right: 0;
-      padding-left: 0;
     }
     .search-wrap {
       position: fixed;

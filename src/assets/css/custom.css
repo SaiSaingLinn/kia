@@ -649,10 +649,20 @@ header a:hover {
 .main-nav .navbar-collapse {
   flex-grow: 0;
 }
+@media screen and (max-width: 991px) {
+  .main-nav .navbar-collapse {
+    position: relative;
+  }
+}
 @media screen and (min-width: 992px) {
   .main-nav .navbar-collapse .navbar-nav::after {
     padding: .5rem .25rem;
     content: "|";
+  }
+}
+@media screen and (max-width: 991px) {
+  .main-nav .navbar-collapse .navbar-nav {
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -752,11 +762,16 @@ header a:hover {
 }
 @media screen and (max-width: 991px) {
   .main-nav .searchright {
-    padding: .5rem 0;
+    padding: 0;
   }
 }
 .main-nav .searchright .btn-search-icon {
   cursor: pointer;
+}
+@media screen and (max-width: 991px) {
+  .main-nav .searchright .btn-search-icon {
+    display: none;
+  }
 }
 .main-nav .searchright .search {
   border-radius: 0;
@@ -782,8 +797,10 @@ header a:hover {
 }
 @media screen and (max-width: 991px) {
   .main-nav .searchright .search-form {
-    left: -1px;
+    top: 10px;
+    left: 0;
     display: block;
+    height: 38px;
     padding: 0;
   }
   .main-nav .searchright .search-form .close {
@@ -791,17 +808,11 @@ header a:hover {
   }
   .main-nav .searchright .search-form .icon-search {
     position: absolute;
-    bottom: 8px;
+    top: 10px;
     left: calc(100% - 35px);
     display: block;
     font-size: 18px;
     cursor: pointer;
-  }
-}
-@media screen and (max-width: 991px) {
-  .main-nav .searchright {
-    padding-right: 0;
-    padding-left: 0;
   }
 }
 .main-nav .searchright .search-wrap {

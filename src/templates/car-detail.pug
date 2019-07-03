@@ -1,168 +1,171 @@
+doctype
+// variables require
 include ./components/_var.pug
 
-include ./components/_head.pug
-include ./components/_header.pug
-main
-  div.brecrum
-    .container
-      .brecrum-inner
-        p
-          a(href="./index.html") KIA
-          | / CAR DETAILS
-        ul
-          li 
-            a(href="http://sss.innovix-solutions.net/kia") Kia   
-          li 
-            a(href="http://sss.innovix-solutions.net/peugeot") Peugeot 
-          li 
-            a(href="http://sss.innovix-solutions.net/kinglong/") King Long
-  section.content-body
-    .container
-      .pre-owned-detail
-        h1.mb-5.text-uppercase KIA SPORTAGE
-        .row
-          .col-md-7
-            .car-parts-wrap
-              #car-parts-slider.carousel.slide(data-ride='carousel')              
-                .carousel-inner
-                  .carousel-item.active
-                    img(src='./assets/images/utils/kia-sportage-exterior-01.jpg', alt='front view', width='100%')
-                  .carousel-item
-                    img(src='./assets/images/utils/kia-sportage-exterior-02.jpg', alt='back view',width='100%')
-                  .carousel-item
-                    img(src='./assets/images/utils/kia-sportage-exterior-03.jpg', alt='side view left', width='100%')
-                  .carousel-item
-                    img(src='./assets/images/utils/kia-sportage-exterior-04.jpg', alt='side view right', width='100%')
-                  .carousel-item
-                    img(src='./assets/images/utils/kia-sportage-exterior-05.jpg', alt='inner view left', width='100%')
-                  .carousel-item
-                    img(src='./assets/images/utils/kia-sportage-exterior-06.jpg', alt='inner view right', width='100%')
-                a.carousel-control-prev(href='#car-parts-slider', data-slide='prev')
-                  span.carousel-control-prev-icon
-                a.carousel-control-next(href='#car-parts-slider', data-slide='next')
-                  span.carousel-control-next-icon
-                .carousel-indicators
-                  div.active(data-target='#car-parts-slider', data-slide-to='0')
-                    img(src='./assets/images/utils/kia-sportage-exterior-01.jpg', alt='front view', width='100%')
-                  div(data-target='#car-parts-slider', data-slide-to='1')
-                    img(src='./assets/images/utils/kia-sportage-exterior-02.jpg', alt='back view',width='100%')
-                  div(data-target='#car-parts-slider', data-slide-to='2')
-                    img(src='./assets/images/utils/kia-sportage-exterior-03.jpg', alt='side view left', width='100%')
-                  div(data-target='#car-parts-slider', data-slide-to='3')
-                    img(src='./assets/images/utils/kia-sportage-exterior-04.jpg', alt='side view right', width='100%')                
-                  div(data-target='#car-parts-slider', data-slide-to='4')
-                    img(src='./assets/images/utils/kia-sportage-exterior-05.jpg', alt='inner view left', width='100%')
-                  div(data-target='#car-parts-slider', data-slide-to='5')
-                    img(src='./assets/images/utils/kia-sportage-exterior-06.jpg', alt='inner view right', width='100%')
-              a(href="./test-drive.html").btn.btn-peugeot.radius-0.btn-test-drive
-                img(src='./assets/images/utils/steering-white.svg', width='35px').mr-2 
-                | BOOK TEST DRIVE
-            .video-container.mb-5
-              iframe(width='100%', height='315', src='https://www.youtube.com/embed/JsB2HYChX6o',frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')             
-            .spare-part-wrap
-              h3.mb-5 Spare Parts
-              .spare-part
-                .img-spare-part
-                  img(src='./assets/images/utils/spare-part-1.png', alt='spare part', width='100%')
-                .img-spare-part
-                  img(src='./assets/images/utils/spare-part-2.png', alt='spare part', width='100%')
-                .img-spare-part
-                  img(src='./assets/images/utils/spare-part-3.png', alt='spare part', width='100%')
-                .img-spare-part
-                  img(src='./assets/images/utils/spare-part-4.png', alt='spare part', width='100%')        
-                           
-          .col-md-5
-            ul.car-spec
-              li
-                img(src="./assets/images/utils/speed-auto.png",alt="speed auto")
-                | 6 Speed Auto 
-              li
-                img(src="./assets/images/utils/2wd.png",alt="speed auto") 
-                | 2WD
-              li
-                img(src="./assets/images/utils/engine.png",alt="speed auto") 
-                | 1600 CC
-              li
-                img(src="./assets/images/utils/gas-station.svg",alt="speed auto") 
-                | Petrol
-              li
-                img(src="./assets/images/utils/seat.png",alt="speed auto") 
-                | 7 passengers
-              li
-                img(src="./assets/images/utils/sports-car.svg",alt="speed auto")
-                | 6 Doors 
-              li
-                img(src="./assets/images/utils/steering.svg",alt="speed auto")
-                | LHD
-            #accordion.mb-5         
-              .card
-                #headingOne.card-header(data-toggle='collapse', data-target='#itemOne', aria-expanded='false', aria-controls='collapseOne')
-                  span Summary
-                #itemOne.collapse(aria-labelledby='headingOne', data-parent='#accordion')
-                  .card-body
-                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cup
-              .card
-                #headingTwo.card-header(data-toggle='collapse', data-target='#itemTwo', aria-expanded='false', aria-controls='collapseOne')
-                  span Engine
-                #itemTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
-                  .card-body
-                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cup
-              .card
-                #headingthree.card-header(data-toggle='collapse', data-target='#itemthree', aria-expanded='false', aria-controls='collapseOne')
-                  span Performance
-                #itemthree.collapse(aria-labelledby='headingthree', data-parent='#accordion')
-                  .card-body
-                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cup
-              .card
-                #headingfour.card-header(data-toggle='collapse', data-target='#itemfour', aria-expanded='false', aria-controls='collapseOne')
-                  span Environment
-                #itemfour.collapse(aria-labelledby='headingfour', data-parent='#accordion')
-                  .card-body
-                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cu
-              .card
-                #headingfive.card-header(data-toggle='collapse', data-target='#itemfive', aria-expanded='false', aria-controls='collapseOne')
-                  span Dimension
-                #itemfive.collapse(aria-labelledby='headingfive', data-parent='#accordion')
-                  .card-body
-                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cu
-              .card
-                #headingsix.card-header(data-toggle='collapse', data-target='#itemsix', aria-expanded='false', aria-controls='collapseOne')
-                  span Safety
-                #itemsix.collapse(aria-labelledby='headingsix', data-parent='#accordion')
-                  .card-body
-                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-              .card
-                #headingseven.card-header(data-toggle='collapse', data-target='#itemseven', aria-expanded='false', aria-controls='collapseOne')
-                  span Feature
-                #itemseven.collapse(aria-labelledby='headingseven', data-parent='#accordion')
-                  .card-body
-                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-              .card
-                #headingeight.card-header(data-toggle='collapse', data-target='#itemeight', aria-expanded='false', aria-controls='collapseOne')
-                  span Technology
-                #itemeight.collapse(aria-labelledby='headingeight', data-parent='#accordion')
-                  .card-body
-                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-        .row
-          .col-md-12
-            h3.mb-3 Reasons to choose the KIA Sportage
-            .sportage-reason
-              .img-wrap
-                img(src='./assets/images/utils/sportage-1.jpg', alt='sportage one', width='100%')
-                .img-content
-                  h4 INSPIRED STYLING
-              .img-wrap
-                img(src='./assets/images/utils/sportage-2.jpg', alt='sportage one')
-                .img-content
-                  h4 AN ENHANCED EXPERIENCE               
-              .img-wrap
-                img(src='./assets/images/utils/sportage-3.jpg', alt='sportage one')
-                .img-content
-                  h4 INNOVATIVE TECHNOLOGY
-  a.return-to-top(href='javascript:')
-    i.fas.fa-arrow-up         
-          
-    
-include ./components/_footer.pug
+html(lang='en')
+  include ./components/_head.pug
+  body
+    include ./components/_header.pug
+    main
+      div.brecrum
+        .container
+          .brecrum-inner
+            p
+              a(href="./index.html") KIA
+              | / CAR DETAILS
+            ul
+              li 
+                a(href="http://sss.innovix-solutions.net/kia") Kia   
+              li 
+                a(href="http://sss.innovix-solutions.net/peugeot") Peugeot 
+              li 
+                a(href="http://sss.innovix-solutions.net/kinglong/") King Long
+      section.content-body
+        .container
+          .pre-owned-detail
+            h1.mb-5.text-uppercase KIA SPORTAGE
+            .row
+              .col-md-7
+                .car-parts-wrap
+                  #car-parts-slider.carousel.slide(data-ride='carousel')              
+                    .carousel-inner
+                      .carousel-item.active
+                        img(src='./assets/images/utils/kia-sportage-exterior-01.jpg', alt='front view', width='100%')
+                      .carousel-item
+                        img(src='./assets/images/utils/kia-sportage-exterior-02.jpg', alt='back view',width='100%')
+                      .carousel-item
+                        img(src='./assets/images/utils/kia-sportage-exterior-03.jpg', alt='side view left', width='100%')
+                      .carousel-item
+                        img(src='./assets/images/utils/kia-sportage-exterior-04.jpg', alt='side view right', width='100%')
+                      .carousel-item
+                        img(src='./assets/images/utils/kia-sportage-exterior-05.jpg', alt='inner view left', width='100%')
+                      .carousel-item
+                        img(src='./assets/images/utils/kia-sportage-exterior-06.jpg', alt='inner view right', width='100%')
+                    a.carousel-control-prev(href='#car-parts-slider', data-slide='prev')
+                      span.carousel-control-prev-icon
+                    a.carousel-control-next(href='#car-parts-slider', data-slide='next')
+                      span.carousel-control-next-icon
+                    .carousel-indicators
+                      div.active(data-target='#car-parts-slider', data-slide-to='0')
+                        img(src='./assets/images/utils/kia-sportage-exterior-01.jpg', alt='front view', width='100%')
+                      div(data-target='#car-parts-slider', data-slide-to='1')
+                        img(src='./assets/images/utils/kia-sportage-exterior-02.jpg', alt='back view',width='100%')
+                      div(data-target='#car-parts-slider', data-slide-to='2')
+                        img(src='./assets/images/utils/kia-sportage-exterior-03.jpg', alt='side view left', width='100%')
+                      div(data-target='#car-parts-slider', data-slide-to='3')
+                        img(src='./assets/images/utils/kia-sportage-exterior-04.jpg', alt='side view right', width='100%')                
+                      div(data-target='#car-parts-slider', data-slide-to='4')
+                        img(src='./assets/images/utils/kia-sportage-exterior-05.jpg', alt='inner view left', width='100%')
+                      div(data-target='#car-parts-slider', data-slide-to='5')
+                        img(src='./assets/images/utils/kia-sportage-exterior-06.jpg', alt='inner view right', width='100%')
+                  a(href="./test-drive.html").btn.btn-peugeot.radius-0.btn-test-drive
+                    img(src='./assets/images/utils/steering-white.svg', width='35px').mr-2 
+                    | BOOK TEST DRIVE
+                .video-container.mb-5
+                  iframe(width='100%', height='315', src='https://www.youtube.com/embed/JsB2HYChX6o',frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')             
+                .spare-part-wrap
+                  h3.mb-5 Spare Parts
+                  .spare-part
+                    .img-spare-part
+                      img(src='./assets/images/utils/spare-part-1.png', alt='spare part', width='100%')
+                    .img-spare-part
+                      img(src='./assets/images/utils/spare-part-2.png', alt='spare part', width='100%')
+                    .img-spare-part
+                      img(src='./assets/images/utils/spare-part-3.png', alt='spare part', width='100%')
+                    .img-spare-part
+                      img(src='./assets/images/utils/spare-part-4.png', alt='spare part', width='100%')        
+                               
+              .col-md-5
+                ul.car-spec
+                  li
+                    img(src="./assets/images/utils/speed-auto.png",alt="speed auto")
+                    | 6 Speed Auto 
+                  li
+                    img(src="./assets/images/utils/2wd.png",alt="speed auto") 
+                    | 2WD
+                  li
+                    img(src="./assets/images/utils/engine.png",alt="speed auto") 
+                    | 1600 CC
+                  li
+                    img(src="./assets/images/utils/gas-station.svg",alt="speed auto") 
+                    | Petrol
+                  li
+                    img(src="./assets/images/utils/seat.png",alt="speed auto") 
+                    | 7 passengers
+                  li
+                    img(src="./assets/images/utils/sports-car.svg",alt="speed auto")
+                    | 6 Doors 
+                  li
+                    img(src="./assets/images/utils/steering.svg",alt="speed auto")
+                    | LHD
+                #accordion.mb-5         
+                  .card
+                    #headingOne.card-header(data-toggle='collapse', data-target='#itemOne', aria-expanded='false', aria-controls='collapseOne')
+                      span Summary
+                    #itemOne.collapse(aria-labelledby='headingOne', data-parent='#accordion')
+                      .card-body
+                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cup
+                  .card
+                    #headingTwo.card-header(data-toggle='collapse', data-target='#itemTwo', aria-expanded='false', aria-controls='collapseOne')
+                      span Engine
+                    #itemTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
+                      .card-body
+                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cup
+                  .card
+                    #headingthree.card-header(data-toggle='collapse', data-target='#itemthree', aria-expanded='false', aria-controls='collapseOne')
+                      span Performance
+                    #itemthree.collapse(aria-labelledby='headingthree', data-parent='#accordion')
+                      .card-body
+                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cup
+                  .card
+                    #headingfour.card-header(data-toggle='collapse', data-target='#itemfour', aria-expanded='false', aria-controls='collapseOne')
+                      span Environment
+                    #itemfour.collapse(aria-labelledby='headingfour', data-parent='#accordion')
+                      .card-body
+                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cu
+                  .card
+                    #headingfive.card-header(data-toggle='collapse', data-target='#itemfive', aria-expanded='false', aria-controls='collapseOne')
+                      span Dimension
+                    #itemfive.collapse(aria-labelledby='headingfive', data-parent='#accordion')
+                      .card-body
+                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cu
+                  .card
+                    #headingsix.card-header(data-toggle='collapse', data-target='#itemsix', aria-expanded='false', aria-controls='collapseOne')
+                      span Safety
+                    #itemsix.collapse(aria-labelledby='headingsix', data-parent='#accordion')
+                      .card-body
+                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                  .card
+                    #headingseven.card-header(data-toggle='collapse', data-target='#itemseven', aria-expanded='false', aria-controls='collapseOne')
+                      span Feature
+                    #itemseven.collapse(aria-labelledby='headingseven', data-parent='#accordion')
+                      .card-body
+                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                  .card
+                    #headingeight.card-header(data-toggle='collapse', data-target='#itemeight', aria-expanded='false', aria-controls='collapseOne')
+                      span Technology
+                    #itemeight.collapse(aria-labelledby='headingeight', data-parent='#accordion')
+                      .card-body
+                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+            .row
+              .col-md-12
+                h3.mb-3 Reasons to choose the KIA Sportage
+                .sportage-reason
+                  .img-wrap
+                    img(src='./assets/images/utils/sportage-1.jpg', alt='sportage one', width='100%')
+                    .img-content
+                      h4 INSPIRED STYLING
+                  .img-wrap
+                    img(src='./assets/images/utils/sportage-2.jpg', alt='sportage one')
+                    .img-content
+                      h4 AN ENHANCED EXPERIENCE               
+                  .img-wrap
+                    img(src='./assets/images/utils/sportage-3.jpg', alt='sportage one')
+                    .img-content
+                      h4 INNOVATIVE TECHNOLOGY
+      a.return-to-top(href='javascript:')
+        i.fas.fa-arrow-up         
+                  
+    include ./components/_footer.pug
 
-script(src="./assets/js/core.min.js")
+    script(src="./assets/js/core.min.js")

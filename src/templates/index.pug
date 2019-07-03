@@ -1,252 +1,256 @@
+doctype
+// variables require
 include ./components/_var.pug
 
-include ./components/_head.pug
-include ./components/_header.pug
-main
-  div.brecrum
-    .container
-      .brecrum-inner
-        p
-          a(href="http://sss.innovix-solutions.net/automotive") Automotive
-          | / KIA
-        ul
-          li 
-            a(href="http://sss.innovix-solutions.net/kia") Kia   
-          li 
-            a(href="http://sss.innovix-solutions.net/peugeot") Peugeot 
-          li 
-            a(href="http://sss.innovix-solutions.net/kinglong/") King Long
-  section.kia-main
-    .header-slider-wrap
-      .header-slider
-        .slide-item
-          img.d-none.d-sm-block(src='./assets/images/utils/kia-banner-1.jpg', alt='banner one',width="100%")
-          img.d-block.d-sm-none(src='./assets/images/utils/kia-banner-mb-1.jpg', alt='banner one',width="100%")
-          .slide-content
-            h1 THE POWER TO SURPRISE
-        .slide-item
-          img.d-none.d-sm-block(src='./assets/images/utils/kia-banner-2.jpg', alt='banner two',width="100%")
-          img.d-block.d-sm-none(src='./assets/images/utils/kia-banner-mb-2.jpg', alt='banner one',width="100%")
-          .slide-content
-            h1 THE POWER TO SURPRISE
-        .slide-item
-          img.d-none.d-sm-block(src='./assets/images/utils/kia-banner-3.jpg', alt='banner three',width="100%")
-          img.d-block.d-sm-none(src='./assets/images/utils/kia-banner-mb-3.jpg', alt='banner one',width="100%")
-          .slide-content
-            h1 THE POWER TO SURPRISE
-    .popular-car-wrap    
-      .container
-        h1 Our Product Line
-        .row.popular-car-list
-          .col-sm-4.col-md-3.wow.fadeIn
-            .car-item
-              a(href="./car-detail.html")
-                img(src="./assets/images/utils/popular-car-1.jpg", alt="popular car")
-                .car-price
-                  h5 K 900
-                  p $62,000 
-              
-          .col-sm-4.col-md-3.wow.fadeIn
-            .car-item
-              a(href="./car-detail.html")
-                img(src="./assets/images/utils/popular-car-2.jpg", alt="popular car")
-                .car-price
-                  h5 Optima
-                  p $58,000 
-              //- ul
-              //-   li Bookmark
-              //-   li Compare
-              //-   li 3.5/5  
-          .col-sm-4.col-md-3.wow.fadeIn
-            .car-item
-              a(href="./car-detail.html")
-                img(src="./assets/images/utils/popular-car-3.jpg", alt="popular car")
-                .car-price
-                  h5 Sportage
-                  p $36,000 
-              //- ul
-              //-   li Bookmark
-              //-   li Compare
-              //-   li 3.5/5  
-          .col-sm-4.col-md-3.wow.fadeIn
-            .car-item
-              a(href="./car-detail.html")
-                img(src="./assets/images/utils/popular-car-4.jpg", alt="popular car")
-                .car-price
-                  h5 Niro
-                  p $49,000 
-              //- ul
-              //-   li Bookmark
-              //-   li Compare
-              //-   li 3.5/5  
-          .col-sm-4.col-md-3.wow.fadeIn
-            .car-item
-              a(href="./car-detail.html")
-                img(src="./assets/images/utils/popular-car-1.jpg", alt="popular car")
-                .car-price
-                  h5 K 900
-                  p $62,000 
-              //- ul
-              //-   li Bookmark
-              //-   li Compare
-              //-   li 3.5/5  
-          .col-sm-4.col-md-3.wow.fadeIn
-            .car-item
-              a(href="./car-detail.html")
-                img(src="./assets/images/utils/popular-car-2.jpg", alt="popular car")
-                .car-price
-                  h5 Optima
-                  p $58,000 
-              //- ul
-              //-   li Bookmark
-              //-   li Compare
-              //-   li 3.5/5  
-          .col-sm-4.col-md-3.wow.fadeIn
-            .car-item
-              a(href="./car-detail.html")
-                img(src="./assets/images/utils/popular-car-3.jpg", alt="popular car")
-                .car-price
-                  h5 Sportage
-                  p $36,000 
-              //- ul
-              //-   li Bookmark
-              //-   li Compare
-              //-   li 3.5/5  
-          .col-sm-4.col-md-3.wow.fadeIn
-            .car-item
-              a(href="./car-detail.html")
-                img(src="./assets/images/utils/popular-car-4.jpg", alt="popular car")
-                .car-price
-                  h5 Niro
-                  p $49,000 
-              //- ul
-              //-   li Bookmark
-              //-   li Compare
-              //-   li 3.5/5
-    .new-promotion-wrap 
-      .container          
-        h1 Promotions
-      .promotion-slider
-        .promotion-item
-          img(src='./assets/images/utils/kia-main-promotion-1.jpg', alt='',width="100%")
-          .promotion-content
-            h3
-              | Your own it.
-              br
-              | Now make it yours.
-            p Choose your vehicle
-            a(href="./promotion_detail.html").btn.btn-rounded.btn-peugeot View more
-        .promotion-item
-          img(src='./assets/images/utils/kia-main-promotion-2.jpg', alt='',width="100%")
-          .promotion-content
-            h3 
-              | Your own it.
-              br
-              | Now make it yours.
-            p Choose your vehicle
-            a(href="./promotion_detail.html").btn.btn-rounded.btn-peugeot View more
-        .promotion-item
-          img(src='./assets/images/utils/kia-main-promotion-3.jpg', alt='',width="100%")
-          .promotion-content
-            h3 
-              | Your own it.
-              br
-              | Now make it yours.
-            p Choose your vehicle
-            a(href="./promotion_detail.html").btn.btn-rounded.btn-peugeot View more
-      .bar
-        h2 THINKING OF TRADING IN YOUR USED CAR FOR A NEW CAR?
-      .latest-new-wrap      
+html(lang='en')
+  include ./components/_head.pug
+  body
+    include ./components/_header.pug
+    main
+      div.brecrum
         .container
-          .latest-new-header 
-            h1 Latest News
-          .row
-            .col-lg-4.col-md-6.wow.fadeIn
-              .new-item
-                img(src='./assets/images/utils/latest-new-1.jpg', alt='',width="100%")                
-                .new-item-content
-                  p.date October 30,2019
-                  h5 KIA MYANMAR
-                  p 
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ...                    
-                  a.read-more(href="./news.html") Read more >>
-                        
-            .col-lg-4.col-md-6.wow.fadeIn
-              .new-item
-                img(src='./assets/images/utils/latest-new-2.jpg', alt='',width="100%")                
-                .new-item-content
-                  p.date October 30,2019
-                  h5 KIA MYANMAR
-                  p 
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ... 
-                  a.read-more(href="./news.html") Read more >>
-            .col-lg-4.col-md-6.wow.fadeIn
-              .new-item
-                img(src='./assets/images/utils/latest-new-3.jpg', alt='',width="100%")                
-                .new-item-content
-                  p.date October 30,2019
-                  h5 KIA MYANMAR
-                  p 
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ... 
-                  a.read-more(href="./news.html") Read more >>
-          .center-btn.mb-5
-            a.btn.btn-rounded.btn-peugeot(href="newlist.html") See all news
-            
-          .facebook-social-wrap
-            .facebook-header                    
-              h3 
-                i.fab.fa-facebook-square
-                | Social Feed
-            .social-feed-wrap
+          .brecrum-inner
+            p
+              a(href="http://sss.innovix-solutions.net/automotive") Automotive
+              | / KIA
+            ul
+              li 
+                a(href="http://sss.innovix-solutions.net/kia") Kia   
+              li 
+                a(href="http://sss.innovix-solutions.net/peugeot") Peugeot 
+              li 
+                a(href="http://sss.innovix-solutions.net/kinglong/") King Long
+      section.kia-main
+        .header-slider-wrap
+          .header-slider
+            .slide-item
+              img.d-none.d-sm-block(src='./assets/images/utils/kia-banner-1.jpg', alt='banner one',width="100%")
+              img.d-block.d-sm-none(src='./assets/images/utils/kia-banner-mb-1.jpg', alt='banner one',width="100%")
+              .slide-content
+                h1 THE POWER TO SURPRISE
+            .slide-item
+              img.d-none.d-sm-block(src='./assets/images/utils/kia-banner-2.jpg', alt='banner two',width="100%")
+              img.d-block.d-sm-none(src='./assets/images/utils/kia-banner-mb-2.jpg', alt='banner one',width="100%")
+              .slide-content
+                h1 THE POWER TO SURPRISE
+            .slide-item
+              img.d-none.d-sm-block(src='./assets/images/utils/kia-banner-3.jpg', alt='banner three',width="100%")
+              img.d-block.d-sm-none(src='./assets/images/utils/kia-banner-mb-3.jpg', alt='banner one',width="100%")
+              .slide-content
+                h1 THE POWER TO SURPRISE
+        .popular-car-wrap    
+          .container
+            h1 Our Product Line
+            .row.popular-car-list
+              .col-sm-4.col-md-3.wow.fadeIn
+                .car-item
+                  a(href="./car-detail.html")
+                    img(src="./assets/images/utils/popular-car-1.jpg", alt="popular car")
+                    .car-price
+                      h5 K 900
+                      p $62,000 
+                  
+              .col-sm-4.col-md-3.wow.fadeIn
+                .car-item
+                  a(href="./car-detail.html")
+                    img(src="./assets/images/utils/popular-car-2.jpg", alt="popular car")
+                    .car-price
+                      h5 Optima
+                      p $58,000 
+                  //- ul
+                  //-   li Bookmark
+                  //-   li Compare
+                  //-   li 3.5/5  
+              .col-sm-4.col-md-3.wow.fadeIn
+                .car-item
+                  a(href="./car-detail.html")
+                    img(src="./assets/images/utils/popular-car-3.jpg", alt="popular car")
+                    .car-price
+                      h5 Sportage
+                      p $36,000 
+                  //- ul
+                  //-   li Bookmark
+                  //-   li Compare
+                  //-   li 3.5/5  
+              .col-sm-4.col-md-3.wow.fadeIn
+                .car-item
+                  a(href="./car-detail.html")
+                    img(src="./assets/images/utils/popular-car-4.jpg", alt="popular car")
+                    .car-price
+                      h5 Niro
+                      p $49,000 
+                  //- ul
+                  //-   li Bookmark
+                  //-   li Compare
+                  //-   li 3.5/5  
+              .col-sm-4.col-md-3.wow.fadeIn
+                .car-item
+                  a(href="./car-detail.html")
+                    img(src="./assets/images/utils/popular-car-1.jpg", alt="popular car")
+                    .car-price
+                      h5 K 900
+                      p $62,000 
+                  //- ul
+                  //-   li Bookmark
+                  //-   li Compare
+                  //-   li 3.5/5  
+              .col-sm-4.col-md-3.wow.fadeIn
+                .car-item
+                  a(href="./car-detail.html")
+                    img(src="./assets/images/utils/popular-car-2.jpg", alt="popular car")
+                    .car-price
+                      h5 Optima
+                      p $58,000 
+                  //- ul
+                  //-   li Bookmark
+                  //-   li Compare
+                  //-   li 3.5/5  
+              .col-sm-4.col-md-3.wow.fadeIn
+                .car-item
+                  a(href="./car-detail.html")
+                    img(src="./assets/images/utils/popular-car-3.jpg", alt="popular car")
+                    .car-price
+                      h5 Sportage
+                      p $36,000 
+                  //- ul
+                  //-   li Bookmark
+                  //-   li Compare
+                  //-   li 3.5/5  
+              .col-sm-4.col-md-3.wow.fadeIn
+                .car-item
+                  a(href="./car-detail.html")
+                    img(src="./assets/images/utils/popular-car-4.jpg", alt="popular car")
+                    .car-price
+                      h5 Niro
+                      p $49,000 
+                  //- ul
+                  //-   li Bookmark
+                  //-   li Compare
+                  //-   li 3.5/5
+        .new-promotion-wrap 
+          .container          
+            h1 Promotions
+          .promotion-slider
+            .promotion-item
+              img(src='./assets/images/utils/kia-main-promotion-1.jpg', alt='',width="100%")
+              .promotion-content
+                h3
+                  | Your own it.
+                  br
+                  | Now make it yours.
+                p Choose your vehicle
+                a(href="./promotion_detail.html").btn.btn-rounded.btn-peugeot View more
+            .promotion-item
+              img(src='./assets/images/utils/kia-main-promotion-2.jpg', alt='',width="100%")
+              .promotion-content
+                h3 
+                  | Your own it.
+                  br
+                  | Now make it yours.
+                p Choose your vehicle
+                a(href="./promotion_detail.html").btn.btn-rounded.btn-peugeot View more
+            .promotion-item
+              img(src='./assets/images/utils/kia-main-promotion-3.jpg', alt='',width="100%")
+              .promotion-content
+                h3 
+                  | Your own it.
+                  br
+                  | Now make it yours.
+                p Choose your vehicle
+                a(href="./promotion_detail.html").btn.btn-rounded.btn-peugeot View more
+          .bar
+            h2 THINKING OF TRADING IN YOUR USED CAR FOR A NEW CAR?
+          .latest-new-wrap      
+            .container
+              .latest-new-header 
+                h1 Latest News
               .row
-                -for(var i=0; i<3; i++)
-                  .col-lg-4.col-md-6.social-feed-gap.wow.fadeIn
-                    .social-feed-item
-                      img(src='./assets/images/utils/latest-new-4.jpg', alt='',width="100%")
-                      .social-content
-                        ul
-                          li.logo
-                            a(href="")
-                            img(src="./assets/images/utils/kia-logo.png", alt="kia logo", width="40px")
-                          li
-                            a.kia-mm(href="") KIA Myamar                                                  
-                            a(href="") 7 May at 21:50
-                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ...
-                        a.read-more(href="./news.html") Read more >>
-                  .col-lg-4.col-md-6.social-feed-gap.wow.fadeIn
-                    .social-feed-item
-                      img(src='./assets/images/utils/latest-new-5.jpg', alt='',width="100%")
-                      .social-content
-                        ul
-                          li.logo
-                            a(href="")
-                            img(src="./assets/images/utils/kia-logo.png", alt="kia logo", width="40px")
-                          li
-                            a.kia-mm(href="") KIA Myamar                     
-                            a(href="") 2 days
-                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ...
-                        a.read-more(href="./news.html") Read more >>
-                  .col-lg-4.col-md-6.social-feed-gap.wow.fadeIn
-                    .social-feed-item
-                      img(src='./assets/images/utils/latest-new-3.jpg', alt='',width="100%")
-                      .social-content
-                        ul
-                          li.logo
-                            a(href="")
-                            img(src="./assets/images/utils/kia-logo.png", alt="kia logo", width="40px")
-                          li
-                            a.kia-mm(href="") KIA Myamar                    
-                            a(href="") 3 hrs
-                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ...
-                        a.read-more(href="./news.html") Read more >>
-                        
-              .center-btn
-                button.btn.btn-rounded.btn-peugeot#loadmore
-                  | Load more
-                  i.fas.fa-chevron-down
+                .col-lg-4.col-md-6.wow.fadeIn
+                  .new-item
+                    img(src='./assets/images/utils/latest-new-1.jpg', alt='',width="100%")                
+                    .new-item-content
+                      p.date October 30,2019
+                      h5 KIA MYANMAR
+                      p 
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ...                    
+                      a.read-more(href="./news.html") Read more >>
+                            
+                .col-lg-4.col-md-6.wow.fadeIn
+                  .new-item
+                    img(src='./assets/images/utils/latest-new-2.jpg', alt='',width="100%")                
+                    .new-item-content
+                      p.date October 30,2019
+                      h5 KIA MYANMAR
+                      p 
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ... 
+                      a.read-more(href="./news.html") Read more >>
+                .col-lg-4.col-md-6.wow.fadeIn
+                  .new-item
+                    img(src='./assets/images/utils/latest-new-3.jpg', alt='',width="100%")                
+                    .new-item-content
+                      p.date October 30,2019
+                      h5 KIA MYANMAR
+                      p 
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ... 
+                      a.read-more(href="./news.html") Read more >>
+              .center-btn.mb-5
+                a.btn.btn-rounded.btn-peugeot(href="newlist.html") See all news
                 
-  a.return-to-top(href='javascript:')
-    i.fas.fa-arrow-up        
-include ./components/_footer.pug
+              .facebook-social-wrap
+                .facebook-header                    
+                  h3 
+                    i.fab.fa-facebook-square
+                    | Social Feed
+                .social-feed-wrap
+                  .row
+                    -for(var i=0; i<3; i++)
+                      .col-lg-4.col-md-6.social-feed-gap.wow.fadeIn
+                        .social-feed-item
+                          img(src='./assets/images/utils/latest-new-4.jpg', alt='',width="100%")
+                          .social-content
+                            ul
+                              li.logo
+                                a(href="")
+                                img(src="./assets/images/utils/kia-logo.png", alt="kia logo", width="40px")
+                              li
+                                a.kia-mm(href="") KIA Myamar                                                  
+                                a(href="") 7 May at 21:50
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ...
+                            a.read-more(href="./news.html") Read more >>
+                      .col-lg-4.col-md-6.social-feed-gap.wow.fadeIn
+                        .social-feed-item
+                          img(src='./assets/images/utils/latest-new-5.jpg', alt='',width="100%")
+                          .social-content
+                            ul
+                              li.logo
+                                a(href="")
+                                img(src="./assets/images/utils/kia-logo.png", alt="kia logo", width="40px")
+                              li
+                                a.kia-mm(href="") KIA Myamar                     
+                                a(href="") 2 days
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ...
+                            a.read-more(href="./news.html") Read more >>
+                      .col-lg-4.col-md-6.social-feed-gap.wow.fadeIn
+                        .social-feed-item
+                          img(src='./assets/images/utils/latest-new-3.jpg', alt='',width="100%")
+                          .social-content
+                            ul
+                              li.logo
+                                a(href="")
+                                img(src="./assets/images/utils/kia-logo.png", alt="kia logo", width="40px")
+                              li
+                                a.kia-mm(href="") KIA Myamar                    
+                                a(href="") 3 hrs
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at orci nulla. Quisque fermentum nisi sed eros aliquet, nec pulvinar justo iaculis. Duis at facilisis metus. Sed id erat tortor.  ...
+                            a.read-more(href="./news.html") Read more >>
+                            
+                  .center-btn
+                    button.btn.btn-rounded.btn-peugeot#loadmore
+                      | Load more
+                      i.fas.fa-chevron-down
+                    
+      a.return-to-top(href='javascript:')
+        i.fas.fa-arrow-up        
+    include ./components/_footer.pug
 
-script(src="./assets/js/core.min.js")
+    script(src="./assets/js/core.min.js")

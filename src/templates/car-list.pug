@@ -1,149 +1,153 @@
+doctype
+// variables require
 include ./components/_var.pug
 
-include ./components/_head.pug
-include ./components/_header.pug
-main
-  div.brecrum
-    .container
-      .brecrum-inner
-        p
-          a(href="./index.html") KIA
-          | / KIA MODELS
-        ul
-          li 
-            a(href="http://sss.innovix-solutions.net/kia") Kia   
-          li 
-            a(href="http://sss.innovix-solutions.net/peugeot") Peugeot 
-          li 
-            a(href="http://sss.innovix-solutions.net/kinglong/") King Long
-  section
-    .car-selector
-      h1 Explore Your KIA
-      .selector
-        .model-wrapper
-          ul.models
-            li
-              button.active(data-model="stinger")
-                img(src="./assets/images/utils/kia-stinger-white.png", alt="").wow.fadeIn
-                span stinger
-            li
-              button(data-model="picanto")
-                img(src="./assets/images/utils/kia-picanto_2017-black.png", alt="").wow.fadeIn
-                span picanto
-            li
-              button(data-model="ceed")
-                img(src="./assets/images/utils/kia-ceed_2018-red.png", alt="").wow.fadeIn
-                span ceed
-                  
-        .category
-          .stage-bg
-            img.desktop(src="./assets/images/utils/selector-bg-desktop.jpg", alt="")
-            img.mobile(src="./assets/images/utils/selector-bg-mobile.jpg", alt="")
-          .stage.stage-wrap.active(data-content="stinger")
-            .stage-top
-              .stage-content
-                .card-content
-                  span.model-year The 2019
-                  span.model-name stinger
-                  span.starting-at Starting At
-                  span.price
-                    span.dollar $
-                    | 32,000
-                  .vehicle-show
-                    | $32,000
-                  .buttons
-                    a.cta(href="./car-detail.html")
-                      .stage-btn Explore
+html(lang='en')
+  include ./components/_head.pug
+  body
+    include ./components/_header.pug
+    main
+      div.brecrum
+        .container
+          .brecrum-inner
+            p
+              a(href="./index.html") KIA
+              | / KIA MODELS
+            ul
+              li 
+                a(href="http://sss.innovix-solutions.net/kia") Kia   
+              li 
+                a(href="http://sss.innovix-solutions.net/peugeot") Peugeot 
+              li 
+                a(href="http://sss.innovix-solutions.net/kinglong/") King Long
+      section
+        .car-selector
+          h1 Explore Your KIA
+          .selector
+            .model-wrapper
+              ul.models
+                li
+                  button.active(data-model="stinger")
+                    img(src="./assets/images/utils/kia-stinger-white.png", alt="").wow.fadeIn
+                    span stinger
+                li
+                  button(data-model="picanto")
+                    img(src="./assets/images/utils/kia-picanto_2017-black.png", alt="").wow.fadeIn
+                    span picanto
+                li
+                  button(data-model="ceed")
+                    img(src="./assets/images/utils/kia-ceed_2018-red.png", alt="").wow.fadeIn
+                    span ceed
                       
-              .stage-content-image.stage-content
-                .stage-vehicle
-                  img.active(src="./assets/images/utils/kia-stinger-white.png", alt="", data-carcolor="white")
-                  img(src="./assets/images/utils/kia-stinger-black.png", alt="", data-carcolor="black")
-                  img(src="./assets/images/utils/kia-stinger-red.png", alt="", data-carcolor="red")
-            .stage-bottom
-              .stage-content.module-wrapper
-                .swatches-wrapper
-                  .swatches-color
-                    button.swatches-button
-                      img.active(src="./assets/images/utils/white-button.png", alt="", data-color="white")
-                    button.swatches-button
-                      img(src="./assets/images/utils/black-button.png", alt="", data-color="black")
-                    button.swatches-button
-                      img(src="./assets/images/utils/red-button.png", alt="", data-color="red")
-                  //- .swatch-name
-                  //-   | White
-          .stage.stage-wrap(data-content="picanto")  
-            .stage-top
-              .stage-content
-                .card-content
-                  span.model-year The 2019
-                  span.model-name picanto
-                  span.starting-at Starting At
-                  span.price
-                    span.dollar $
-                    | 22,000
-                  .vehicle-show
-                    | $22,000
-                  .buttons
-                    a.cta(href="./car-detail.html")
-                      .stage-btn Explore
-          
-              .stage-content-image.stage-content
-                .stage-vehicle
-                  img.active(src="./assets/images/utils/kia-picanto_2017-white.png", alt="", data-carcolor="white")
-                  img(src="./assets/images/utils/kia-picanto_2017-black.png", alt="", data-carcolor="black")
-                  img(src="./assets/images/utils/kia-picanto_2017-red.png", alt="", data-carcolor="red")
-            .stage-bottom
-              .stage-content.module-wrapper
-                .swatches-wrapper
-                  .swatches-color
-                    button.swatches-button
-                      img.active(src="./assets/images/utils/white-button.png", alt="", data-color="white")
-                    button.swatches-button
-                      img(src="./assets/images/utils/black-button.png", alt="", data-color="black")
-                    button.swatches-button
-                      img(src="./assets/images/utils/red-button.png", alt="", data-color="red")
-                  //- .swatch-name
-                  //-   | White
-          .stage.stage-wrap(data-content='ceed')
-            .stage-top
-              .stage-content
-                .card-content
-                  span.model-year The 2019
-                  span.model-name ceed
-                  span.starting-at Starting At
-                  span.price
-                    span.dollar $
-                    | 12,000
-                  .vehicle-show
-                    | $12,000
-                  .buttons
-                    a.cta(href="./car-detail.html")
-                      .stage-btn Explore
-          
-              .stage-content-image.stage-content
-                .stage-vehicle
-                  img.active(src="./assets/images/utils/kia-ceed_2018-white.png", alt="", data-carcolor="white").wow.fadeIn
-                  img(src="./assets/images/utils/kia-ceed_2018-black.png", alt="", data-carcolor="black")
-                  img(src="./assets/images/utils/kia-ceed_2018-red.png", alt="", data-carcolor="red")
-            .stage-bottom
-              .stage-content.module-wrapper
-                .swatches-wrapper
-                  .swatches-color
-                    button.swatches-button
-                      img.active(src="./assets/images/utils/white-button.png", alt="", data-color="white")
-                    button.swatches-button
-                      img(src="./assets/images/utils/black-button.png", alt="", data-color="black")
-                    button.swatches-button
-                      img(src="./assets/images/utils/red-button.png", alt="", data-color="red")
-                  //- .swatch-name
-                  //-   | White
-                  
-        .divider
-          .module-divider
+            .category
+              .stage-bg
+                img.desktop(src="./assets/images/utils/selector-bg-desktop.jpg", alt="")
+                img.mobile(src="./assets/images/utils/selector-bg-mobile.jpg", alt="")
+              .stage.stage-wrap.active(data-content="stinger")
+                .stage-top
+                  .stage-content
+                    .card-content
+                      span.model-year The 2019
+                      span.model-name stinger
+                      span.starting-at Starting At
+                      span.price
+                        span.dollar $
+                        | 32,000
+                      .vehicle-show
+                        | $32,000
+                      .buttons
+                        a.cta(href="./car-detail.html")
+                          .stage-btn Explore
+                          
+                  .stage-content-image.stage-content
+                    .stage-vehicle
+                      img.active(src="./assets/images/utils/kia-stinger-white.png", alt="", data-carcolor="white")
+                      img(src="./assets/images/utils/kia-stinger-black.png", alt="", data-carcolor="black")
+                      img(src="./assets/images/utils/kia-stinger-red.png", alt="", data-carcolor="red")
+                .stage-bottom
+                  .stage-content.module-wrapper
+                    .swatches-wrapper
+                      .swatches-color
+                        button.swatches-button
+                          img.active(src="./assets/images/utils/white-button.png", alt="", data-color="white")
+                        button.swatches-button
+                          img(src="./assets/images/utils/black-button.png", alt="", data-color="black")
+                        button.swatches-button
+                          img(src="./assets/images/utils/red-button.png", alt="", data-color="red")
+                      //- .swatch-name
+                      //-   | White
+              .stage.stage-wrap(data-content="picanto")  
+                .stage-top
+                  .stage-content
+                    .card-content
+                      span.model-year The 2019
+                      span.model-name picanto
+                      span.starting-at Starting At
+                      span.price
+                        span.dollar $
+                        | 22,000
+                      .vehicle-show
+                        | $22,000
+                      .buttons
+                        a.cta(href="./car-detail.html")
+                          .stage-btn Explore
+              
+                  .stage-content-image.stage-content
+                    .stage-vehicle
+                      img.active(src="./assets/images/utils/kia-picanto_2017-white.png", alt="", data-carcolor="white")
+                      img(src="./assets/images/utils/kia-picanto_2017-black.png", alt="", data-carcolor="black")
+                      img(src="./assets/images/utils/kia-picanto_2017-red.png", alt="", data-carcolor="red")
+                .stage-bottom
+                  .stage-content.module-wrapper
+                    .swatches-wrapper
+                      .swatches-color
+                        button.swatches-button
+                          img.active(src="./assets/images/utils/white-button.png", alt="", data-color="white")
+                        button.swatches-button
+                          img(src="./assets/images/utils/black-button.png", alt="", data-color="black")
+                        button.swatches-button
+                          img(src="./assets/images/utils/red-button.png", alt="", data-color="red")
+                      //- .swatch-name
+                      //-   | White
+              .stage.stage-wrap(data-content='ceed')
+                .stage-top
+                  .stage-content
+                    .card-content
+                      span.model-year The 2019
+                      span.model-name ceed
+                      span.starting-at Starting At
+                      span.price
+                        span.dollar $
+                        | 12,000
+                      .vehicle-show
+                        | $12,000
+                      .buttons
+                        a.cta(href="./car-detail.html")
+                          .stage-btn Explore
+              
+                  .stage-content-image.stage-content
+                    .stage-vehicle
+                      img.active(src="./assets/images/utils/kia-ceed_2018-white.png", alt="", data-carcolor="white").wow.fadeIn
+                      img(src="./assets/images/utils/kia-ceed_2018-black.png", alt="", data-carcolor="black")
+                      img(src="./assets/images/utils/kia-ceed_2018-red.png", alt="", data-carcolor="red")
+                .stage-bottom
+                  .stage-content.module-wrapper
+                    .swatches-wrapper
+                      .swatches-color
+                        button.swatches-button
+                          img.active(src="./assets/images/utils/white-button.png", alt="", data-color="white")
+                        button.swatches-button
+                          img(src="./assets/images/utils/black-button.png", alt="", data-color="black")
+                        button.swatches-button
+                          img(src="./assets/images/utils/red-button.png", alt="", data-color="red")
+                      //- .swatch-name
+                      //-   | White
+                      
+            .divider
+              .module-divider
 
-  a.return-to-top(href='javascript:')
-    i.fas.fa-arrow-up         
-include ./components/_footer.pug
+      a.return-to-top(href='javascript:')
+        i.fas.fa-arrow-up         
+    include ./components/_footer.pug
 
-script(src="./assets/js/core.min.js")
+    script(src="./assets/js/core.min.js")

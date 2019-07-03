@@ -1,118 +1,122 @@
+doctype
+// variables require
 include ./components/_var.pug
 
-include ./components/_head.pug
-include ./components/_header.pug
-main
-  div.brecrum
-    .container
-      .brecrum-inner
-        p
-          a(href="./index.html") KIA
-          | / News
-        ul
-          li 
-            a(href="http://sss.innovix-solutions.net/kia/") Kia   
-          li 
-            a(href="http://sss.innovix-solutions.net/peugeot/") Peugeot 
-          li 
-            a(href="http://sss.innovix-solutions.net/kinglong/") King Long
-  div.content-color.latest-new-wrap.pt-0.pb-0
-    div.container.content-body
-      .latest-new-header 
-        h1 Latest News
-      div.row
-        div.col-lg-8.col-md-7.kia-myanmar
-          div.row.border-row 
-            div.col-lg-6.col-md-12 
-              img.w-100(src="assets/images/utils/popular-car-1.jpg", alt="")
-            div.col-lg-6.col-md-12
-              h4 KIA Myanmar 
-              div.calendar 
-                i.far.fa-calendar-alt
-                span October 30,2019
-              p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ut optio fugit minus enim, officia sit sint fuga, consectetur, illo repellendus provident ex nisi facere? 
-              a(href="news.html") Read More>>  
+html(lang='en')
+  include ./components/_head.pug
+  body
+    include ./components/_header.pug
+    main
+      div.brecrum
+        .container
+          .brecrum-inner
+            p
+              a(href="./index.html") KIA
+              | / News
+            ul
+              li 
+                a(href="http://sss.innovix-solutions.net/kia/") Kia   
+              li 
+                a(href="http://sss.innovix-solutions.net/peugeot/") Peugeot 
+              li 
+                a(href="http://sss.innovix-solutions.net/kinglong/") King Long
+      div.content-color.latest-new-wrap.pt-0.pb-0
+        div.container.content-body
+          .latest-new-header 
+            h1 Latest News
+          div.row
+            div.col-lg-8.col-md-7.kia-myanmar
+              div.row.border-row 
+                div.col-lg-6.col-md-12 
+                  img.w-100(src="assets/images/utils/popular-car-1.jpg", alt="")
+                div.col-lg-6.col-md-12
+                  h4 KIA Myanmar 
+                  div.calendar 
+                    i.far.fa-calendar-alt
+                    span October 30,2019
+                  p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ut optio fugit minus enim, officia sit sint fuga, consectetur, illo repellendus provident ex nisi facere? 
+                  a(href="news.html") Read More>>  
 
-          div.row.border-row 
-            div.col-lg-6.col-md-12
-              img.w-100(src="assets/images/utils/popular-car-2.jpg", alt="")
-            div.col-lg-6.col-md-12
-              h4 KIA Myanmar 
-              div.calendar 
-                i.far.fa-calendar-alt
-                span October 30,2019
-              p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ut optio fugit minus enim, officia sit sint fuga, consectetur, illo repellendus provident ex nisi facere?
-              a(href="news.html") Read More>> 
+              div.row.border-row 
+                div.col-lg-6.col-md-12
+                  img.w-100(src="assets/images/utils/popular-car-2.jpg", alt="")
+                div.col-lg-6.col-md-12
+                  h4 KIA Myanmar 
+                  div.calendar 
+                    i.far.fa-calendar-alt
+                    span October 30,2019
+                  p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ut optio fugit minus enim, officia sit sint fuga, consectetur, illo repellendus provident ex nisi facere?
+                  a(href="news.html") Read More>> 
 
-          div.row.border-row 
-            div.col-lg-6.col-md-12 
-              img.w-100(src="assets/images/utils/popular-car-3.jpg", alt="")
-            div.col-lg-6.col-md-12
-              h4 KIA Myanmar 
-              div.calendar 
-                i.far.fa-calendar-alt
-                span October 30,2019
-              p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ut optio fugit minus enim, officia sit sint fuga, consectetur, illo repellendus provident ex nisi facere? 
-              a(href="news.html") Read More>>  
+              div.row.border-row 
+                div.col-lg-6.col-md-12 
+                  img.w-100(src="assets/images/utils/popular-car-3.jpg", alt="")
+                div.col-lg-6.col-md-12
+                  h4 KIA Myanmar 
+                  div.calendar 
+                    i.far.fa-calendar-alt
+                    span October 30,2019
+                  p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ut optio fugit minus enim, officia sit sint fuga, consectetur, illo repellendus provident ex nisi facere? 
+                  a(href="news.html") Read More>>  
 
-          div.row.border-row 
-            div.col-lg-6.col-md-12 
-              img.w-100(src="assets/images/utils/popular-car-4.jpg", alt="")
-            div.col-lg-6.col-md-12
-              h4 KIA Myanmar 
-              div.calendar 
-                i.far.fa-calendar-alt
-                span October 30,2019
-              p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ut optio fugit minus enim, officia sit sint fuga, consectetur, illo repellendus provident ex nisi facere?
-              a(href="news.html") Read More>>
-           
-        div.col-lg-4.col-md-5.kia-Subscribe 
-          div.subscribes
-            span Subscribe
-          div.text-subscribe 
-            input.form-control(type="text" name="username" placeholder="Name") 
-            input.form-control(type="text" name="email" placeholder="Email")
-            p 
-              button.btn.btn-peugeot(type="submit") Subscribe
-          div.subscribes  
-            span Recent Posts
+              div.row.border-row 
+                div.col-lg-6.col-md-12 
+                  img.w-100(src="assets/images/utils/popular-car-4.jpg", alt="")
+                div.col-lg-6.col-md-12
+                  h4 KIA Myanmar 
+                  div.calendar 
+                    i.far.fa-calendar-alt
+                    span October 30,2019
+                  p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ut optio fugit minus enim, officia sit sint fuga, consectetur, illo repellendus provident ex nisi facere?
+                  a(href="news.html") Read More>>
+               
+            div.col-lg-4.col-md-5.kia-Subscribe 
+              div.subscribes
+                span Subscribe
+              div.text-subscribe 
+                input.form-control(type="text" name="username" placeholder="Name") 
+                input.form-control(type="text" name="email" placeholder="Email")
+                p 
+                  button.btn.btn-peugeot(type="submit") Subscribe
+              div.subscribes  
+                span Recent Posts
 
-          div.recent
-            ul.tab
-              li Recent 
-            
-            div.row 
-              .col-md-3
-                img.w-100(src="assets/images/utils/newimg.jpg", alt="")
-              .col-md-9 
-                span.d-block Our New Dashboard Is Here
-                a(href="#") read more
+              div.recent
+                ul.tab
+                  li Recent 
+                
+                div.row 
+                  .col-md-3
+                    img.w-100(src="assets/images/utils/newimg.jpg", alt="")
+                  .col-md-9 
+                    span.d-block Our New Dashboard Is Here
+                    a(href="#") read more
 
-            div.row 
-              .col-md-3
-                img.w-100(src="assets/images/utils/newimg1.jpg", alt="")
-              .col-md-9 
-                span.d-block Design Is In The Air
-                a(href="#") read more
+                div.row 
+                  .col-md-3
+                    img.w-100(src="assets/images/utils/newimg1.jpg", alt="")
+                  .col-md-9 
+                    span.d-block Design Is In The Air
+                    a(href="#") read more
 
-            div.row 
-              .col-md-3
-                img.w-100(src="assets/images/utils/newimg.jpg", alt="")
-              .col-md-9 
-                span.d-block Our New Dashboard Is Here
-                a(href="#") read more
+                div.row 
+                  .col-md-3
+                    img.w-100(src="assets/images/utils/newimg.jpg", alt="")
+                  .col-md-9 
+                    span.d-block Our New Dashboard Is Here
+                    a(href="#") read more
 
-            div.row 
-              .col-md-3
-                img.w-100(src="assets/images/utils/newimg1.jpg", alt="")
-              .col-md-9 
-                span.d-block Design Is In The Air
-                a(href="#") read more	
+                div.row 
+                  .col-md-3
+                    img.w-100(src="assets/images/utils/newimg1.jpg", alt="")
+                  .col-md-9 
+                    span.d-block Design Is In The Air
+                    a(href="#") read more	
 
-  
-  
-  
-  a.return-to-top(href='javascript:')
-    i.fas.fa-arrow-up 
-include ./components/_footer.pug
-script(src="./assets/js/core.min.js")
+      
+      
+      
+      a.return-to-top(href='javascript:')
+        i.fas.fa-arrow-up 
+    include ./components/_footer.pug
+    script(src="./assets/js/core.min.js")
