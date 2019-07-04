@@ -703,24 +703,24 @@ header a:hover {
     margin-top: 50px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 991px) {
   .main-nav .navbar-collapse .navbar-nav {
-    max-height: 320px;
+    max-height: 230px;
     overflow: auto;
     overflow-y: scroll;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 991px) {
   .main-nav .navbar-collapse .navbar-nav::-webkit-scrollbar {
     width: 5px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 991px) {
   .main-nav .navbar-collapse .navbar-nav::-webkit-scrollbar-track {
     background: #ddd;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 991px) {
   .main-nav .navbar-collapse .navbar-nav::-webkit-scrollbar-thumb {
     background: #666;
   }

@@ -192,26 +192,26 @@ header
       @media screen and (max-width: 991px) {
         margin-top: 50px;
       }
-      @media screen and (max-width: 576px) {
-        max-height: 320px;
+      @media screen and (max-width: 991px) {
+        max-height: 230px;
         overflow-y: scroll;
         overflow: auto;
       }
     }
     .navbar-nav::-webkit-scrollbar {
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 991px) {
         width: 5px;
       }
     }
 
     .navbar-nav::-webkit-scrollbar-track {
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 991px) {
         background: #ddd;
       }
     }
 
     .navbar-nav::-webkit-scrollbar-thumb {
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 991px) {
         background: #666;
       }
     }
