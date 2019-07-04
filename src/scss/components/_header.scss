@@ -20,12 +20,15 @@ header
     }
 
 }
-.top-bar
-  {
-    width:100%;
-    border-bottom: 1px solid #ccc;
-    font-size: 0.9rem;
-    min-height: 2rem;
+.top-bar {
+  width:100%;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.9rem;
+  min-height: 2rem;
+  .top-bar-wrap {
+    @media screen and (max-width: 991px) {
+      padding: 0;
+    }
     .sub-menu{
       display: flex;
       justify-content: space-between;
@@ -33,6 +36,21 @@ header
         display:inline-block;
         i {
           padding-right: 5px;
+          @media screen and (max-width: 991px) {
+            padding: 0 10px;
+            font-size: 1.2rem;
+            color: $kia;
+          }
+        }
+        i.fa-envelope {
+          @media screen and (max-width: 991px) {
+            font-size: 1.3rem;
+          }
+        }
+        span {
+          @media screen and (max-width: 991px) {
+            display: none;
+          }
         }
       }
 
@@ -46,7 +64,9 @@ header
     .sss-link::before{
       content: "|";
       margin: auto 0.5rem;
-
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
     }
     .top-menu
     {
@@ -108,10 +128,8 @@ header
       }
 
     }
-    .top-menu-icon
-    {
+    .top-menu-icon {
       margin-right:0;
-
       a{
         padding: 5px;
         text-decoration: none;
@@ -130,7 +148,7 @@ header
         display: none;
       }
     }
-
+  }
 }
 .nav-container{
   position: relative;
@@ -140,6 +158,19 @@ header
   width:100%;
   border-bottom: 1px solid #ccc;
   font-family: KIA-Font-B, sans-serif;
+  .navbar-brand {
+    img {
+      @media screen and (max-width: 991px) {
+        width: 90px;
+      }
+    }
+    .line {
+      @media screen and (max-width: 991px) {
+        height: 40px;
+        width: inherit;
+      }
+    }
+  }
   .navbar-collapse
   {
     flex-grow: 0;
@@ -349,29 +380,32 @@ header
   .show-text-drive{
     display: block;
   }
-}
-@media screen and(max-width:767px){
-  .top-bar{
-    .sss-link::before{
-      content: "";
-      margin: auto;
-    }
-    .sub-menu{
-      .mobile-width{
-        width: 65%;
-      }
-    }
-    .top-menu-icon {
-      padding: 0.5rem 0;
-    }
-    .show-text-drive{
-     margin-top: 0.5rem;
-    }
-  }
-  .show-mobile-767{
+  .show-mobile-767 {
     display: block;
   }
 }
+// @media screen and(max-width:767px){
+//   .top-bar{
+//     .sss-link::before{
+//       content: "";
+//       margin: auto;
+//     }
+//     .sub-menu{
+//       .mobile-width{
+//         width: 65%;
+//       }
+//     }
+//     .top-menu-icon {
+//       padding: 0.5rem 0;
+//     }
+//     .show-text-drive{
+//      margin-top: 0.5rem;
+//     }
+//   }
+//   .show-mobile-767{
+//     display: block;
+//   }
+// }
 // @media screen and(max-width:424px){
 //   .navbar-brand{
 //     a{
@@ -384,17 +418,17 @@ header
 //     }
 //   }
 // }
-@media screen and(max-width:375px){
-  .top-bar{
-    .sub-menu{
-      display: inline-block;
-      .mobile-width{
-        width: 100%;
-      }
-    }
-  }
-
-}
+// @media screen and(max-width:375px){
+//   .top-bar{
+//     .sub-menu{
+//       display: inline-block;
+//       .mobile-width{
+//         width: 100%;
+//       }
+//     }
+//   }
+//
+// }
 
 .cookie-alert {
   position: fixed;

@@ -76,6 +76,9 @@ main {
   top: 0;
   left: 0;
   margin-top: 121px;
+  @media screen and (max-width: 991px) {
+    margin-top: 105px;
+  }
   * {
     color: $paragraph-color;
   }
@@ -172,32 +175,32 @@ main {
   }
 }
 
-@media screen and (max-width:767px){
-  main{
-    margin-top: 135px;
-    .brecrum{
-      .brecrum-inner{
-        display: block;
-      }
-    }
-  }
-
-}
-@media screen and(max-width:424px){
-  main{
-    margin-top: 136px;
-  }
-}
-@media screen and(max-width:375px){
-  main{
-    margin-top: 175px;
-  }
-}
-@media screen and(max-width:362px){
-  main{
-    margin-top: 215px;
-  }
-}
+// @media screen and (max-width:767px){
+//   main{
+//     margin-top: 135px;
+//     .brecrum{
+//       .brecrum-inner{
+//         display: block;
+//       }
+//     }
+//   }
+//
+// }
+// @media screen and(max-width:424px){
+//   main{
+//     margin-top: 136px;
+//   }
+// }
+// @media screen and(max-width:375px){
+//   main{
+//     margin-top: 175px;
+//   }
+// }
+// @media screen and(max-width:362px){
+//   main{
+//     margin-top: 215px;
+//   }
+// }
 .return-to-top
     {
       position: fixed;

@@ -526,39 +526,66 @@ header a:hover {
   font-size: .9rem;
   border-bottom: 1px solid #ccc;
 }
-.top-bar .sub-menu {
+@media screen and (max-width: 991px) {
+  .top-bar .top-bar-wrap {
+    padding: 0;
+  }
+}
+.top-bar .top-bar-wrap .sub-menu {
   display: flex;
   justify-content: space-between;
 }
-.top-bar .sub-menu .contact-item {
+.top-bar .top-bar-wrap .sub-menu .contact-item {
   display: inline-block;
 }
-.top-bar .sub-menu .contact-item i {
+.top-bar .top-bar-wrap .sub-menu .contact-item i {
   padding-right: 5px;
 }
-.top-bar ul {
+@media screen and (max-width: 991px) {
+  .top-bar .top-bar-wrap .sub-menu .contact-item i {
+    padding: 0 10px;
+    font-size: 1.2rem;
+    color: #c51230;
+  }
+}
+@media screen and (max-width: 991px) {
+  .top-bar .top-bar-wrap .sub-menu .contact-item i.fa-envelope {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .top-bar .top-bar-wrap .sub-menu .contact-item span {
+    display: none;
+  }
+}
+.top-bar .top-bar-wrap ul {
   padding: 0;
   margin-bottom: 0;
   list-style-type: none;
 }
-.top-bar .sss-link::before {
+.top-bar .top-bar-wrap .sss-link::before {
   margin: auto .5rem;
   content: "|";
 }
-.top-bar .top-menu {
+@media screen and (max-width: 991px) {
+  .top-bar .top-bar-wrap .sss-link::before {
+    display: none;
+  }
+}
+.top-bar .top-bar-wrap .top-menu {
   position: relative;
 }
-.top-bar .top-menu::after {
+.top-bar .top-bar-wrap .top-menu::after {
   position: absolute;
   top: 5px;
   right: 0;
   color: #fff;
   content: "|";
 }
-.top-bar .top-menu:last-child::after {
+.top-bar .top-bar-wrap .top-menu:last-child::after {
   content: "";
 }
-.top-bar .top-menu a {
+.top-bar .top-bar-wrap .top-menu a {
   display: block;
   padding: 5px 10px;
   color: #fff;
@@ -566,10 +593,10 @@ header a:hover {
   background-color: #c51230;
   transition: all .8s;
 }
-.top-bar .top-menu a:hover {
+.top-bar .top-bar-wrap .top-menu a:hover {
   text-decoration: underline;
 }
-.top-bar .top-menu .rotating {
+.top-bar .top-bar-wrap .top-menu .rotating {
   width: 17px;
   margin-right: .3rem;
   -webkit-animation-name: steering;
@@ -615,24 +642,24 @@ header a:hover {
     transform: rotate(60deg);
   }
 }
-.top-bar .top-menu-icon {
+.top-bar .top-bar-wrap .top-menu-icon {
   margin-right: 0;
 }
-.top-bar .top-menu-icon a {
+.top-bar .top-bar-wrap .top-menu-icon a {
   padding: 5px;
   text-decoration: none;
   cursor: pointer;
   opacity: .6;
 }
-.top-bar .top-menu-icon a:hover {
+.top-bar .top-bar-wrap .top-menu-icon a:hover {
   opacity: 1;
 }
-.top-bar .top-menu-icon img {
+.top-bar .top-bar-wrap .top-menu-icon img {
   width: 17px;
   margin-top: .3rem;
 }
 @media screen and (max-width: 991px) {
-  .top-bar .top-menu-icon {
+  .top-bar .top-bar-wrap .top-menu-icon {
     display: none;
   }
 }
@@ -645,6 +672,17 @@ header a:hover {
   width: 100%;
   font-family: KIA-Font-B, sans-serif;
   border-bottom: 1px solid #ccc;
+}
+@media screen and (max-width: 991px) {
+  .main-nav .navbar-brand img {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .main-nav .navbar-brand .line {
+    width: inherit;
+    height: 40px;
+  }
 }
 .main-nav .navbar-collapse {
   flex-grow: 0;
@@ -839,33 +877,8 @@ header a:hover {
   .show-text-drive {
     display: block;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .top-bar .sss-link::before {
-    margin: auto;
-    content: "";
-  }
-  .top-bar .sub-menu .mobile-width {
-    width: 65%;
-  }
-  .top-bar .top-menu-icon {
-    padding: .5rem 0;
-  }
-  .top-bar .show-text-drive {
-    margin-top: .5rem;
-  }
   .show-mobile-767 {
     display: block;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .top-bar .sub-menu {
-    display: inline-block;
-  }
-  .top-bar .sub-menu .mobile-width {
-    width: 100%;
   }
 }
 
@@ -2795,6 +2808,11 @@ main {
   height: 100%;
   margin-top: 121px;
 }
+@media screen and (max-width: 991px) {
+  main {
+    margin-top: 105px;
+  }
+}
 main * {
   color: #606060;
 }
@@ -2899,33 +2917,6 @@ main .btn-sss {
 main .content-body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-@media screen and (max-width: 767px) {
-  main {
-    margin-top: 135px;
-  }
-  main .brecrum .brecrum-inner {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 424px) {
-  main {
-    margin-top: 136px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  main {
-    margin-top: 175px;
-  }
-}
-
-@media screen and (max-width: 362px) {
-  main {
-    margin-top: 215px;
-  }
 }
 
 .return-to-top {
