@@ -1,78 +1,60 @@
-$header-color:#3498db;
-
-.service{
-    margin-top:200px;
-    .services-row{
-        // border-bottom: 1px solid;
-        margin-top: 50px;
-        padding-bottom: 50px;
-		}
-		.services-row1{
-
-			margin-top: 50px;
-			padding-bottom: 50px;
-	}
+.service-banner {
+  padding: 0;
 }
-.h-color{
-    color:$header-color;
-}
-@media screen and (max-width:576px){
-	.service{
-		.services-row{
-			padding-bottom: 1px;
-			margin-top: 50px;
-			h4{
-				margin-top:24px;
-			}
-		}
-		.services-row1{
-			padding-bottom: 1px;
-			margin-top: 50px;
-			h4{
-				margin-top: 24px;
-			}
-		}
 
-	}
-
-
-}
-//......update service
-
-.con-auto{
-	ul{
+.con-auto {
+	ul {
 		padding: 0;
+    .account-item {
+      display: flex;
+    	margin-bottom: 2rem;
+    	@media screen and (max-width:768px) {
+    		display:block;
+        text-align: center;
+    	}
+      .check-square-img {
+      	padding-top: .3rem;
+      	img{
+      		width: 70px;
+      		height: 70px;
+      		padding: 10px;
+      		margin-right: 1rem;
+      		background: #c51230;
+      		border-radius: 50%;
+      		margin-bottom:1rem;
+      	}
+      }
+    }
 	}
   .service-img {
-    @media screen and (max-width: 767px) {
-      img {
+    img {
+      @media screen and (max-width:767px) {
         margin-bottom: 1rem;
-      }  
+      }
     }
   }
-}
-.first_row{
-	margin-top: 50px;
-}
-.account-item {
-    display: flex;
-    margin-bottom: 2rem;
-    @media screen and (max-width: 768px) {
-      display: block;
+  .slick-prev {
+    &:before {
+      content: "\f053";
     }
-}
-.account-item .check-square-img {
-    // width: 147px;
-	padding-top: .3rem;
-	img{
-		width: 70px;
-    height: 70px;
-    padding: 10px;
-    margin-right: 1rem;
-    background: #c51230;
+  }
+  .slick-next {
+    &:before {
+      content: "\f054";
+    }
+  }
+  .slick-next,.slick-prev {
+    &:before {
+      color: #FFF;
+      font-family: "Font Awesome 5 Free",sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+    }
+  }
+  .slick-next, .slick-prev {
+    width: 30px;
+    height: 30px;
+    background: #666;
     border-radius: 50%;
-    @media screen and (max-width: 768px) {
-      margin-bottom: 1rem;
-    }
-	}
+  }
 }

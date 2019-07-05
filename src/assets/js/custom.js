@@ -194,6 +194,25 @@ $('.spare-part').slick({
   slidesToScroll:1
 });
 
+//------------service slider ----------//
+$('.service-img').slick({
+  dots: false,
+  infinite: true,
+  speed: 1000,
+  slidesToShow: 3,
+  slidesToScroll:1,
+  autoplay: true,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        arrows: false
+      }
+    }
+  ]
+});
+
 //-------------Begin JS for Tradein Upload page------------//
 $(window).scroll(function() {
   if ($(this).scrollTop() >= Number('50')) {

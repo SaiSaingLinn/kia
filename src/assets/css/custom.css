@@ -1831,41 +1831,34 @@ header a:hover {
   color: #3498db;
 }
 
-.service {
-  margin-top: 200px;
-}
-.service .services-row {
-  padding-bottom: 50px;
-  margin-top: 50px;
-}
-.service .services-row1 {
-  padding-bottom: 50px;
-  margin-top: 50px;
-}
-
-.h-color {
-  color: #3498db;
-}
-
-@media screen and (max-width: 576px) {
-  .service .services-row {
-    padding-bottom: 1px;
-    margin-top: 50px;
-  }
-  .service .services-row h4 {
-    margin-top: 24px;
-  }
-  .service .services-row1 {
-    padding-bottom: 1px;
-    margin-top: 50px;
-  }
-  .service .services-row1 h4 {
-    margin-top: 24px;
-  }
+.service-banner {
+  padding: 0;
 }
 
 .con-auto ul {
   padding: 0;
+}
+.con-auto ul .account-item {
+  display: flex;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .con-auto ul .account-item {
+    display: block;
+    text-align: center;
+  }
+}
+.con-auto ul .account-item .check-square-img {
+  padding-top: .3rem;
+}
+.con-auto ul .account-item .check-square-img img {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  background: #c51230;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 767px) {
@@ -1874,35 +1867,28 @@ header a:hover {
   }
 }
 
-.first_row {
-  margin-top: 50px;
+.con-auto .slick-prev::before {
+  content: "\f053";
 }
 
-.account-item {
-  display: flex;
-  margin-bottom: 2rem;
-}
-@media screen and (max-width: 768px) {
-  .account-item {
-    display: block;
-  }
+.con-auto .slick-next::before {
+  content: "\f054";
 }
 
-.account-item .check-square-img {
-  padding-top: .3rem;
+.con-auto .slick-next::before,
+.con-auto .slick-prev::before {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
 }
-.account-item .check-square-img img {
-  width: 70px;
-  height: 70px;
-  padding: 10px;
-  margin-right: 1rem;
-  background: #c51230;
+
+.con-auto .slick-next,
+.con-auto .slick-prev {
+  width: 30px;
+  height: 30px;
+  background: #666;
   border-radius: 50%;
-}
-@media screen and (max-width: 768px) {
-  .account-item .check-square-img img {
-    margin-bottom: 1rem;
-  }
 }
 
 .promo-slide-wrap .promo-slide-tabs .carousel .carousel-inner .carousel-item .carousel-caption {
