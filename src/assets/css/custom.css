@@ -2727,7 +2727,7 @@ header a:hover {
 
 body {
   overflow-x: hidden;
-  font-family: KIA-Font-M, sans-serif !important;
+  font-family: KIA-Font-M, MM-Font, sans-serif;
   font-size: 15px;
 }
 
@@ -2737,7 +2737,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: KIA-Font-B, sans-serif !important;
+  font-family: KIA-Font-B, MM-Font, sans-serif !important;
   text-transform: uppercase;
 }
 
